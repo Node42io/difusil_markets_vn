@@ -1,0 +1,170 @@
+{
+  "goal": "Restructure the standalone diffusil report to match the customer_demo_062026.html views/flow: two top-level tabs (Product & Functional Promise, Markets) and a market->VN/BOM tree+detail drilldown using the demo's tree-rail + detail-panel design, adapted to @node42/ui-kit design tokens. Real report.json data only; 6 markets have full VN+pyramid, 33 do not.",
+  "design_translation": {
+    "principle": "Copy the demo's STRUCTURE/LAYOUT/INTERACTION, NOT its 'Sterile Injectables' data. Re-skin demo CSS classes onto kit tokens.",
+    "token_map": {
+      "--surface / card bg": "var(--color-page) elevated via var(--background-* ) — use raw div with background:#f7f7f7-equivalent token: var(--color-page) lighter; concretely use kit ContentCard/WidgetCard where a card is whole-width, and raw divs with border:1px solid var(--border-*) + var(--radius-md) for tree/detail panels",
+      "--border": "var(--border-neutral) / var(--border-default)",
+      "--info selected band (.trow.sel)": "var(--background-information) bg + var(--text-information)",
+      "--suc-s / .pin connected-product band": "var(--background-success) + var(--text-success) + border var(--border-success)",
+      "--warn-s / .stkpin stakeholder band": "var(--background-warning) + var(--text-warning) + border var(--border-warning)",
+      "level pin .lvl": "kit Badge variant=\"color\" size=\"xs\" for L5+/normal; Badge variant=\"information\" for L7/L6 (the demo .lvl.h)",
+      "mono labels (.dlabel/.section-t/.bcrumb)": "kit Text variant=\"label-s\" (Geist Mono uppercase) ",
+      "spacing": "var(--space-100..700); radii var(--radius-xs/sm/md)",
+      "fit % bands": "kit ConfidenceBadge value={fitPct} (direct=90 high / adjacent=65 medium / stretch=40 low)",
+      "esco occ chips": "raw chip div + Badge for code + ConfidenceBadge value={esco.confidence}"
+    }
+  },
+  "routes": {
+    "/": "Redirect or render the two-tab shell with default tab 'product'. App shell = AppShell.tsx (Navbar + report sidebar kept for Glossary/About reachability). Top of content = horizontal kit Tab row: 'Product & Functional Promise' | 'Markets'.",
+    "/product": "Tab 1 content (also reachable as default).",
+    "/markets": "Tab 2 — ranked 39-market universe table + dimension view for the 6 dimension_markets.",
+    "/markets/:naics": "Market drilldown. If naics in stage3 (6 markets) -> VN/BOM tree+detail viz. Else -> ranking/dimension detail + 'Value network not yet built for this market' empty state.",
+    "/glossary": "kept (existing Glossary page)",
+    "/about": "kept (existing About page)"
+  },
+  "tab_structure": {
+    "top_tabs": ["Product & Functional Promise", "Markets"],
+    "tab1_product": {
+      "data": "report.product",
+      "blocks": [
+        "Hero: functional_promise (large, ContentCard) + commodity_functional_promise (labelled 'Commodity-level functional promise')",
+        "Identity row: technology_class, vendor, custom_product_group (WidgetItemField)",
+        "Features list (product.features[])",
+        "Specifications table (product.specifications[] split on ': ')",
+        "Constraints list (product.constraints[])"
+      ]
+    },
+    "tab2_markets": {
+      "data": "report.universe[] (39), report.universe_stats, report.dimension_markets[] (6)",
+      "blocks": [
+        "universe_stats summary chips (total/bom/process_vn/both)",
+        "Sortable ranked table of 39 universe markets: rank, naics, title, paths[] (Badges), composite, 6 score columns, rationale (expandable). Rows CLICKABLE -> /markets/:naics.",
+        "Rows whose naics is in stage3 get a 'VN available' pin Badge (success); others get neutral 'ranking only'.",
+        "Below: the demo Market view (dimensions + L2/L3) shown for the markets that have dimension_markets (the 6) — accessible from the drilldown, not duplicated here."
+      ]
+    }
+  },
+  "market_drilldown": {
+    "lookup": "Match :naics to stage3 by leading numeric prefix (stage3 naics keys are inconsistent: '333242' vs '333314 — Optical...'). Helper findStage3(naics) and findDimensionMarket(naics).",
+    "has_vn_markets": ["333242", "334516", "333314", "339112", "221320", "334220"],
+    "sub_tabs": ["Value Network", "BOM", "Market dimensions"],
+    "value_network": "DemoTree (stage3.vn_units) + DetailPanel(VN)",
+    "bom": "DemoTree (stage3.bom_units) + DetailPanel(BOM)",
+    "market_dimensions": "demo Market view from dimension_markets[naics] (all_dimensions demand/supply grid, chosen dim -> L2 -> L3). Honest empty if no dimension_market.",
+    "no_vn_state": "For the 33 markets without stage3: show universe scorecard + rationale + dimension view if present, and an InfoCard/empty banner 'Value network not yet built for this market'. Never fabricate VN/stakeholders."
+  },
+  "vn_viz_component_tree": {
+    "MarketDrilldown.tsx": {
+      "MarketHeader": "title + NAICS chip + composite + paths + breadcrumb (Markets > <title>)",
+      "Toggle/sub-Tabs": "Value Network | BOM | Market dimensions",
+      "VnBomViz (shared)": {
+        "left_rail": "DemoTree.tsx",
+        "right_detail": "UnitDetail.tsx"
+      }
+    },
+    "DemoTree.tsx": {
+      "purpose": "Custom tree-rail re-creating demo .tree/.trow with kit tokens. Level pins, selectable rows (var(--background-information) when selected), right-side pins.",
+      "props": "{ units: TreeRow[]; selectedId; onSelect(row) }",
+      "TreeRow_shape": "{ id, level, name, cfj, depth, hasConnected:boolean, connectedCount:number, hasStakeholders:boolean }",
+      "tree_build": "Units are flat with no parent links. Build nesting by level order (VN: L7>L6>L6a>L5>L4; BOM: L0>L1>L2>L3>L4>L5) — each unit is a child of the most recent preceding unit one level up (stack-based). Depth drives indentation (depth*15px spacer like demo). Expand L7/root by default; auto-select the intersection unit.",
+      "pins": "connected-product pin (success Badge '▣ N') when unit matched by an intersection; stakeholder pin (warning Badge '◐ N') when unit == pyramid.intersection_unit (has prototype_roles)."
+    },
+    "UnitDetail.tsx": {
+      "VN_unit": [
+        "breadcrumb chain of levels (L7 > L6 > L5 ...) via parent stack",
+        "unit title + level Badge",
+        "Core functional job (unit.cfj)",
+        "CONNECTED PRODUCTS: for each intersection matching this unit -> green cp card: 'diffusil-<x>' name + ConfidenceBadge(fitPct) labelled 'derived from fit: <fit>' + role/where/rationale text",
+        "STAKEHOLDER ROLES (only on the pyramid.intersection_unit): RoleCard per prototype_role"
+      ],
+      "BOM_unit": [
+        "breadcrumb chain",
+        "component title + level Badge + function text",
+        "CONNECTED PRODUCTS where a BOM intersection sits on this unit (same green cp card + fit band)",
+        "No pyramid stakeholders on BOM rows (pyramid is VN-anchored); if BOM unit corresponds to the intersection element, link/note to the VN stakeholder view"
+      ]
+    },
+    "RoleCard.tsx": {
+      "data": "pyramid.prototype_roles[] (5 Burleson types: job_executor, job_overseer, purchase_executor, purchase_influencer, job_beneficiary)",
+      "fields": [
+        "role (formatted) + type_label Badge + prototype_name",
+        "role.cfj",
+        "ESCO chips: esco[]{code,title,confidence} -> chip with mono code + title + ConfidenceBadge(confidence)",
+        "incentive_categories[] (chips/list)",
+        "core_jobs[]{statement,category}",
+        "emotional_jobs[]{feeling,from_incentive}",
+        "status_jobs[]{statement,identity_kind}"
+      ]
+    },
+    "PyramidContext.tsx (optional sub-block in UnitDetail)": "pyramid.cfj_path (L7->L6->L5 chain), top_employers[]{name,employee_count,source} table with Sources link"
+  },
+  "fit_band_mapping": {
+    "direct": { "pct": 90, "level": "high", "label": "direct fit ≈ 90%" },
+    "adjacent": { "pct": 65, "level": "medium", "label": "adjacent fit ≈ 65%" },
+    "stretch": { "pct": 40, "level": "low", "label": "stretch fit ≈ 40%" },
+    "render": "ConfidenceBadge value={pct} level={level}; caption 'derived from fit' so the band is clearly labelled as derived, not measured.",
+    "note": "Existing src/pages/Stakeholders.tsx already has FIT_LEVEL map (direct->high etc.) — reuse/centralize into src/fit.ts."
+  },
+  "intersection_matching": {
+    "to_vn_unit": "intersection.unit string embeds both VN and BOM names. Match a VN tree row when row.name (normalized) is a substring of intersection.unit AND intersection.path includes 'vn' OR generic. Count multiple intersections per unit.",
+    "to_bom_unit": "Match when row.name substring of intersection.unit (BOM L# token present).",
+    "pyramid_unit": "Mark the VN row whose name is contained in pyramid.intersection_unit as the stakeholder-bearing unit; attach prototype_roles there.",
+    "diffusil_product_name": "Connected product label = product.name ('diffusil-...') from report.product; the % is the fit band, the where/role/rationale come from the intersection."
+  },
+  "kit_components_used": [
+    "Tab (top tabs + market sub-tabs)",
+    "Toggle (VN/BOM switch alternative)",
+    "Badge (level pins, paths, VN-available, type_label)",
+    "ConfidenceBadge (fit % band, ESCO confidence)",
+    "Text (label-s mono labels, page-title, body)",
+    "Dot, Divider",
+    "Table (universe ranked table, specifications, top_employers)",
+    "Sources (top_employers source links, dimension sources)",
+    "ContentCard / WidgetCard / WidgetItemField (product blocks, detail cards)",
+    "Breadcrumb (market drilldown trail)",
+    "PageTemplate (shell)"
+  ],
+  "custom_token_styled_blocks": [
+    "DemoTree rows (.trow re-skin): raw div, var(--background-information) selected, var(--border-default), var(--radius-sm)",
+    "Connected-product green band (.cp): var(--background-success)+var(--border-success)+var(--radius-md)",
+    "Stakeholder role card (.role): raw card var(--border-default)+var(--radius-sm)",
+    "ESCO occ chips (.occc)",
+    "Dimension cards grid (.dim/.dim.chosen) + L2/L3 grids",
+    "Detail parent breadcrumb box (.parentbox)"
+  ],
+  "data_d_ts_update": "report.d.ts: add Pyramid types (intersection_unit, cfj_path[]{level,unit,cfj}, top_employers[]{name,employee_count,source}, prototype_roles[]{role,type_label,prototype_name,cfj,esco[]{code,title,confidence},incentive_categories[],core_jobs[]{statement,category,incentive_driver},emotional_jobs[]{feeling,from_incentive},status_jobs[]{statement,identity_kind,from_incentive}}). Add pyramid to Stage3Segment. UniverseScores keys already correct.",
+  "hard_requirements": {
+    "build": "npm run build (tsc -b && vite build) MUST pass; TypeScript clean.",
+    "css_tokens": "Keep src/index.css @import of tokens.css+globals.css; after build verify dist CSS contains ':root' and '--space-300:'.",
+    "config": "Keep vite base '/difusil_markets_vn/', router basename, .github/workflows/deploy.yml unchanged.",
+    "data": "Real report.json only; no fabricated VN/stakeholder data; 33 no-VN markets get honest empty state."
+  },
+  "files": {
+    "replace_main_router": "src/main.tsx — routes: /, /product, /markets, /markets/:naics, /glossary, /about (drop /universe,/ranking,/dimensions,/stakeholders standalone routes; their content folds into the two tabs/drilldown).",
+    "new": [
+      "src/AppShell.tsx (two-tab chrome via PageTemplate + Tab)",
+      "src/pages/ProductTab.tsx",
+      "src/pages/MarketsTab.tsx",
+      "src/pages/MarketDrilldown.tsx",
+      "src/components/DemoTree.tsx",
+      "src/components/UnitDetail.tsx",
+      "src/components/RoleCard.tsx",
+      "src/components/MarketDimensions.tsx",
+      "src/lib/stage3.ts (findStage3, findDimensionMarket, buildTree, matchIntersections)",
+      "src/lib/fit.ts (FIT_BAND map)"
+    ],
+    "update": [
+      "src/report.d.ts (Pyramid/Esco/Role types + pyramid on Stage3Segment)",
+      "src/ReportSidebar.tsx (point at /product, /markets, /glossary, /about) OR remove sidebar sub-nav in favour of tabs",
+      "src/index.css (unchanged token import; keep)"
+    ],
+    "reuse_then_remove": [
+      "src/pages/Product.tsx -> fold into ProductTab.tsx",
+      "src/pages/MarketUniverse.tsx + Ranking.tsx -> fold into MarketsTab.tsx",
+      "src/pages/Dimensions.tsx -> fold into MarketDimensions.tsx",
+      "src/pages/Stakeholders.tsx -> harvest tree/fit logic into DemoTree/UnitDetail then remove"
+    ],
+    "keep": ["src/pages/Glossary.tsx", "src/pages/About.tsx", "src/pages/Overview.tsx (optional, fold into Markets or drop)"]
+  }
+}

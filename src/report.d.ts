@@ -15,8 +15,13 @@ export interface Product {
   commodity_functional_promise: string;
   custom_product_group: string;
   features: string[];
-  constraints: string[];
+  constraints: { name: string; type: string; explanation: string }[];
   specifications: string[];
+  unspsc: {
+    custom_product_group: string;
+    note: string;
+    candidates: { code: string; name: string; confidence: number }[];
+  };
 }
 
 export interface UniverseScores {
@@ -105,6 +110,60 @@ export interface Stakeholder {
   decides: string;
 }
 
+export interface EscoOccupation {
+  code: string;
+  title: string;
+  confidence: number;
+}
+
+export interface CoreJob {
+  statement: string;
+  category: string;
+  incentive_driver?: string;
+}
+
+export interface EmotionalJob {
+  feeling: string;
+  from_incentive?: string;
+}
+
+export interface StatusJob {
+  statement: string;
+  identity_kind: string;
+  from_incentive?: string;
+}
+
+export interface PrototypeRole {
+  role: string;
+  type_label: string;
+  prototype_name: string;
+  cfj: string;
+  esco: EscoOccupation[];
+  incentive_categories: string[];
+  core_jobs: CoreJob[];
+  emotional_jobs: EmotionalJob[];
+  status_jobs: StatusJob[];
+}
+
+export interface CfjPathNode {
+  level: string;
+  unit: string;
+  cfj: string;
+}
+
+export interface TopEmployer {
+  name: string;
+  employee_count: string;
+  source: string;
+}
+
+export interface Pyramid {
+  intersection_unit: string;
+  cfj_path: CfjPathNode[];
+  top_employers: TopEmployer[];
+  prototype_roles: PrototypeRole[];
+}
+
 export interface Stage3Segment {
   segment_id: string;
   naics: string;
@@ -116,6 +175,7 @@ export interface Stage3Segment {
   bom_units: BomUnit[];
   intersections: Intersection[];
   stakeholders: Stakeholder[];
+  pyramid?: Pyramid;
 }
 
 export interface GlossaryEntry {

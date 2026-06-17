@@ -20,12 +20,36 @@
    "Calibrated BSDF reference grade"
   ],
   "constraints": [
-   "Low optical transmission",
-   "Brittle fracture",
-   "Maximum single-piece size",
-   "High material and process cost",
-   "Thickness-dependent scatter",
-   "Hydrofluoric-acid attack"
+   {
+    "name": "Low optical transmission",
+    "type": "physical",
+    "explanation": "Only ~30\u201340% of incident light is transmitted (grade T1000 @1 mm); the rest is back-scattered or absorbed, so it is unsuitable for high-efficiency illumination."
+   },
+   {
+    "name": "Brittle fracture",
+    "type": "physical",
+    "explanation": "It is a silica glass \u2014 brittle and thermal-shock-sensitive, with low fracture toughness despite its high bending strength."
+   },
+   {
+    "name": "Maximum single-piece size",
+    "type": "physical",
+    "explanation": "Sol-gel casting caps a single monolithic piece at ~220\u00d7220 mm; larger continuous diffuser areas require tiling or another technology."
+   },
+   {
+    "name": "High material and process cost",
+    "type": "economic",
+    "explanation": "Ultra-pure synthetic silica plus the multi-step sol-gel densification process makes unit cost far higher than polymer (PMMA/PC) or opal-glass diffusers."
+   },
+   {
+    "name": "Thickness-dependent scatter",
+    "type": "operational",
+    "explanation": "As a volume (not surface) diffuser, scatter strength and transmission depend on thickness and bubble-density grade, so very thin or very large-area parts behave differently."
+   },
+   {
+    "name": "Hydrofluoric-acid attack",
+    "type": "chemical",
+    "explanation": "Resistant to most strong acids and bases (DIN class 1), but fused silica is etched by hydrofluoric acid and hot phosphoric acid, so it cannot be used in HF process environments."
+   }
   ],
   "specifications": [
    "SiO2 purity: 99.999 %",
@@ -52,7 +76,33 @@
    "Acid resistance: Class 1 DIN 12116",
    "Alkali resistance: Class 1 DIN 52322",
    "Trace impurities: <0.15 (Al <0.08) ppm"
-  ]
+  ],
+  "unspsc": {
+   "custom_product_group": "Volume Silica Light Diffusers",
+   "note": "No UNSPSC commodity reached the 80% confidence gate, so the product is classified to a custom product group. The closest candidates are shown for reference.",
+   "candidates": [
+    {
+     "code": "41115306",
+     "name": "Optical diffusers",
+     "confidence": 72
+    },
+    {
+     "code": "41111604",
+     "name": "Diffuse reflectance / photometric reference standards",
+     "confidence": 58
+    },
+    {
+     "code": "41121809",
+     "name": "Optical glass / specialty glass blanks",
+     "confidence": 45
+    },
+    {
+     "code": "60121009",
+     "name": "Optical lenses or filters or diffusers (optical components)",
+     "confidence": 41
+    }
+   ]
+  }
  },
  "universe": [
   {
@@ -2850,7 +2900,847 @@
      "unit": "Broadband optical defect inspector (illumination + calibration subsystems as procured)",
      "decides": "Makes the financial/sourcing decision to qualify and buy diffusil as a merchant optical component into the inspector's illumination and calibration BOM, weighing cost, lead time, single-source risk and the differentiated DUV/temperature performance."
     }
-   ]
+   ],
+   "pyramid": {
+    "intersection_unit": "Reference-diffuser & reflectance calibration assembly / Diffuse-reflectance reference element (VN L5 / BOM L1) \u2014 the on-tool diffuse-reflectance REFERENCE STANDARD that an optical metrology/inspection tool (broadband-plasma defect inspector, spectroscopic reflectometer/ellipsometer) calibrates its photometric and radiometric scale against. diffusil-R is the volume-diffuse reflector inside this reference module, replacing UV-fragile PTFE/Spectralon. PRIMARY (fit=direct) intersection diffusil sells into.",
+    "cfj_path": [
+     {
+      "level": "L7",
+      "unit": "Wafer process-control & metrology system",
+      "cfj": "To measure and verify each fabricated layer against its dimensional, material and defect specification across the device flow."
+     },
+     {
+      "level": "L6 (horizontal)",
+      "unit": "Calibration & reference standards",
+      "cfj": "To keep every measurement of each fabricated layer traceable and stable over time by qualifying the metrology tool against known reference and reference-diffuse standards, so that the verification in the parent system stays trustworthy."
+     },
+     {
+      "level": "L5 (intersection unit)",
+      "unit": "Reference-diffuser & reflectance calibration assembly / Diffuse-reflectance reference element",
+      "cfj": "To present a known, stable diffuse-reflectance reference the optical metrology/inspection tool calibrates its photometric and radiometric scale against, so that measurement traceability holds across the DUV-NIR range without reference drift."
+     }
+    ],
+    "top_employers": [
+     {
+      "name": "Thermo Fisher Scientific",
+      "employee_count": "~125,000 (Dec 31, 2025)",
+      "source": "stockanalysis.com / SEC FY2025 ARS \u2014 semiconductor metrology via FEI electron microscopy & e-beam analytics arm"
+     },
+     {
+      "name": "ASML Holding",
+      "employee_count": "~44,175 (Dec 31, 2025)",
+      "source": "stockanalysis.com / ASML SEC 6-K FY2025 \u2014 incl. YieldStar/optical metrology & 24.9% owner of Zeiss SMT"
+     },
+     {
+      "name": "Applied Materials",
+      "employee_count": "~36,500 (Oct 26, 2025)",
+      "source": "stockanalysis.com / macrotrends / SEC FY2025 \u2014 Process Diagnostics & Control (PDC) metrology & inspection group"
+     },
+     {
+      "name": "KLA Corporation",
+      "employee_count": "~15,200 (Jun 30, 2025)",
+      "source": "stockanalysis.com / KLA 10-Q FY2025 \u2014 inspection & metrology market leader"
+     },
+     {
+      "name": "Hitachi High-Tech",
+      "employee_count": "~13,000 (mid-2025)",
+      "source": "hitachi-hightech.com / ZoomInfo \u2014 CD-SEM metrology (~80% share)"
+     },
+     {
+      "name": "Bruker Corporation",
+      "employee_count": "~11,396 (Dec 31, 2024)",
+      "source": "macrotrends / Wikipedia / SEC 10-Q FY2025 \u2014 semiconductor AFM, XRR, XRF metrology"
+     },
+     {
+      "name": "Carl Zeiss SMT GmbH",
+      "employee_count": "~9,349 (FY2024/25)",
+      "source": "Wikipedia / ZEISS Annual Report 2024/25 \u2014 optics & metrology for semiconductor manufacturing"
+     },
+     {
+      "name": "SCREEN Holdings",
+      "employee_count": "~6,884 (FY2026/03)",
+      "source": "screen.co.jp / stockanalysis.com \u2014 wafer & edge inspection systems"
+     },
+     {
+      "name": "Advantest",
+      "employee_count": "~5,687 (CY2025)",
+      "source": "reveliolabs / Advantest FY2025 results \u2014 test + integrated optical/parametric metrology"
+     },
+     {
+      "name": "Nova Ltd. (formerly Nova Measuring Instruments)",
+      "employee_count": "~1,612 (2025)",
+      "source": "stockanalysis.com (TLV:NVMI) / Craft.co \u2014 optical CD & film-thickness metrology pure-play"
+     }
+    ],
+    "prototype_roles": [
+     {
+      "role": "job_executor",
+      "type_label": "Tool calibration & field-service technician (line/tool level)",
+      "prototype_name": "Metrology calibration technician",
+      "cfj": "To run the diffuse-reflectance reference through the optical tool's calibration routine and judge, hands-on, whether the reference still presents a known, stable diffuse standard the tool's photometric/radiometric scale can be trusted against.",
+      "esco": [
+       {
+        "code": "3119.1",
+        "title": "Calibration technician",
+        "confidence": 92
+       },
+       {
+        "code": "7311.1",
+        "title": "Precision-instrument maker and repairer",
+        "confidence": 80
+       },
+       {
+        "code": "3114.1",
+        "title": "Electronics engineering technician",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "Calibration pass-rate / first-time-right calibration",
+       "Tool uptime & mean-time-to-calibrate",
+       "Reference standard longevity (replacement frequency / consumable cost)",
+       "Audit/traceability compliance (ISO 17025-style records)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Verify that the diffuse-reflectance reference still holds its known reflectance value before releasing the tool to production",
+        "category": "Control",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Complete the calibration routine to a first-time-right pass without re-runs",
+        "category": "Process",
+        "incentive_driver": "Calibration pass-rate / first-time-right calibration"
+       },
+       {
+        "statement": "Minimize the time the tool is down for reference calibration",
+        "category": "Efficiency",
+        "incentive_driver": "Tool uptime & mean-time-to-calibrate"
+       },
+       {
+        "statement": "Detect reference degradation or DUV-induced drift early enough to act before it corrupts measurements",
+        "category": "Problem-Solving",
+        "incentive_driver": "Reference standard longevity (replacement frequency / consumable cost)"
+       },
+       {
+        "statement": "Record each calibration result so the measurement chain stays auditable and traceable",
+        "category": "Control",
+        "incentive_driver": "Audit/traceability compliance (ISO 17025-style records)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the reference I just signed off will not silently drift on my shift",
+        "from_incentive": "Calibration pass-rate / first-time-right calibration"
+       },
+       {
+        "feeling": "Feel relieved that the tool went back to production fast and I am not holding up the line",
+        "from_incentive": "Tool uptime & mean-time-to-calibrate"
+       },
+       {
+        "feeling": "Feel reassured that I will not get blamed for a degraded reference I could not have seen coming",
+        "from_incentive": "Reference standard longevity (replacement frequency / consumable cost)"
+       },
+       {
+        "feeling": "Feel secure that an auditor reviewing my calibration log will find nothing wrong",
+        "from_incentive": "Audit/traceability compliance (ISO 17025-style records)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the technician the team trusts to certify a tool is truly calibrated, not just nominally",
+        "identity_kind": "role_identity",
+        "from_incentive": "Calibration pass-rate / first-time-right calibration"
+       },
+       {
+        "statement": "Be seen as the person whose calibrations never come back as a downstream excursion",
+        "identity_kind": "image_identity",
+        "from_incentive": "Reference standard longevity (replacement frequency / consumable cost)"
+       },
+       {
+        "statement": "Be recognized as the technician who keeps high-value tools available without cutting corners",
+        "identity_kind": "image_identity",
+        "from_incentive": "Tool uptime & mean-time-to-calibrate"
+       }
+      ]
+     },
+     {
+      "role": "job_executor",
+      "type_label": "Photometry / optical-reference qualification engineer (integration level)",
+      "prototype_name": "Optical reference & photometry integration engineer",
+      "cfj": "To qualify and characterize a candidate diffuse-reflectance reference element in development so that, once integrated, the tool's photometric/radiometric scale stays stable and traceable across the DUV-NIR range.",
+      "esco": [
+       {
+        "code": "2149.6",
+        "title": "Optical engineer",
+        "confidence": 90
+       },
+       {
+        "code": "2111.4",
+        "title": "Physicist (applied / metrology)",
+        "confidence": 75
+       },
+       {
+        "code": "3111.2",
+        "title": "Physical-science technician (photometry/optics)",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "Measurement-uncertainty / accuracy budget achieved",
+       "DUV/UV-C and thermal stability of the reference over lifetime",
+       "Time-to-qualify a new reference into the tool build",
+       "Tool-to-tool matching enabled by the reference"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Characterize how the candidate diffuse reference behaves across the DUV-NIR band and over temperature",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Hold the photometric/radiometric scale inside the tool's measurement-uncertainty budget",
+        "category": "Control",
+        "incentive_driver": "Measurement-uncertainty / accuracy budget achieved"
+       },
+       {
+        "statement": "Prove the reference does not yellow or drift under sustained DUV/UV-C flux and heat",
+        "category": "Problem-Solving",
+        "incentive_driver": "DUV/UV-C and thermal stability of the reference over lifetime"
+       },
+       {
+        "statement": "Shorten the qualification cycle for getting a new reference into the tool build",
+        "category": "Efficiency",
+        "incentive_driver": "Time-to-qualify a new reference into the tool build"
+       },
+       {
+        "statement": "Establish a reference behavior consistent enough to match tool to tool across the fleet",
+        "category": "Control",
+        "incentive_driver": "Tool-to-tool matching enabled by the reference"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the reference I qualified will hold its diffuse value in the field, not just on my bench",
+        "from_incentive": "DUV/UV-C and thermal stability of the reference over lifetime"
+       },
+       {
+        "feeling": "Feel in control of an accuracy budget that has no hidden margin being eaten by reference drift",
+        "from_incentive": "Measurement-uncertainty / accuracy budget achieved"
+       },
+       {
+        "feeling": "Feel satisfied that I closed the qualification on schedule without a late surprise",
+        "from_incentive": "Time-to-qualify a new reference into the tool build"
+       },
+       {
+        "feeling": "Feel reassured that two tools with my reference will agree with each other",
+        "from_incentive": "Tool-to-tool matching enabled by the reference"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the optics engineer who is the go-to authority on diffuse-reference behavior in DUV",
+        "identity_kind": "role_identity",
+        "from_incentive": "DUV/UV-C and thermal stability of the reference over lifetime"
+       },
+       {
+        "statement": "Be seen as the engineer whose qualified references never become a field-reliability problem",
+        "identity_kind": "image_identity",
+        "from_incentive": "Measurement-uncertainty / accuracy budget achieved"
+       },
+       {
+        "statement": "Be recognized as someone who solves the hard DUV-stability problems incumbents could not",
+        "identity_kind": "image_identity",
+        "from_incentive": "DUV/UV-C and thermal stability of the reference over lifetime"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Tool-OEM metrology / subsystem-integration manager (accountable for the tool's uncertainty budget)",
+      "prototype_name": "Metrology subsystem-integration manager",
+      "cfj": "To ensure the optical tool's calibration-reference subsystem delivers a stable, traceable diffuse-reflectance standard, so the tool's measurement-uncertainty budget and tool-matching specification are met for every shipped system.",
+      "esco": [
+       {
+        "code": "1321.1",
+        "title": "Manufacturing manager",
+        "confidence": 84
+       },
+       {
+        "code": "2149.6",
+        "title": "Optical engineer (engineering management track)",
+        "confidence": 74
+       },
+       {
+        "code": "1223.1",
+        "title": "Research and development manager",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "Tool-level measurement-uncertainty / matching spec met",
+       "Field-reliability & warranty cost of the reference subsystem",
+       "Bill-of-materials cost & single-source risk of the reference",
+       "Program schedule (ship/qualification milestones)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Ensure the calibration-reference subsystem meets the tool's measurement-uncertainty and matching spec",
+        "category": "Control",
+        "incentive_driver": "Tool-level measurement-uncertainty / matching spec met"
+       },
+       {
+        "statement": "Govern the reference-subsystem design so field failures and warranty calls stay rare",
+        "category": "Control",
+        "incentive_driver": "Field-reliability & warranty cost of the reference subsystem"
+       },
+       {
+        "statement": "Resolve whether to move to a more stable diffuse reference when drift threatens the spec",
+        "category": "Problem-Solving",
+        "incentive_driver": "Tool-level measurement-uncertainty / matching spec met"
+       },
+       {
+        "statement": "Keep the reference subsystem's cost and supply risk within program limits",
+        "category": "Efficiency",
+        "incentive_driver": "Bill-of-materials cost & single-source risk of the reference"
+       },
+       {
+        "statement": "Keep the reference-qualification work on the program's milestone schedule",
+        "category": "Process",
+        "incentive_driver": "Program schedule (ship/qualification milestones)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident every tool we ship will hold its calibration in the customer's fab",
+        "from_incentive": "Tool-level measurement-uncertainty / matching spec met"
+       },
+       {
+        "feeling": "Feel relieved that the reference subsystem will not generate a wave of warranty escalations",
+        "from_incentive": "Field-reliability & warranty cost of the reference subsystem"
+       },
+       {
+        "feeling": "Feel uneasy-then-reassured that we are not dangerously single-sourced on a critical reference part",
+        "from_incentive": "Bill-of-materials cost & single-source risk of the reference"
+       },
+       {
+        "feeling": "Feel in control of a program that hits its qualification milestone on time",
+        "from_incentive": "Program schedule (ship/qualification milestones)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the integration manager who owns a metrology subsystem that simply never drifts in the field",
+        "identity_kind": "role_identity",
+        "from_incentive": "Tool-level measurement-uncertainty / matching spec met"
+       },
+       {
+        "statement": "Be seen by engineering leadership as the manager whose subsystems carry the lowest warranty cost",
+        "identity_kind": "image_identity",
+        "from_incentive": "Field-reliability & warranty cost of the reference subsystem"
+       },
+       {
+        "statement": "Be recognized as the manager who de-risked a single-source dependency before it became a crisis",
+        "identity_kind": "image_identity",
+        "from_incentive": "Bill-of-materials cost & single-source risk of the reference"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Fab metrology / yield manager at the end-customer (accountable for tool-to-tool matching & traceability across the fab)",
+      "prototype_name": "Fab metrology & tool-matching manager",
+      "cfj": "To ensure that, across the fab's metrology fleet, the diffuse-reflectance calibration holds so every tool's measurements stay traceable and matched, and layer dispositions remain trustworthy for yield.",
+      "esco": [
+       {
+        "code": "1321.1",
+        "title": "Manufacturing manager (fab metrology)",
+        "confidence": 80
+       },
+       {
+        "code": "1322.1",
+        "title": "Production / operations manager",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "Measurement traceability & ISO/audit compliance across the fleet",
+       "Tool-to-tool matching (no metrology-induced excursions)",
+       "Metrology-driven yield loss / false disposition rate",
+       "Cost of metrology downtime & recalibration"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Ensure every metrology tool in the fab stays calibrated to a common, traceable reference",
+        "category": "Control",
+        "incentive_driver": "Measurement traceability & ISO/audit compliance across the fleet"
+       },
+       {
+        "statement": "Keep tools matched so the same wafer measures the same on any tool",
+        "category": "Control",
+        "incentive_driver": "Tool-to-tool matching (no metrology-induced excursions)"
+       },
+       {
+        "statement": "Diagnose whether a yield excursion came from the process or from drifting metrology",
+        "category": "Problem-Solving",
+        "incentive_driver": "Metrology-driven yield loss / false disposition rate"
+       },
+       {
+        "statement": "Reduce metrology downtime spent recalibrating against unstable references",
+        "category": "Efficiency",
+        "incentive_driver": "Cost of metrology downtime & recalibration"
+       },
+       {
+        "statement": "Approve and sign off qualification of a more stable diffuse reference when matching is at risk",
+        "category": "Process",
+        "incentive_driver": "Tool-to-tool matching (no metrology-induced excursions)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident an audit of the fab's measurement traceability will pass cleanly",
+        "from_incentive": "Measurement traceability & ISO/audit compliance across the fleet"
+       },
+       {
+        "feeling": "Feel secure that I will not have to explain a yield excursion that was really metrology drift",
+        "from_incentive": "Metrology-driven yield loss / false disposition rate"
+       },
+       {
+        "feeling": "Feel in control that my tools agree with each other across the fleet",
+        "from_incentive": "Tool-to-tool matching (no metrology-induced excursions)"
+       },
+       {
+        "feeling": "Feel relieved that recalibration is not eating my metrology capacity",
+        "from_incentive": "Cost of metrology downtime & recalibration"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the metrology manager whose fab is the benchmark for traceable, matched measurement",
+        "identity_kind": "role_identity",
+        "from_incentive": "Measurement traceability & ISO/audit compliance across the fleet"
+       },
+       {
+        "statement": "Be seen by fab leadership as the manager whose metrology never causes a false scrap",
+        "identity_kind": "image_identity",
+        "from_incentive": "Metrology-driven yield loss / false disposition rate"
+       },
+       {
+        "statement": "Be recognized as the manager who keeps the metrology fleet perfectly matched",
+        "identity_kind": "image_identity",
+        "from_incentive": "Tool-to-tool matching (no metrology-induced excursions)"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Tool-OEM component sourcing / commodity manager (economic buyer of the merchant optical reference part)",
+      "prototype_name": "Optical-component sourcing manager",
+      "cfj": "To make the financial and sourcing decision to qualify and procure the diffuse-reflectance reference element as a merchant optical component into the tool's calibration BOM, balancing cost, lead time, single-source risk and its DUV/temperature performance.",
+      "esco": [
+       {
+        "code": "1324.1",
+        "title": "Supply, distribution and procurement manager",
+        "confidence": 88
+       },
+       {
+        "code": "2433.1",
+        "title": "Technical sales/procurement professional (components)",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "Component unit cost & total cost of ownership",
+       "Supply assurance / single-source & lead-time risk",
+       "Supplier quality & qualification pass-rate (PPM/NCR)",
+       "Cost-down / year-over-year savings targets"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Secure a qualified source for the diffuse-reflectance reference element at the right cost",
+        "category": "Process",
+        "incentive_driver": "Component unit cost & total cost of ownership"
+       },
+       {
+        "statement": "Reduce the landed cost and total cost of ownership of the reference part",
+        "category": "Efficiency",
+        "incentive_driver": "Component unit cost & total cost of ownership"
+       },
+       {
+        "statement": "Eliminate single-source and lead-time exposure on a calibration-critical part",
+        "category": "Problem-Solving",
+        "incentive_driver": "Supply assurance / single-source & lead-time risk"
+       },
+       {
+        "statement": "Hold the supplier to a quality/defect level the calibration subsystem can rely on",
+        "category": "Control",
+        "incentive_driver": "Supplier quality & qualification pass-rate (PPM/NCR)"
+       },
+       {
+        "statement": "Deliver the year-over-year cost-down target on the optical-component category",
+        "category": "Efficiency",
+        "incentive_driver": "Cost-down / year-over-year savings targets"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the price I committed to is defensible and competitive",
+        "from_incentive": "Component unit cost & total cost of ownership"
+       },
+       {
+        "feeling": "Feel secure that this calibration-critical part will not go on allocation and stop our line",
+        "from_incentive": "Supply assurance / single-source & lead-time risk"
+       },
+       {
+        "feeling": "Feel reassured the supplier's quality will not generate NCRs that land back on me",
+        "from_incentive": "Supplier quality & qualification pass-rate (PPM/NCR)"
+       },
+       {
+        "feeling": "Feel satisfied that I hit my savings number without compromising the tool",
+        "from_incentive": "Cost-down / year-over-year savings targets"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the sourcing manager trusted to buy hard-to-source optical components without drama",
+        "identity_kind": "role_identity",
+        "from_incentive": "Supply assurance / single-source & lead-time risk"
+       },
+       {
+        "statement": "Be seen by procurement leadership as the buyer who delivers savings AND supply security",
+        "identity_kind": "image_identity",
+        "from_incentive": "Cost-down / year-over-year savings targets"
+       },
+       {
+        "statement": "Be recognized as the buyer who de-risked a critical single-source dependency",
+        "identity_kind": "image_identity",
+        "from_incentive": "Supply assurance / single-source & lead-time risk"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Fab capital-equipment / MRO buyer (economic buyer of reference standards & calibration consumables at the end-customer)",
+      "prototype_name": "Fab metrology-equipment & consumables buyer",
+      "cfj": "To make the procurement decision to fund stable diffuse-reflectance reference standards and calibration consumables for the fab's metrology fleet, weighing replacement cost against calibration uptime and traceability.",
+      "esco": [
+       {
+        "code": "1324.1",
+        "title": "Supply, distribution and procurement manager (capital/MRO)",
+        "confidence": 82
+       },
+       {
+        "code": "3323.1",
+        "title": "Buyer",
+        "confidence": 73
+       }
+      ],
+      "incentive_categories": [
+       "Consumable / reference-standard replacement spend",
+       "Calibration uptime enabled per dollar",
+       "Supplier lead time & qualification status",
+       "MRO budget adherence"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Fund a stable reference standard that does not need frequent replacement",
+        "category": "Efficiency",
+        "incentive_driver": "Consumable / reference-standard replacement spend"
+       },
+       {
+        "statement": "Procure references in a way that maximizes calibration uptime per dollar spent",
+        "category": "Efficiency",
+        "incentive_driver": "Calibration uptime enabled per dollar"
+       },
+       {
+        "statement": "Ensure reference standards arrive qualified and on lead time for scheduled calibrations",
+        "category": "Process",
+        "incentive_driver": "Supplier lead time & qualification status"
+       },
+       {
+        "statement": "Keep reference-standard and calibration-consumable spend within the MRO budget",
+        "category": "Control",
+        "incentive_driver": "MRO budget adherence"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel relieved that I am not re-buying degraded references every few months",
+        "from_incentive": "Consumable / reference-standard replacement spend"
+       },
+       {
+        "feeling": "Feel confident the calibration team will have the reference when they need it",
+        "from_incentive": "Supplier lead time & qualification status"
+       },
+       {
+        "feeling": "Feel satisfied that I stayed inside the MRO budget without starving calibration",
+        "from_incentive": "MRO budget adherence"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the buyer who keeps metrology supplied and on-budget at the same time",
+        "identity_kind": "role_identity",
+        "from_incentive": "MRO budget adherence"
+       },
+       {
+        "statement": "Be seen as the buyer who found the longer-life reference that cut replacement spend",
+        "identity_kind": "image_identity",
+        "from_incentive": "Consumable / reference-standard replacement spend"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Optical / metrology design engineer who specifies the reference material & traceability spec",
+      "prototype_name": "Reference-standard specifying engineer",
+      "cfj": "To evaluate, specify and recommend the diffuse-reflectance reference material and its BRDF/reflectance-traceability spec, judging whether a volume fused-silica reference meets DUV-stability and calibration-drift requirements before it enters the calibration BOM.",
+      "esco": [
+       {
+        "code": "2149.6",
+        "title": "Optical engineer",
+        "confidence": 90
+       },
+       {
+        "code": "2152.1",
+        "title": "Electronics engineer (instrumentation/metrology)",
+        "confidence": 73
+       },
+       {
+        "code": "2111.4",
+        "title": "Physicist (metrology/radiometry)",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "Spec correctness / design margin on the reference",
+       "DUV/UV-C & thermal robustness designed in",
+       "Design-in reuse across tool platforms",
+       "Avoidance of late design changes / ECOs"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Define the reference material and BRDF/reflectance-traceability spec the tool will rely on",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Set enough design margin that the reference stays in spec over its service life",
+        "category": "Control",
+        "incentive_driver": "Spec correctness / design margin on the reference"
+       },
+       {
+        "statement": "Choose a reference robust to DUV/UV-C flux and heat so it will not yellow or drift",
+        "category": "Problem-Solving",
+        "incentive_driver": "DUV/UV-C & thermal robustness designed in"
+       },
+       {
+        "statement": "Specify a reference reusable across multiple tool platforms to amortize the design-in",
+        "category": "Efficiency",
+        "incentive_driver": "Design-in reuse across tool platforms"
+       },
+       {
+        "statement": "Get the reference spec right early to avoid late engineering change orders",
+        "category": "Problem-Solving",
+        "incentive_driver": "Avoidance of late design changes / ECOs"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the reference I specified will not be the part that drifts in the field",
+        "from_incentive": "DUV/UV-C & thermal robustness designed in"
+       },
+       {
+        "feeling": "Feel in control of a spec with real margin, not one running on the edge",
+        "from_incentive": "Spec correctness / design margin on the reference"
+       },
+       {
+        "feeling": "Feel reassured I will not have to issue an embarrassing late ECO on the reference",
+        "from_incentive": "Avoidance of late design changes / ECOs"
+       },
+       {
+        "feeling": "Feel satisfied that my reference design got reused across the platform",
+        "from_incentive": "Design-in reuse across tool platforms"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the engineer recognized as the authority on diffuse-reference specification in DUV metrology",
+        "identity_kind": "role_identity",
+        "from_incentive": "DUV/UV-C & thermal robustness designed in"
+       },
+       {
+        "statement": "Be seen as the designer whose reference specs never come back as field problems",
+        "identity_kind": "image_identity",
+        "from_incentive": "Spec correctness / design margin on the reference"
+       },
+       {
+        "statement": "Be regarded as the engineer who picked the better material before the incumbent failed",
+        "identity_kind": "image_identity",
+        "from_incentive": "DUV/UV-C & thermal robustness designed in"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Applications / field-applications engineer who recommends references from in-fab degradation experience",
+      "prototype_name": "Metrology applications engineer",
+      "cfj": "To recommend, from observed in-fab reference degradation and drift, which diffuse-reflectance reference keeps the optical tool calibrated longest, influencing both the OEM's BOM and the fab's standard.",
+      "esco": [
+       {
+        "code": "2149.6",
+        "title": "Optical/applications engineer",
+        "confidence": 84
+       },
+       {
+        "code": "2434.1",
+        "title": "Technical sales / applications professional",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "Customer calibration uptime / satisfaction",
+       "Reduction of field drift complaints",
+       "Recommendation credibility / win-rate of advised solutions",
+       "Time-to-resolution on calibration issues"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Identify which reference behavior is actually causing field calibration drift",
+        "category": "Problem-Solving",
+        "incentive_driver": "Reduction of field drift complaints"
+       },
+       {
+        "statement": "Recommend the reference that keeps customer tools calibrated longest",
+        "category": "Process",
+        "incentive_driver": "Customer calibration uptime / satisfaction"
+       },
+       {
+        "statement": "Resolve calibration-drift escalations quickly so the customer's tool returns to spec",
+        "category": "Problem-Solving",
+        "incentive_driver": "Time-to-resolution on calibration issues"
+       },
+       {
+        "statement": "Build a recommendation track record the OEM and fab both trust",
+        "category": "Control",
+        "incentive_driver": "Recommendation credibility / win-rate of advised solutions"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the reference I recommended will actually stop the drift complaints",
+        "from_incentive": "Reduction of field drift complaints"
+       },
+       {
+        "feeling": "Feel reassured the customer sees me as having solved their calibration headache",
+        "from_incentive": "Customer calibration uptime / satisfaction"
+       },
+       {
+        "feeling": "Feel in control when a drift escalation lands because I know the root cause",
+        "from_incentive": "Time-to-resolution on calibration issues"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the applications engineer customers call first when calibration drifts",
+        "identity_kind": "role_identity",
+        "from_incentive": "Customer calibration uptime / satisfaction"
+       },
+       {
+        "statement": "Be seen as the engineer whose reference recommendation made the drift complaints stop",
+        "identity_kind": "image_identity",
+        "from_incentive": "Reduction of field drift complaints"
+       }
+      ]
+     },
+     {
+      "role": "job_beneficiary",
+      "type_label": "Fab process / yield engineer whose layer dispositions depend on the tool staying calibrated",
+      "prototype_name": "Fab process & yield engineer",
+      "cfj": "To receive trustworthy, traceable layer measurements from a tool whose diffuse-reflectance calibration is stable, so that pass/hold/scrap dispositions are correct and yield is protected.",
+      "esco": [
+       {
+        "code": "2149.7",
+        "title": "Industrial / process engineer (semiconductor)",
+        "confidence": 84
+       },
+       {
+        "code": "2152.1",
+        "title": "Electronics engineer (yield/integration)",
+        "confidence": 74
+       },
+       {
+        "code": "2111.4",
+        "title": "Physicist (device/process)",
+        "confidence": 70
+       }
+      ],
+      "incentive_categories": [
+       "Yield (good die per wafer)",
+       "Correctness of disposition (no false scrap / no escaped defect)",
+       "Process-window control via trustworthy metrology",
+       "Cycle-time / throughput of the disposition loop"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Receive layer measurements I can trust enough to disposition wafers on",
+        "category": "Control",
+        "incentive_driver": "Correctness of disposition (no false scrap / no escaped defect)"
+       },
+       {
+        "statement": "Protect yield by acting on real process signals, not metrology artifacts",
+        "category": "Problem-Solving",
+        "incentive_driver": "Yield (good die per wafer)"
+       },
+       {
+        "statement": "Keep the process window centered using measurements that stay calibrated",
+        "category": "Control",
+        "incentive_driver": "Process-window control via trustworthy metrology"
+       },
+       {
+        "statement": "Get a correct disposition quickly so wafers are not held waiting on metrology",
+        "category": "Efficiency",
+        "incentive_driver": "Cycle-time / throughput of the disposition loop"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the number I am dispositioning on is real, not a drifting reference",
+        "from_incentive": "Correctness of disposition (no false scrap / no escaped defect)"
+       },
+       {
+        "feeling": "Feel secure that I will not scrap good wafers or pass bad ones because of metrology",
+        "from_incentive": "Yield (good die per wafer)"
+       },
+       {
+        "feeling": "Feel in control of a process window that is not being blurred by measurement drift",
+        "from_incentive": "Process-window control via trustworthy metrology"
+       },
+       {
+        "feeling": "Feel relieved that my lots are not stuck on hold waiting for a recalibration",
+        "from_incentive": "Cycle-time / throughput of the disposition loop"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the process engineer whose yield calls are trusted because the data behind them is sound",
+        "identity_kind": "role_identity",
+        "from_incentive": "Yield (good die per wafer)"
+       },
+       {
+        "statement": "Be seen as the engineer who never scraps good material on a metrology artifact",
+        "identity_kind": "image_identity",
+        "from_incentive": "Correctness of disposition (no false scrap / no escaped defect)"
+       },
+       {
+        "statement": "Be recognized as someone who holds the tightest, best-controlled process window",
+        "identity_kind": "image_identity",
+        "from_incentive": "Process-window control via trustworthy metrology"
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "segment_id": "B6",
@@ -3084,7 +3974,684 @@
      "unit": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
      "decides": "Decides whether to qualify and contract opsira as the supplier of the diffusil diffuse-reference/diffuser component \u2014 weighing single-source risk, brittleness/handling, lead time and unit cost against the longer service life and reduced re-calibration burden of the UV/chemical/autoclave-resistant SiO2 part."
     }
-   ]
+   ],
+   "pyramid": {
+    "intersection_unit": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
+    "cfj_path": [
+     {
+      "level": "L7",
+      "unit": "Materials & Semiconductor Optical-Analysis Instrument Manufacturing System",
+      "cfj": "To convert optics, photonics, electronics and software into a calibrated materials-characterization instrument that defines the structure, purity and properties of a sample."
+     },
+     {
+      "level": "L4",
+      "unit": "Optical Measurement Engine",
+      "cfj": "To realize the calibrated source-to-detector spectral measurement chain that turns sample-modulated light into a quantified, traceable optical reading of the sample's properties."
+     },
+     {
+      "level": "L3",
+      "unit": "Integrating Sphere Module",
+      "cfj": "To collect and spatially homogenize the diffusely reflected and transmitted light from the sample against a known internal diffuse reference, so the measured optical signal is geometry-independent and quantifiable."
+     },
+     {
+      "level": "L2",
+      "unit": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
+      "cfj": "To establish a stable, near-Lambertian, traceable diffuse-reflectance reference inside the sphere so that every reflectance measurement is anchored to a known, drift-free reflectance scale across the instrument's wavelength range and service life."
+     }
+    ],
+    "top_employers": [
+     {
+      "name": "Thermo Fisher Scientific",
+      "employee_count": "~125,000 (FY2025, as of Dec 31 2025)",
+      "source": "Thermo Fisher Scientific FY2025 Annual Report (SEC) / Wikipedia / stockanalysis.com"
+     },
+     {
+      "name": "Danaher Corporation",
+      "employee_count": "~60,000 (as of Dec 31 2025)",
+      "source": "Danaher FY2025 filings / macrotrends.net / bullfincher.io"
+     },
+     {
+      "name": "Agilent Technologies",
+      "employee_count": "~18,100 (FY2025)",
+      "source": "Agilent FY2025 / macrotrends.net / stockanalysis.com"
+     },
+     {
+      "name": "Shimadzu Corporation",
+      "employee_count": "~15,815 (group; 14,481 parent as of Mar 31 2025)",
+      "source": "stockanalysis.com (TYO:7701) / craft.co / Wikipedia"
+     },
+     {
+      "name": "Hitachi High-Tech Group",
+      "employee_count": "~15,016 (consolidated, as of Mar 2025)",
+      "source": "Hitachi High-Tech Corporation 'Company Figures' / reveliolabs.com"
+     },
+     {
+      "name": "KLA Corporation",
+      "employee_count": "~15,000 (2025)",
+      "source": "Wikipedia KLA Corporation / company filings"
+     },
+     {
+      "name": "Bruker Corporation",
+      "employee_count": "~11,396 (as of Dec 31 2024; ~11,000 listed 2025)",
+      "source": "macrotrends.net (BRKR) / stockanalysis.com / Wikipedia"
+     },
+     {
+      "name": "Revvity (former PerkinElmer analytical/LAMBDA UV-Vis-NIR line)",
+      "employee_count": "~11,000 (2024)",
+      "source": "Wikipedia Revvity / revvity.com"
+     },
+     {
+      "name": "HORIBA Ltd.",
+      "employee_count": "~8,955 (2024 consolidated)",
+      "source": "HORIBA Report 2024-2025 / macrotrends.net (HRIBF)"
+     },
+     {
+      "name": "Onto Innovation",
+      "employee_count": "~1,551 (as of Dec 31 2024)",
+      "source": "stockanalysis.com (ONTO) / macrotrends.net"
+     }
+    ],
+    "prototype_roles": [
+     {
+      "role": "job_executor",
+      "type_label": "Instrument calibration & sphere-reference metrologist (production/service floor)",
+      "prototype_name": "Reflectance-Scale Calibration Metrologist",
+      "cfj": "To operate the diffuse-reflectance reference at the sphere port so the instrument's reflectance scale is set, verified and held drift-free against a traceable Lambertian standard across the wavelength range.",
+      "esco": [
+       {
+        "code": "2111.4",
+        "title": "metrologist",
+        "confidence": 88
+       },
+       {
+        "code": "3111.2",
+        "title": "physical science technician (calibration technician)",
+        "confidence": 82
+       },
+       {
+        "code": "2149.6",
+        "title": "calibration engineer",
+        "confidence": 73
+       }
+      ],
+      "incentive_categories": [
+       "measurement accuracy / uncertainty budget compliance",
+       "calibration throughput (units calibrated per shift)",
+       "first-pass calibration yield / rework avoidance",
+       "traceability audit pass rate (ISO 17025 / NIST chain)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Establish the instrument's diffuse-reflectance scale against a traceable near-Lambertian reference",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Verify reflectance-scale stability across the full UV-Vis-NIR wavelength range before release",
+        "category": "Control",
+        "incentive_driver": "measurement accuracy / uncertainty budget compliance"
+       },
+       {
+        "statement": "Maintain the measurement uncertainty budget within the specified tolerance band",
+        "category": "Control",
+        "incentive_driver": "measurement accuracy / uncertainty budget compliance"
+       },
+       {
+        "statement": "Increase the number of instruments calibrated per shift without scale drift",
+        "category": "Efficiency",
+        "incentive_driver": "calibration throughput (units calibrated per shift)"
+       },
+       {
+        "statement": "Reduce re-calibration and rework caused by reference-standard degradation",
+        "category": "Efficiency",
+        "incentive_driver": "first-pass calibration yield / rework avoidance"
+       },
+       {
+        "statement": "Diagnose and resolve reflectance-scale anomalies traced to reference-material drift or contamination",
+        "category": "Problem-Solving",
+        "incentive_driver": "first-pass calibration yield / rework avoidance"
+       },
+       {
+        "statement": "Preserve an unbroken traceability chain from the in-sphere reference to the national reflectance standard",
+        "category": "Control",
+        "incentive_driver": "traceability audit pass rate (ISO 17025 / NIST chain)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident that every instrument I sign off will hold its reflectance scale in the field",
+        "from_incentive": "measurement accuracy / uncertainty budget compliance"
+       },
+       {
+        "feeling": "Feel in control of the calibration queue knowing the reference won't drift mid-shift",
+        "from_incentive": "calibration throughput (units calibrated per shift)"
+       },
+       {
+        "feeling": "Feel relieved that I won't be re-calibrating the same unit twice because the standard yellowed or wore",
+        "from_incentive": "first-pass calibration yield / rework avoidance"
+       },
+       {
+        "feeling": "Feel secure walking into an audit knowing my traceability chain is intact",
+        "from_incentive": "traceability audit pass rate (ISO 17025 / NIST chain)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the metrologist whose calibrations are trusted as the most repeatable and drift-free on the floor",
+        "identity_kind": "role_identity",
+        "from_incentive": "measurement accuracy / uncertainty budget compliance"
+       },
+       {
+        "statement": "Be seen as the fast, reliable calibrator who never holds up the release line",
+        "identity_kind": "image_identity",
+        "from_incentive": "calibration throughput (units calibrated per shift)"
+       },
+       {
+        "statement": "Be recognized by the quality manager as the technician whose traceability never fails an audit",
+        "identity_kind": "image_identity",
+        "from_incentive": "traceability audit pass rate (ISO 17025 / NIST chain)"
+       }
+      ]
+     },
+     {
+      "role": "job_executor",
+      "type_label": "Semiconductor optical-metrology systems engineer (fab/tool integration)",
+      "prototype_name": "Sphere-Reference Tool Integration Engineer",
+      "cfj": "To deploy and qualify the diffuse-reflectance reference within the optical-metrology tool so the reflectance reading stays geometry- and drift-independent under high-flux DUV/UV-C operation.",
+      "esco": [
+       {
+        "code": "2149.6",
+        "title": "calibration engineer",
+        "confidence": 78
+       },
+       {
+        "code": "2151.4",
+        "title": "optical engineer",
+        "confidence": 74
+       }
+      ],
+      "incentive_categories": [
+       "tool uptime / mean-time-between-recalibration",
+       "DUV/UV-C measurement stability",
+       "fab match-to-reference (tool-to-tool correlation)",
+       "metrology tool throughput"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Qualify the in-tool diffuse reference so reflectance readings stay geometry-independent",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Hold reflectance-reference stability under sustained high-flux DUV/UV-C exposure",
+        "category": "Control",
+        "incentive_driver": "DUV/UV-C measurement stability"
+       },
+       {
+        "statement": "Extend mean time between reference re-qualification to protect tool uptime",
+        "category": "Efficiency",
+        "incentive_driver": "tool uptime / mean-time-between-recalibration"
+       },
+       {
+        "statement": "Keep tool-to-tool reflectance correlation within the fab's match tolerance",
+        "category": "Control",
+        "incentive_driver": "fab match-to-reference (tool-to-tool correlation)"
+       },
+       {
+        "statement": "Diagnose reflectance excursions to reference degradation versus optical-path drift",
+        "category": "Problem-Solving",
+        "incentive_driver": "fab match-to-reference (tool-to-tool correlation)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel assured the reference won't burn out under DUV and force an unplanned tool-down",
+        "from_incentive": "DUV/UV-C measurement stability"
+       },
+       {
+        "feeling": "Feel in control of the fleet knowing every tool reads the same reference the same way",
+        "from_incentive": "fab match-to-reference (tool-to-tool correlation)"
+       },
+       {
+        "feeling": "Feel relieved that uptime targets aren't at the mercy of a degrading reflectance standard",
+        "from_incentive": "tool uptime / mean-time-between-recalibration"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the integration engineer whose metrology tools are the fab's gold reflectance reference",
+        "identity_kind": "role_identity",
+        "from_incentive": "fab match-to-reference (tool-to-tool correlation)"
+       },
+       {
+        "statement": "Be seen as the engineer who solved DUV reference drift for the whole tool line",
+        "identity_kind": "image_identity",
+        "from_incentive": "DUV/UV-C measurement stability"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Quality & metrology manager accountable for instrument conformance and traceability",
+      "prototype_name": "Metrology & Conformance Manager",
+      "cfj": "To ensure the diffuse-reflectance reference keeps every released instrument's reflectance scale within specified, traceable uncertainty without performing the calibration personally.",
+      "esco": [
+       {
+        "code": "1212.0",
+        "title": "quality manager",
+        "confidence": 80
+       },
+       {
+        "code": "1321.6",
+        "title": "manufacturing quality manager",
+        "confidence": 75
+       }
+      ],
+      "incentive_categories": [
+       "instrument conformance / spec-out rate",
+       "warranty & field-return rate attributable to drift",
+       "ISO 9001 / 17025 audit outcomes",
+       "calibration cost per instrument",
+       "on-time release rate"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Ensure released instruments conform to the reflectance-accuracy specification",
+        "category": "Control",
+        "incentive_driver": "instrument conformance / spec-out rate"
+       },
+       {
+        "statement": "Govern the traceability chain so the reflectance reference stays auditable end to end",
+        "category": "Control",
+        "incentive_driver": "ISO 9001 / 17025 audit outcomes"
+       },
+       {
+        "statement": "Reduce field returns attributable to reflectance-scale drift",
+        "category": "Problem-Solving",
+        "incentive_driver": "warranty & field-return rate attributable to drift"
+       },
+       {
+        "statement": "Lower total calibration cost per instrument across the product line",
+        "category": "Efficiency",
+        "incentive_driver": "calibration cost per instrument"
+       },
+       {
+        "statement": "Protect the on-time release schedule against calibration-stage bottlenecks",
+        "category": "Process",
+        "incentive_driver": "on-time release rate"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident signing the release knowing no unit will drift out of spec in the field",
+        "from_incentive": "instrument conformance / spec-out rate"
+       },
+       {
+        "feeling": "Feel reassured ahead of the certification audit that the traceability evidence holds",
+        "from_incentive": "ISO 9001 / 17025 audit outcomes"
+       },
+       {
+        "feeling": "Feel relieved that warranty returns from reference degradation are off my dashboard",
+        "from_incentive": "warranty & field-return rate attributable to drift"
+       },
+       {
+        "feeling": "Feel in command of the release schedule, not hostage to calibration rework",
+        "from_incentive": "on-time release rate"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the quality leader whose line has the lowest field-drift return rate in the division",
+        "identity_kind": "role_identity",
+        "from_incentive": "warranty & field-return rate attributable to drift"
+       },
+       {
+        "statement": "Be seen by leadership as the manager who runs the most audit-clean, conformant operation",
+        "identity_kind": "image_identity",
+        "from_incentive": "ISO 9001 / 17025 audit outcomes"
+       },
+       {
+        "statement": "Be recognized as the manager who took calibration cost out without sacrificing accuracy",
+        "identity_kind": "image_identity",
+        "from_incentive": "calibration cost per instrument"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Strategic sourcing / commodity manager for optical components",
+      "prototype_name": "Optical-Component Sourcing Manager",
+      "cfj": "To fund and contract the supply of the diffuse-reflectance reference component so the reflectance-reference need is met at the lowest total cost of ownership and supply risk.",
+      "esco": [
+       {
+        "code": "1324.3",
+        "title": "purchasing manager",
+        "confidence": 82
+       },
+       {
+        "code": "2433.1",
+        "title": "technical sales / sourcing specialist (technical procurement)",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "total cost of ownership / unit cost",
+       "supply assurance & single-source risk mitigation",
+       "supplier lead time & on-time delivery",
+       "supplier quality (PPM / qualification pass)",
+       "working-capital / inventory efficiency"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Secure a qualified supply of the diffuse-reference component that meets the optical spec",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Minimize the landed total cost of ownership of the reference component including re-calibration burden",
+        "category": "Efficiency",
+        "incentive_driver": "total cost of ownership / unit cost"
+       },
+       {
+        "statement": "Mitigate single-source and brittleness/handling risk on the reference component",
+        "category": "Problem-Solving",
+        "incentive_driver": "supply assurance & single-source risk mitigation"
+       },
+       {
+        "statement": "Hold supplier on-time delivery and lead time within the production plan",
+        "category": "Control",
+        "incentive_driver": "supplier lead time & on-time delivery"
+       },
+       {
+        "statement": "Keep supplier defect rate (PPM) below the qualification threshold",
+        "category": "Control",
+        "incentive_driver": "supplier quality (PPM / qualification pass)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the line won't stop because a sole-source reference part is late",
+        "from_incentive": "supply assurance & single-source risk mitigation"
+       },
+       {
+        "feeling": "Feel justified that the higher unit price pays back through longer service life and fewer re-calibrations",
+        "from_incentive": "total cost of ownership / unit cost"
+       },
+       {
+        "feeling": "Feel secure that the supplier's delivery commitments will hold against the build plan",
+        "from_incentive": "supplier lead time & on-time delivery"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the sourcing manager who de-risked a critical optical commodity for the business",
+        "identity_kind": "role_identity",
+        "from_incentive": "supply assurance & single-source risk mitigation"
+       },
+       {
+        "statement": "Be seen by finance as the buyer who lowered total cost of ownership, not just unit price",
+        "identity_kind": "image_identity",
+        "from_incentive": "total cost of ownership / unit cost"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Optical / photonics design engineer who specifies the sphere reference material",
+      "prototype_name": "Integrating-Sphere Optical Design Engineer",
+      "cfj": "To evaluate and specify which diffuse-reflectance reference material and sphere geometry are designed in, so the reflectance reference meets accuracy, angle-independence and DUV/UV-C survival before it enters the bill of materials.",
+      "esco": [
+       {
+        "code": "2151.4",
+        "title": "optical engineer",
+        "confidence": 90
+       },
+       {
+        "code": "2149.4",
+        "title": "product development engineer",
+        "confidence": 74
+       },
+       {
+        "code": "2111.4",
+        "title": "physicist (applied optics)",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "design-in optical performance (reflectance accuracy / angle-independence)",
+       "spectral range & DUV/UV-C robustness of the design",
+       "design reliability / field-life of specified materials",
+       "design-to-cost / BOM cost targets",
+       "time-to-market of the instrument program"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Specify the diffuse-reference material that delivers a near-Lambertian, angle-independent reflectance reference",
+        "category": "Process",
+        "incentive_driver": "design-in optical performance (reflectance accuracy / angle-independence)"
+       },
+       {
+        "statement": "Ensure the specified reference survives the design's DUV/UV-C and thermal/chemical exposure",
+        "category": "Control",
+        "incentive_driver": "spectral range & DUV/UV-C robustness of the design"
+       },
+       {
+        "statement": "Maximize the field-life and stability of the reference designed into the sphere",
+        "category": "Control",
+        "incentive_driver": "design reliability / field-life of specified materials"
+       },
+       {
+        "statement": "Meet the BOM cost target while preserving reflectance-reference performance",
+        "category": "Efficiency",
+        "incentive_driver": "design-to-cost / BOM cost targets"
+       },
+       {
+        "statement": "Resolve the trade-off between reference durability, brittleness/handling and optical accuracy",
+        "category": "Problem-Solving",
+        "incentive_driver": "design reliability / field-life of specified materials"
+       },
+       {
+        "statement": "Release the optical design to schedule with the reference qualified for production",
+        "category": "Process",
+        "incentive_driver": "time-to-market of the instrument program"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident my specified reference will measure accurately at every angle the sphere sees",
+        "from_incentive": "design-in optical performance (reflectance accuracy / angle-independence)"
+       },
+       {
+        "feeling": "Feel reassured the reference I chose won't yellow or outgas under DUV in the field",
+        "from_incentive": "spectral range & DUV/UV-C robustness of the design"
+       },
+       {
+        "feeling": "Feel secure that the design I signed will still hold its reflectance years into service",
+        "from_incentive": "design reliability / field-life of specified materials"
+       },
+       {
+        "feeling": "Feel in control of the BOM cost without compromising the measurement",
+        "from_incentive": "design-to-cost / BOM cost targets"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the optical engineer known for the most accurate, longest-lived sphere designs",
+        "identity_kind": "role_identity",
+        "from_incentive": "design-in optical performance (reflectance accuracy / angle-independence)"
+       },
+       {
+        "statement": "Be seen as the engineer who future-proofed the platform for DUV/UV-C materials work",
+        "identity_kind": "image_identity",
+        "from_incentive": "spectral range & DUV/UV-C robustness of the design"
+       },
+       {
+        "statement": "Be recognized for hitting the cost target without ever compromising optical accuracy",
+        "identity_kind": "image_identity",
+        "from_incentive": "design-to-cost / BOM cost targets"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Metrology / reference-standards specialist who validates the traceable reference",
+      "prototype_name": "Reference-Standards & Traceability Specialist",
+      "cfj": "To validate and recommend the diffuse-reflectance reference against traceability and long-term-stability criteria, so the chosen reference is accepted into the calibration architecture.",
+      "esco": [
+       {
+        "code": "2111.4",
+        "title": "metrologist",
+        "confidence": 84
+       },
+       {
+        "code": "2149.6",
+        "title": "calibration engineer",
+        "confidence": 76
+       }
+      ],
+      "incentive_categories": [
+       "traceability rigor (chain to national standard)",
+       "long-term reflectance stability / aging characterization",
+       "measurement uncertainty reduction",
+       "cleanability / re-use of the reference standard"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Characterize the long-term reflectance stability and aging of the candidate reference",
+        "category": "Control",
+        "incentive_driver": "long-term reflectance stability / aging characterization"
+       },
+       {
+        "statement": "Establish the traceability path from the candidate reference to the national reflectance standard",
+        "category": "Process",
+        "incentive_driver": "traceability rigor (chain to national standard)"
+       },
+       {
+        "statement": "Reduce the contribution of the reference to the overall measurement uncertainty",
+        "category": "Efficiency",
+        "incentive_driver": "measurement uncertainty reduction"
+       },
+       {
+        "statement": "Verify the reference can be cleaned and re-used without losing its reflectance scale",
+        "category": "Problem-Solving",
+        "incentive_driver": "cleanability / re-use of the reference standard"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the reference I recommend will still be traceable a decade from now",
+        "from_incentive": "traceability rigor (chain to national standard)"
+       },
+       {
+        "feeling": "Feel reassured that cleaning the standard won't quietly shift the reflectance scale",
+        "from_incentive": "cleanability / re-use of the reference standard"
+       },
+       {
+        "feeling": "Feel satisfied that I shrank the uncertainty budget by picking a stabler reference",
+        "from_incentive": "measurement uncertainty reduction"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the metrology authority whose recommended standards set the company's traceability bar",
+        "identity_kind": "role_identity",
+        "from_incentive": "traceability rigor (chain to national standard)"
+       },
+       {
+        "statement": "Be seen as the specialist who drove down the measurement uncertainty budget",
+        "identity_kind": "image_identity",
+        "from_incentive": "measurement uncertainty reduction"
+       }
+      ]
+     },
+     {
+      "role": "job_beneficiary",
+      "type_label": "End materials / semiconductor analyst the reflectance reference ultimately serves",
+      "prototype_name": "Materials & Semiconductor Characterization Analyst",
+      "cfj": "To receive a trustworthy, drift-free reflectance measurement of the sample so the material's surface, thin-film, contamination and optical properties can be defined with confidence.",
+      "esco": [
+       {
+        "code": "2113.5",
+        "title": "materials scientist",
+        "confidence": 80
+       },
+       {
+        "code": "3111.4",
+        "title": "chemical / materials laboratory technician",
+        "confidence": 74
+       },
+       {
+        "code": "2149.7",
+        "title": "semiconductor process / characterization engineer",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "data confidence / measurement reproducibility",
+       "sample/lot throughput in the lab or fab",
+       "defensibility of results to customers/regulators",
+       "low instrument downtime / re-measure rate"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Obtain a reflectance measurement that truthfully reflects the sample's optical properties",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Trust that repeated measurements of the same sample agree over time and across instruments",
+        "category": "Control",
+        "incentive_driver": "data confidence / measurement reproducibility"
+       },
+       {
+        "statement": "Characterize more samples per session without re-measuring for drift",
+        "category": "Efficiency",
+        "incentive_driver": "sample/lot throughput in the lab or fab"
+       },
+       {
+        "statement": "Produce results that withstand customer, auditor or regulatory scrutiny",
+        "category": "Problem-Solving",
+        "incentive_driver": "defensibility of results to customers/regulators"
+       },
+       {
+        "statement": "Avoid re-measurement caused by an unstable or contaminated reflectance reference",
+        "category": "Efficiency",
+        "incentive_driver": "low instrument downtime / re-measure rate"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the number I report is real and not an artifact of a drifting reference",
+        "from_incentive": "data confidence / measurement reproducibility"
+       },
+       {
+        "feeling": "Feel reassured my results will hold up when a customer or auditor challenges them",
+        "from_incentive": "defensibility of results to customers/regulators"
+       },
+       {
+        "feeling": "Feel in control of my throughput, not stalled by re-measuring suspect samples",
+        "from_incentive": "sample/lot throughput in the lab or fab"
+       },
+       {
+        "feeling": "Feel relieved the instrument is ready when I am, not down for reference issues",
+        "from_incentive": "low instrument downtime / re-measure rate"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the analyst whose characterization data is trusted as the lab's reference truth",
+        "identity_kind": "role_identity",
+        "from_incentive": "data confidence / measurement reproducibility"
+       },
+       {
+        "statement": "Be seen as the analyst whose results never get sent back for re-measurement",
+        "identity_kind": "image_identity",
+        "from_incentive": "defensibility of results to customers/regulators"
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "segment_id": "C4",
@@ -3342,7 +4909,555 @@
      "unit": "Volume Optical Diffuser Element + Diffuse Reference Coupon (merchant optical component sourcing across both paths)",
      "decides": "Makes the buy decision and supplier qualification for the diffuser/reference optical component: balances diffusil's unit price and brittleness/lead-time against its lifetime durability and re-certification savings; qualifies opsira as an approved optical-component vendor."
     }
-   ]
+   ],
+   "pyramid": {
+    "intersection_unit": "Volume Optical Diffuser Element",
+    "cfj_path": [
+     {
+      "level": "L7",
+      "unit": "Machine Vision & Metrology Optics Manufacturing System",
+      "cfj": "To convert optical materials and electro-optical components into machine-vision and metrology optical instruments that let automated systems inspect, guide and dimensionally verify parts."
+     },
+     {
+      "level": "L6",
+      "unit": "Illumination & Light-Shaping Subassembly Build",
+      "cfj": "To assemble the light source, homogenizing/diffusing and beam-shaping optics into illumination subassemblies that deliver uniform, controlled illumination onto the inspected part \u2014 the light-shaping branch of building the metrology instrument."
+     },
+     {
+      "level": "L5",
+      "unit": "Illumination Module Assembly Station",
+      "cfj": "To assemble the light source, homogenizing diffuser and beam-shaping optics into one uniform illumination module whose output is even and angle-independent across the field \u2014 specializing the L6 light-shaping job to a single producible illumination module."
+     },
+     {
+      "level": "L4",
+      "unit": "Homogenizing Diffuser",
+      "cfj": "To turn the directional, non-uniform output of the light source into homogeneous, hot-spot-free light of the spectral band and uniformity the illumination module requires \u2014 the diffusing sub-function within the assembled module."
+     },
+     {
+      "level": "L1 (intersection unit)",
+      "unit": "Volume Optical Diffuser Element",
+      "cfj": "To scatter directional incident light into near-Lambertian, incident-angle-independent, hot-spot-free output across UV/DUV-to-NIR without aging or burning, so the illumination module can flood the inspected part with uniform light the metrology instrument can rely on."
+     }
+    ],
+    "top_employers": [
+     {
+      "name": "Omron Corporation",
+      "employee_count": "~26,614 (Mar 2025)",
+      "source": "stockanalysis.com / OMRON Factbook 2025"
+     },
+     {
+      "name": "Hexagon AB (Manufacturing Intelligence / metrology)",
+      "employee_count": "~24,800 group-wide (2025)",
+      "source": "hexagon.com company divisions / press 2025"
+     },
+     {
+      "name": "Nikon Corporation",
+      "employee_count": "~20,000 consolidated (2025)",
+      "source": "pitchbook.com / Nikon company page"
+     },
+     {
+      "name": "Teledyne Technologies (incl. Teledyne DALSA / FLIR machine vision)",
+      "employee_count": "~15,800 (Dec 2025)",
+      "source": "macrotrends.net / Wikipedia / SEC 10-K"
+     },
+     {
+      "name": "Keyence Corporation",
+      "employee_count": "~12,261 (Mar 2025)",
+      "source": "stockanalysis.com / macrotrends.net"
+     },
+     {
+      "name": "Mitutoyo Corporation",
+      "employee_count": "~5,374 worldwide",
+      "source": "Wikipedia / ZoomInfo / metoree.com"
+     },
+     {
+      "name": "Jenoptik AG (optics, photonics, optical metrology)",
+      "employee_count": "~4,646 (FY2024)",
+      "source": "stockanalysis.com / jenoptik.com sustainability"
+     },
+     {
+      "name": "Cognex Corporation",
+      "employee_count": "~2,914 (2025)",
+      "source": "macrotrends.net / SEC 10-Q FY2025"
+     },
+     {
+      "name": "Datalogic S.p.A. (machine vision, sensors, code reading)",
+      "employee_count": "~2,685 (2025)",
+      "source": "owler.com / datalogic.com company overview"
+     },
+     {
+      "name": "Basler AG (machine vision cameras, illumination optics)",
+      "employee_count": "~849 FTE (Mar 2025)",
+      "source": "Basler Q1 2025 report / reveliolabs.com"
+     }
+    ],
+    "prototype_roles": [
+     {
+      "role": "job_executor",
+      "type_label": "Illumination/optical assembly technician",
+      "prototype_name": "Optical Illumination & Diffuser Assembly Technician",
+      "cfj": "To assemble and verify the homogenizing diffuser into the illumination module so it delivers hot-spot-free, angle-independent light the instrument can rely on.",
+      "esco": [
+       {
+        "code": "7311.4",
+        "title": "Optical instrument assembler / precision-instrument maker",
+        "confidence": 86
+       },
+       {
+        "code": "8211.5",
+        "title": "Optomechanical / mechanical assembler",
+        "confidence": 78
+       },
+       {
+        "code": "3119.7",
+        "title": "Optoelectronics / optical production technician",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "first-pass assembly yield (no rework on the illumination module)",
+       "throughput / units assembled per shift",
+       "uniformity & spec-conformance at station test (illumination flatness pass rate)",
+       "workmanship quality / scrap reduction of optical parts (handling brittle diffuser elements)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Assemble the homogenizing diffuser into the illumination module so output light is uniform and hot-spot-free",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Verify illumination uniformity at the assembly station before passing the module downstream",
+        "category": "Control",
+        "incentive_driver": "uniformity & spec-conformance at station test (illumination flatness pass rate)"
+       },
+       {
+        "statement": "Complete each illumination module within the station takt time",
+        "category": "Efficiency",
+        "incentive_driver": "throughput / units assembled per shift"
+       },
+       {
+        "statement": "Handle and seat the brittle volume diffuser element without chipping or contaminating it",
+        "category": "Process",
+        "incentive_driver": "workmanship quality / scrap reduction of optical parts (handling brittle diffuser elements)"
+       },
+       {
+        "statement": "Diagnose and correct a non-uniform or hot-spotting illumination output at first build",
+        "category": "Problem-Solving",
+        "incentive_driver": "first-pass assembly yield (no rework on the illumination module)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident that the module I just built will pass test the first time",
+        "from_incentive": "first-pass assembly yield (no rework on the illumination module)"
+       },
+       {
+        "feeling": "Feel unhurried-but-on-pace, not forced to choose between speed and a clean build",
+        "from_incentive": "throughput / units assembled per shift"
+       },
+       {
+        "feeling": "Feel reassured that the diffuser I seated won't crack or smudge and cost me a scrapped optic",
+        "from_incentive": "workmanship quality / scrap reduction of optical parts (handling brittle diffuser elements)"
+       },
+       {
+        "feeling": "Feel in control when the uniformity reading lands inside spec instead of fighting it",
+        "from_incentive": "uniformity & spec-conformance at station test (illumination flatness pass rate)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the technician trusted with the delicate, high-value optical builds others are nervous to touch",
+        "identity_kind": "role_identity",
+        "from_incentive": "workmanship quality / scrap reduction of optical parts (handling brittle diffuser elements)"
+       },
+       {
+        "statement": "Be seen on the line as the assembler whose modules never come back from test",
+        "identity_kind": "image_identity",
+        "from_incentive": "first-pass assembly yield (no rework on the illumination module)"
+       },
+       {
+        "statement": "Be recognized as the operator who hits takt without dropping quality",
+        "identity_kind": "image_identity",
+        "from_incentive": "throughput / units assembled per shift"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Illumination/optical production line lead or manufacturing engineer",
+      "prototype_name": "Optical Module Production / Manufacturing Engineering Lead",
+      "cfj": "To ensure the illumination modules leave the line with uniform, hot-spot-free, in-spec light at the yield and cost the instrument program requires.",
+      "esco": [
+       {
+        "code": "3122.1",
+        "title": "Manufacturing / production supervisor",
+        "confidence": 84
+       },
+       {
+        "code": "2144.6",
+        "title": "Manufacturing (mechanical/optical) engineer",
+        "confidence": 75
+       }
+      ],
+      "incentive_categories": [
+       "line yield / first-pass-yield of the illumination subassembly",
+       "scrap & rework cost (especially scrapped optical elements)",
+       "on-time output vs. instrument build schedule",
+       "process capability / Cpk of illumination uniformity",
+       "supplier-quality stability of bought-in optical components (diffuser incoming defects)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Ensure illumination modules are built uniform and in-spec without my direct involvement in each build",
+        "category": "Control",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Hold first-pass yield of the illumination subassembly at or above target",
+        "category": "Control",
+        "incentive_driver": "line yield / first-pass-yield of the illumination subassembly"
+       },
+       {
+        "statement": "Drive down scrap and rework cost on the line, especially scrapped diffuser/optic elements",
+        "category": "Efficiency",
+        "incentive_driver": "scrap & rework cost (especially scrapped optical elements)"
+       },
+       {
+        "statement": "Keep illumination-uniformity process capability (Cpk) within control limits across batches",
+        "category": "Control",
+        "incentive_driver": "process capability / Cpk of illumination uniformity"
+       },
+       {
+        "statement": "Resolve recurring uniformity or hot-spot defects to a root cause rather than re-screening",
+        "category": "Problem-Solving",
+        "incentive_driver": "supplier-quality stability of bought-in optical components (diffuser incoming defects)"
+       },
+       {
+        "statement": "Sequence and staff the line to meet the instrument build schedule",
+        "category": "Process",
+        "incentive_driver": "on-time output vs. instrument build schedule"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel secure that yield won't crater on my shift over a flaky optical part",
+        "from_incentive": "line yield / first-pass-yield of the illumination subassembly"
+       },
+       {
+        "feeling": "Feel relieved when scrapped-optic cost stays low because the diffuser is robust and consistent",
+        "from_incentive": "scrap & rework cost (especially scrapped optical elements)"
+       },
+       {
+        "feeling": "Feel in control when uniformity Cpk stays inside limits batch after batch",
+        "from_incentive": "process capability / Cpk of illumination uniformity"
+       },
+       {
+        "feeling": "Feel calm that incoming diffuser quality won't ambush the line with a defect spike",
+        "from_incentive": "supplier-quality stability of bought-in optical components (diffuser incoming defects)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the line owner who runs the most stable, highest-yield optical-build cell in the plant",
+        "identity_kind": "role_identity",
+        "from_incentive": "line yield / first-pass-yield of the illumination subassembly"
+       },
+       {
+        "statement": "Be seen by operations leadership as the engineer who eliminated the diffuser scrap problem for good",
+        "identity_kind": "image_identity",
+        "from_incentive": "scrap & rework cost (especially scrapped optical elements)"
+       },
+       {
+        "statement": "Be regarded as the lead whose process is so capable that uniformity is never a program risk",
+        "identity_kind": "image_identity",
+        "from_incentive": "process capability / Cpk of illumination uniformity"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Optical / illumination design engineer (component specifier)",
+      "prototype_name": "Optical / Illumination Design Engineer",
+      "cfj": "To specify a homogenizing diffuser whose uniformity, spectral band, throughput and durability will give the illumination module the angle-independent, hot-spot-free light the instrument design demands.",
+      "esco": [
+       {
+        "code": "2149.7",
+        "title": "Optical engineer / photonics engineer",
+        "confidence": 88
+       },
+       {
+        "code": "2151.4",
+        "title": "Electro-optical / electronics design engineer",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "design performance to spec (uniformity, etendue, spectral band met)",
+       "design robustness / reliability (no field aging, UV/thermal survival)",
+       "BOM cost & throughput trade-off (transmission efficiency vs. light budget)",
+       "design-win / time-to-qualification of the chosen component",
+       "design reuse & platform standardization across instrument models"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Specify the diffuser so the illumination module meets its uniformity and spectral-band target",
+        "category": "Process",
+        "incentive_driver": "design performance to spec (uniformity, etendue, spectral band met)"
+       },
+       {
+        "statement": "Ensure the chosen diffuser survives the source's UV/flux and thermal load without aging the design out of spec",
+        "category": "Control",
+        "incentive_driver": "design robustness / reliability (no field aging, UV/thermal survival)"
+       },
+       {
+        "statement": "Balance the diffuser's transmission/throughput against the instrument's light budget and cost",
+        "category": "Efficiency",
+        "incentive_driver": "BOM cost & throughput trade-off (transmission efficiency vs. light budget)"
+       },
+       {
+        "statement": "Diagnose whether hot-spots, speckle or angle-dependence come from the diffuser choice and select an element that removes them",
+        "category": "Problem-Solving",
+        "incentive_driver": "design performance to spec (uniformity, etendue, spectral band met)"
+       },
+       {
+        "statement": "Qualify the diffuser component through design verification so it can be released to the BOM",
+        "category": "Process",
+        "incentive_driver": "design-win / time-to-qualification of the chosen component"
+       },
+       {
+        "statement": "Standardize one diffuser solution reusable across illumination modules of the platform",
+        "category": "Efficiency",
+        "incentive_driver": "design reuse & platform standardization across instrument models"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the illumination will be uniform and the design will pass verification",
+        "from_incentive": "design performance to spec (uniformity, etendue, spectral band met)"
+       },
+       {
+        "feeling": "Feel reassured the diffuser won't yellow, burn or speckle and turn into a field-return on my design",
+        "from_incentive": "design robustness / reliability (no field aging, UV/thermal survival)"
+       },
+       {
+        "feeling": "Feel in control of the light budget instead of fighting a throughput shortfall late",
+        "from_incentive": "BOM cost & throughput trade-off (transmission efficiency vs. light budget)"
+       },
+       {
+        "feeling": "Feel decisive that I picked a component that will sail through qualification on time",
+        "from_incentive": "design-win / time-to-qualification of the chosen component"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the optical engineer whose illumination designs are the benchmark for uniformity others copy",
+        "identity_kind": "role_identity",
+        "from_incentive": "design performance to spec (uniformity, etendue, spectral band met)"
+       },
+       {
+        "statement": "Be seen as the designer whose products never come back for an illumination aging failure",
+        "identity_kind": "image_identity",
+        "from_incentive": "design robustness / reliability (no field aging, UV/thermal survival)"
+       },
+       {
+        "statement": "Be recognized as the engineer who set the reusable illumination platform standard for the product line",
+        "identity_kind": "role_identity",
+        "from_incentive": "design reuse & platform standardization across instrument models"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Optical-component sourcing / commodity buyer",
+      "prototype_name": "Optical-Component Procurement / Commodity Manager",
+      "cfj": "To procure the homogenizing diffuser at the right total cost, lead time and supply assurance once it is specified into the instrument BOM.",
+      "esco": [
+       {
+        "code": "1324.4",
+        "title": "Purchasing / procurement manager",
+        "confidence": 85
+       },
+       {
+        "code": "3323.2",
+        "title": "Industrial buyer / purchasing agent",
+        "confidence": 77
+       }
+      ],
+      "incentive_categories": [
+       "purchase price / unit cost of the optical component (PPV)",
+       "total cost of ownership incl. component lifetime & re-buy/replacement frequency",
+       "supply assurance / lead time & dual-sourcing of the optical part",
+       "supplier qualification & quality (PPM defect, approved-vendor status)",
+       "inventory / working-capital impact of the bought-in optic"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Place and manage the order for the specified diffuser component to the production schedule",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Negotiate the unit price of the diffuser optic down against target cost",
+        "category": "Efficiency",
+        "incentive_driver": "purchase price / unit cost of the optical component (PPV)"
+       },
+       {
+        "statement": "Weigh the diffuser's higher unit price against its longer service life and lower re-buy frequency in total cost",
+        "category": "Problem-Solving",
+        "incentive_driver": "total cost of ownership incl. component lifetime & re-buy/replacement frequency"
+       },
+       {
+        "statement": "Secure lead time and a second source so the diffuser never stalls the instrument build",
+        "category": "Control",
+        "incentive_driver": "supply assurance / lead time & dual-sourcing of the optical part"
+       },
+       {
+        "statement": "Qualify and audit the diffuser supplier to approved-vendor quality status",
+        "category": "Control",
+        "incentive_driver": "supplier qualification & quality (PPM defect, approved-vendor status)"
+       },
+       {
+        "statement": "Right-size diffuser inventory to protect the line without tying up working capital",
+        "category": "Efficiency",
+        "incentive_driver": "inventory / working-capital impact of the bought-in optic"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel satisfied I hit the cost target without compromising the optic's quality",
+        "from_incentive": "purchase price / unit cost of the optical component (PPV)"
+       },
+       {
+        "feeling": "Feel justified defending a higher unit price because lifetime cost is clearly lower",
+        "from_incentive": "total cost of ownership incl. component lifetime & re-buy/replacement frequency"
+       },
+       {
+        "feeling": "Feel secure that no single-source diffuser shortage can stop the line on my watch",
+        "from_incentive": "supply assurance / lead time & dual-sourcing of the optical part"
+       },
+       {
+        "feeling": "Feel reassured the vendor I qualified won't send a defect spike into receiving",
+        "from_incentive": "supplier qualification & quality (PPM defect, approved-vendor status)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the buyer leadership trusts to land cost savings without ever risking quality or supply",
+        "identity_kind": "role_identity",
+        "from_incentive": "purchase price / unit cost of the optical component (PPV)"
+       },
+       {
+        "statement": "Be seen as the commodity manager who proved total-cost-of-ownership thinking beats chasing unit price",
+        "identity_kind": "image_identity",
+        "from_incentive": "total cost of ownership incl. component lifetime & re-buy/replacement frequency"
+       },
+       {
+        "statement": "Be regarded as the sourcing lead whose supply base never causes a build stoppage",
+        "identity_kind": "image_identity",
+        "from_incentive": "supply assurance / lead time & dual-sourcing of the optical part"
+       }
+      ]
+     },
+     {
+      "role": "job_beneficiary",
+      "type_label": "End-user inspection/quality engineer running the instrument in production",
+      "prototype_name": "End-User Inspection / Quality Engineer (instrument operator-of-record)",
+      "cfj": "To realize reliable, uniform-illumination measurements from the deployed metrology/vision instrument so production parts are correctly inspected, guided and dimensionally verified.",
+      "esco": [
+       {
+        "code": "3119.2",
+        "title": "Quality / inspection technician (production metrology)",
+        "confidence": 80
+       },
+       {
+        "code": "2141.9",
+        "title": "Industrial / quality engineer",
+        "confidence": 73
+       },
+       {
+        "code": "3155.3",
+        "title": "Imaging / optical-systems operator (machine-vision operator)",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "inspection accuracy / false-reject & escape (measurement reliability)",
+       "instrument uptime & stability (no relamping/recalibration drift from uneven light)",
+       "production throughput the inspection station sustains",
+       "scrap / quality-cost reduction on the inspected line",
+       "audit & traceability of measurement results"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Obtain reliable, repeatable measurements of production parts from the instrument",
+        "category": "Control",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Keep false rejects and escapes low by ensuring illumination stays uniform across the field",
+        "category": "Control",
+        "incentive_driver": "inspection accuracy / false-reject & escape (measurement reliability)"
+       },
+       {
+        "statement": "Maintain instrument uptime without recalibration drift caused by light aging or hot-spots",
+        "category": "Control",
+        "incentive_driver": "instrument uptime & stability (no relamping/recalibration drift from uneven light)"
+       },
+       {
+        "statement": "Sustain the line's inspection throughput without the station becoming the bottleneck",
+        "category": "Efficiency",
+        "incentive_driver": "production throughput the inspection station sustains"
+       },
+       {
+        "statement": "Diagnose whether a measurement problem is the part or uneven illumination, and rule out the light source",
+        "category": "Problem-Solving",
+        "incentive_driver": "scrap / quality-cost reduction on the inspected line"
+       },
+       {
+        "statement": "Produce auditable, traceable inspection records the quality system can stand behind",
+        "category": "Process",
+        "incentive_driver": "audit & traceability of measurement results"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the instrument's verdict on a part is right, not an illumination artifact",
+        "from_incentive": "inspection accuracy / false-reject & escape (measurement reliability)"
+       },
+       {
+        "feeling": "Feel secure the station will run my whole shift without drifting out of calibration",
+        "from_incentive": "instrument uptime & stability (no relamping/recalibration drift from uneven light)"
+       },
+       {
+        "feeling": "Feel unstressed that inspection keeps pace and isn't holding up the line",
+        "from_incentive": "production throughput the inspection station sustains"
+       },
+       {
+        "feeling": "Feel defensible when I sign off measurement records in an audit",
+        "from_incentive": "audit & traceability of measurement results"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the quality engineer whose inspection station is trusted as the line's source of truth",
+        "identity_kind": "role_identity",
+        "from_incentive": "inspection accuracy / false-reject & escape (measurement reliability)"
+       },
+       {
+        "statement": "Be seen by production as the operator whose vision system never causes a false-reject scare",
+        "identity_kind": "image_identity",
+        "from_incentive": "inspection accuracy / false-reject & escape (measurement reliability)"
+       },
+       {
+        "statement": "Be regarded as the engineer whose measurement data always survives a customer or regulatory audit",
+        "identity_kind": "image_identity",
+        "from_incentive": "audit & traceability of measurement results"
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "segment_id": "D9",
@@ -3576,7 +5691,556 @@
      "unit": "Optical Diffuser Window / Integrating Sphere (component procurement)",
      "decides": "Whether to qualify and contract opsira/diffusil as an approved optical-component supplier, the unit price vs ground-glass/Spectralon incumbents, lead time, and second-source strategy for a brittle bespoke-cut silica part."
     }
-   ]
+   ],
+   "pyramid": {
+    "intersection_unit": "Optical Diffuser Window (distal-tip illumination window/diffuser of the flexible video endoscope) \u2014 the L1 fused-silica volume-diffuser part bonded behind the tip illumination window; diffusil's primary BOM attach point in NAICS 339112 Gastroenterology & Urology.",
+    "cfj_path": [
+     {
+      "level": "L7",
+      "unit": "Gastroenterology & Urology Instrument Manufacturing System",
+      "cfj": "To produce instruments that access and manipulate the digestive and urinary tracts during intervention for the interventional physician."
+     },
+     {
+      "level": "L6",
+      "unit": "Optical Chain Fabrication",
+      "cfj": "To build the illumination and imaging light path so the instrument shows the physician a true, well-lit view of the tract during intervention."
+     },
+     {
+      "level": "L5",
+      "unit": "Distal-Tip Illumination Optics Assembly Cell",
+      "cfj": "To assemble, at the distal tip, the illumination window, diffuser and exit optics that deliver even, glare-free light onto the tissue field."
+     },
+     {
+      "level": "L4",
+      "unit": "Illumination Window & Diffuser Mount",
+      "cfj": "To seat and seal the illumination window and its diffuser so light leaves the tip in a wide, uniform, reprocessing-durable cone."
+     },
+     {
+      "level": "INTERSECTION (BOM L1)",
+      "unit": "Optical Diffuser Window",
+      "cfj": "To homogenize the tip illumination into a wide, incident-angle-independent, near-Lambertian, glare-free cone that survives repeated cleaning, disinfection and sterilization, so the physician sees an evenly lit field every reuse."
+     }
+    ],
+    "top_employers": [
+     {
+      "name": "Medtronic plc",
+      "employee_count": "~95,000 (FY2025)",
+      "source": "tradingeconomics.com/mdt:us:employees; SEC 10-Q FY2025 \u2014 GI Solutions/Endoscopy (Beacon Endoscopic, GI Genius) within Medical Surgical."
+     },
+     {
+      "name": "Fujifilm Holdings (Endoscopy / Medical Systems)",
+      "employee_count": "72,593 (as of 31 Mar 2025)",
+      "source": "macrotrends.net FUJIY number-of-employees; Fujifilm FY ended 31 Mar 2025 results \u2014 major flexible GI/urology endoscope OEM (EI-840 / ELUXEO)."
+     },
+     {
+      "name": "B. Braun Group (incl. Aesculap surgical/endoscopy, urology)",
+      "employee_count": ">64,000 (2025)",
+      "source": "bbraun.com facts-and-figures; en.wikipedia.org/wiki/B._Braun \u2014 urology/endoscopy instrument lines within the group."
+     },
+     {
+      "name": "Stryker Corporation (Endoscopy)",
+      "employee_count": "~55,379\u201356,000 (2025)",
+      "source": "stockanalysis.com SYK employees; reveliolabs.com \u2014 Stryker Endoscopy flexible scope / illumination platforms."
+     },
+     {
+      "name": "Boston Scientific Corporation (Endoscopy + Urology/Pelvic Health)",
+      "employee_count": "~53,000\u201357,313 (2025)",
+      "source": "stockanalysis.com BSX; SEC 8-K Q3 FY2025 \u2014 Endoscopy (SpyGlass) and Urology franchises, GI & urology core."
+     },
+     {
+      "name": "Olympus Corporation (Endoscopic Solutions)",
+      "employee_count": "29,297 (as of 31 Mar 2025)",
+      "source": "massdevice.com / medtechdive.com Nov 2025 strategy; olympus-global.com \u2014 global #1 GI flexible endoscope manufacturer (EVIS X1)."
+     },
+     {
+      "name": "Cook Medical (Cook Group)",
+      "employee_count": "~10,000+ (Oct 2025)",
+      "source": "tracxn.com Cook Medical profile; signalhire.com \u2014 major GI & urology endoscopic accessory/device maker."
+     },
+     {
+      "name": "Karl Storz SE & Co. KG",
+      "employee_count": "~9,900 (2025, official) [Revelio 7,640]",
+      "source": "karlstorz.com about-us; en.wikipedia.org/wiki/Karl_Storz_Endoskope \u2014 flexible cysto/uretero/GI endoscopy."
+     },
+     {
+      "name": "Ambu A/S",
+      "employee_count": "~5,500 (2025)",
+      "source": "en.wikipedia.org/wiki/Ambu_(company); ambuusa.com \u2014 single-use GI (aScope Gastro) and urology (aScope cysto/uretero) endoscopes; LED-at-tip illumination."
+     },
+     {
+      "name": "CONMED Corporation",
+      "employee_count": "~3,786 (2025)",
+      "source": "stockanalysis.com CNMD; reveliolabs.com; SEC 10-Q FY2025 \u2014 GI/endoscopy (single-use & reusable scope accessories, illumination)."
+     }
+    ],
+    "prototype_roles": [
+     {
+      "role": "job_executor",
+      "type_label": "Distal-tip illumination-optics assembler / optical micro-assembly operator",
+      "prototype_name": "Tip Illumination Optics Assembler",
+      "cfj": "To place, align and bond the diffuser behind the illumination window at the tip so the light leaves the finished tip wide, even and glare-free.",
+      "esco": [
+       {
+        "code": "7311.3",
+        "title": "Optical instrument assembler",
+        "confidence": 88
+       },
+       {
+        "code": "3119.6",
+        "title": "Photonics engineering technician",
+        "confidence": 74
+       }
+      ],
+      "incentive_categories": [
+       "first-pass yield / scrap-rate on bonded tips",
+       "throughput / units assembled per shift (takt adherence)",
+       "rework rate on illumination-uniformity defects",
+       "handling-damage rate on brittle optical parts",
+       "cleanroom & ESD/contamination-discipline compliance"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Position and align the diffuser to the illumination window within optical tolerance",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Bond and cure the diffuser into the tip without trapping voids, tilt or contamination",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Maximize the share of tips that pass illumination-uniformity check on the first pass",
+        "category": "Efficiency",
+        "incentive_driver": "first-pass yield / scrap-rate on bonded tips"
+       },
+       {
+        "statement": "Keep assembly cadence on takt while holding bond quality",
+        "category": "Efficiency",
+        "incentive_driver": "throughput / units assembled per shift (takt adherence)"
+       },
+       {
+        "statement": "Diagnose and correct recurring illumination-uniformity defects at the bench",
+        "category": "Problem-Solving",
+        "incentive_driver": "rework rate on illumination-uniformity defects"
+       },
+       {
+        "statement": "Handle the brittle diffuser parts so they reach the tip uncracked and unscratched",
+        "category": "Control",
+        "incentive_driver": "handling-damage rate on brittle optical parts"
+       },
+       {
+        "statement": "Maintain cleanroom and contamination discipline through every bonded tip",
+        "category": "Control",
+        "incentive_driver": "cleanroom & ESD/contamination-discipline compliance"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the tip I just bonded will pass the uniformity check the first time",
+        "from_incentive": "first-pass yield / scrap-rate on bonded tips"
+       },
+       {
+        "feeling": "Feel unhurried and steady-handed even while keeping pace with the line",
+        "from_incentive": "throughput / units assembled per shift (takt adherence)"
+       },
+       {
+        "feeling": "Feel relieved that I am not generating rework that comes back to my bench",
+        "from_incentive": "rework rate on illumination-uniformity defects"
+       },
+       {
+        "feeling": "Feel reassured a fragile part won't crack in my fixture and ruin a tip",
+        "from_incentive": "handling-damage rate on brittle optical parts"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the assembler whose bonded tips others trust to pass without a second look",
+        "identity_kind": "role_identity",
+        "from_incentive": "first-pass yield / scrap-rate on bonded tips"
+       },
+       {
+        "statement": "Be seen by the cell lead as the steady hand for the trickiest optical bonds",
+        "identity_kind": "image_identity",
+        "from_incentive": "handling-damage rate on brittle optical parts"
+       },
+       {
+        "statement": "Be recognized as the operator who never lets a contamination defect leave the bench",
+        "identity_kind": "role_identity",
+        "from_incentive": "cleanroom & ESD/contamination-discipline compliance"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Reprocessing / device-reliability quality engineer (reuse-life owner)",
+      "prototype_name": "Reprocessing-Durability Quality Owner",
+      "cfj": "To ensure the tip diffuser holds its illumination performance across every validated cleaning, disinfection and sterilization cycle for the device's full reuse life.",
+      "esco": [
+       {
+        "code": "2141.4",
+        "title": "Industrial quality engineer",
+        "confidence": 84
+       },
+       {
+        "code": "2149.7",
+        "title": "Biomedical engineer (medical devices)",
+        "confidence": 79
+       },
+       {
+        "code": "1321.1",
+        "title": "Manufacturing manager (quality/operations)",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "design- & reprocessing-validation pass/sign-off (ISO 17664 / ISO 8600 / IEC 60601)",
+       "field-failure / complaint rate on illumination degradation across reuse",
+       "audit & regulatory non-conformance count (FDA / Notified Body / MDR)",
+       "warranty / RMA cost from optical degradation in service",
+       "design-change & re-validation cycle time"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Confirm the diffuser retains near-Lambertian, glare-free output across the full validated reprocessing cycle set",
+        "category": "Control",
+        "incentive_driver": "design- & reprocessing-validation pass/sign-off (ISO 17664 / ISO 8600 / IEC 60601)"
+       },
+       {
+        "statement": "Establish that illumination performance holds across the rated reuse count without drift",
+        "category": "Control",
+        "incentive_driver": "field-failure / complaint rate on illumination degradation across reuse"
+       },
+       {
+        "statement": "Drive the field-complaint rate for illumination degradation toward zero",
+        "category": "Problem-Solving",
+        "incentive_driver": "field-failure / complaint rate on illumination degradation across reuse"
+       },
+       {
+        "statement": "Keep the device free of audit and regulatory non-conformances on its optical claims",
+        "category": "Control",
+        "incentive_driver": "audit & regulatory non-conformance count (FDA / Notified Body / MDR)"
+       },
+       {
+        "statement": "Minimize warranty returns caused by yellowed, etched or hazed tip optics",
+        "category": "Efficiency",
+        "incentive_driver": "warranty / RMA cost from optical degradation in service"
+       },
+       {
+        "statement": "Shorten the re-validation cycle when the diffuser material or supplier changes",
+        "category": "Efficiency",
+        "incentive_driver": "design-change & re-validation cycle time"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel secure signing the validation report knowing the optic won't degrade in the field",
+        "from_incentive": "design- & reprocessing-validation pass/sign-off (ISO 17664 / ISO 8600 / IEC 60601)"
+       },
+       {
+        "feeling": "Feel calm going into an FDA/Notified-Body audit on the device's optical claims",
+        "from_incentive": "audit & regulatory non-conformance count (FDA / Notified Body / MDR)"
+       },
+       {
+        "feeling": "Feel reassured that reuse-life complaints won't land back on my desk",
+        "from_incentive": "field-failure / complaint rate on illumination degradation across reuse"
+       },
+       {
+        "feeling": "Feel in control that a material change won't blow up the validation timeline",
+        "from_incentive": "design-change & re-validation cycle time"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the quality owner whose devices never get a reprocessing-durability complaint",
+        "identity_kind": "role_identity",
+        "from_incentive": "field-failure / complaint rate on illumination degradation across reuse"
+       },
+       {
+        "statement": "Be seen by regulators and leadership as the engineer whose validation files always hold up",
+        "identity_kind": "image_identity",
+        "from_incentive": "audit & regulatory non-conformance count (FDA / Notified Body / MDR)"
+       },
+       {
+        "statement": "Be recognized as the guardian of the device's full-life optical reliability",
+        "identity_kind": "role_identity",
+        "from_incentive": "design- & reprocessing-validation pass/sign-off (ISO 17664 / ISO 8600 / IEC 60601)"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Optical / illumination design engineer (component specifier \u2014 designs diffusil in or out)",
+      "prototype_name": "Tip Illumination Optical Designer",
+      "cfj": "To specify the diffuser material and homogenization/durability requirement so the tip delivers the target light cone every reuse, choosing fused-silica volume diffuser vs ground-glass vs polymer.",
+      "esco": [
+       {
+        "code": "2152.1",
+        "title": "Optical engineer",
+        "confidence": 90
+       },
+       {
+        "code": "2149.7",
+        "title": "Biomedical engineer (medical devices)",
+        "confidence": 75
+       },
+       {
+        "code": "2144.3",
+        "title": "Mechanical (opto-mechanical) engineer",
+        "confidence": 71
+       }
+      ],
+      "incentive_categories": [
+       "achieved optical performance vs target (uniformity, angular distribution, color/spectral fidelity)",
+       "design-in robustness / margin against reprocessing degradation",
+       "bill-of-materials cost & miniaturization of the tip optic",
+       "time-to-design-freeze / NPI milestone adherence",
+       "design-for-supply (qualified second source, brittleness/yield risk)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Define the angular-distribution and spectral target the tip illumination must hit",
+        "category": "Process",
+        "incentive_driver": "achieved optical performance vs target (uniformity, angular distribution, color/spectral fidelity)"
+       },
+       {
+        "statement": "Select a diffuser material that holds that target after repeated autoclave/UV-C/chemical exposure",
+        "category": "Problem-Solving",
+        "incentive_driver": "design-in robustness / margin against reprocessing degradation"
+       },
+       {
+        "statement": "Fit the diffuser within the millimetre-scale tip envelope and BOM cost band",
+        "category": "Efficiency",
+        "incentive_driver": "bill-of-materials cost & miniaturization of the tip optic"
+       },
+       {
+        "statement": "Hold the optical design freeze on the NPI schedule",
+        "category": "Process",
+        "incentive_driver": "time-to-design-freeze / NPI milestone adherence"
+       },
+       {
+        "statement": "Specify the part so a robust, second-sourceable supply exists for a brittle bespoke optic",
+        "category": "Control",
+        "incentive_driver": "design-for-supply (qualified second source, brittleness/yield risk)"
+       },
+       {
+        "statement": "Diagnose glare, hot-spots and angular non-uniformity in the illumination cone and design them out",
+        "category": "Problem-Solving",
+        "incentive_driver": "achieved optical performance vs target (uniformity, angular distribution, color/spectral fidelity)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel proud the illumination cone in my design is visibly cleaner and more even than the incumbent",
+        "from_incentive": "achieved optical performance vs target (uniformity, angular distribution, color/spectral fidelity)"
+       },
+       {
+        "feeling": "Feel confident my material choice won't degrade and embarrass me after launch",
+        "from_incentive": "design-in robustness / margin against reprocessing degradation"
+       },
+       {
+        "feeling": "Feel unworried that a brittle, single-source optic will derail my design",
+        "from_incentive": "design-for-supply (qualified second source, brittleness/yield risk)"
+       },
+       {
+        "feeling": "Feel on top of the schedule rather than chasing a slipping optical freeze",
+        "from_incentive": "time-to-design-freeze / NPI milestone adherence"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the optical designer known for the best-lit, most uniform tip image in the portfolio",
+        "identity_kind": "role_identity",
+        "from_incentive": "achieved optical performance vs target (uniformity, angular distribution, color/spectral fidelity)"
+       },
+       {
+        "statement": "Be seen as the engineer whose design-in choices never come back as field optical failures",
+        "identity_kind": "image_identity",
+        "from_incentive": "design-in robustness / margin against reprocessing degradation"
+       },
+       {
+        "statement": "Be recognized as the specifier who balances optical excellence with manufacturable, supplyable design",
+        "identity_kind": "role_identity",
+        "from_incentive": "design-for-supply (qualified second source, brittleness/yield risk)"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Strategic / technical buyer for optical components (economic buyer, supplier qualification)",
+      "prototype_name": "Optical-Component Strategic Buyer",
+      "cfj": "To fund and contract the source of the tip diffuser \u2014 qualifying and pricing the optical-component supplier against ground-glass/polymer incumbents and securing supply for a brittle bespoke silica part.",
+      "esco": [
+       {
+        "code": "1324.2",
+        "title": "Purchasing manager",
+        "confidence": 86
+       },
+       {
+        "code": "2433.1",
+        "title": "Technical sales/procurement professional (technical buyer)",
+        "confidence": 72
+       }
+      ],
+      "incentive_categories": [
+       "purchased-part unit cost & total-cost-of-ownership savings (PPV)",
+       "supply assurance / on-time delivery & dual-source coverage",
+       "supplier quality (PPM, audit pass, MDR-grade QMS) of the optical source",
+       "inventory / working-capital on bespoke long-lead optics",
+       "contract & compliance terms (capacity, change-control, regulatory documentation)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Negotiate the diffuser unit price against ground-glass and polymer incumbents",
+        "category": "Efficiency",
+        "incentive_driver": "purchased-part unit cost & total-cost-of-ownership savings (PPV)"
+       },
+       {
+        "statement": "Secure on-time supply and a qualified second source for the bespoke silica diffuser",
+        "category": "Control",
+        "incentive_driver": "supply assurance / on-time delivery & dual-source coverage"
+       },
+       {
+        "statement": "Qualify the optical-component supplier's medical-grade quality system and capacity",
+        "category": "Process",
+        "incentive_driver": "supplier quality (PPM, audit pass, MDR-grade QMS) of the optical source"
+       },
+       {
+        "statement": "Hold down working capital tied up in long-lead bespoke optics",
+        "category": "Efficiency",
+        "incentive_driver": "inventory / working-capital on bespoke long-lead optics"
+       },
+       {
+        "statement": "Lock contract terms covering change-control and regulatory documentation for the part",
+        "category": "Control",
+        "incentive_driver": "contract & compliance terms (capacity, change-control, regulatory documentation)"
+       },
+       {
+        "statement": "Resolve a supply or quality disruption on the optical part before it stops the line",
+        "category": "Problem-Solving",
+        "incentive_driver": "supply assurance / on-time delivery & dual-source coverage"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel satisfied I captured real savings without trading away optical quality",
+        "from_incentive": "purchased-part unit cost & total-cost-of-ownership savings (PPV)"
+       },
+       {
+        "feeling": "Feel secure that this brittle, bespoke part won't leave the line short",
+        "from_incentive": "supply assurance / on-time delivery & dual-source coverage"
+       },
+       {
+        "feeling": "Feel confident the supplier I qualified will pass any quality audit",
+        "from_incentive": "supplier quality (PPM, audit pass, MDR-grade QMS) of the optical source"
+       },
+       {
+        "feeling": "Feel in control that the contract protects us if the part or supplier changes",
+        "from_incentive": "contract & compliance terms (capacity, change-control, regulatory documentation)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the buyer who delivered cost savings the program manager didn't think were possible",
+        "identity_kind": "image_identity",
+        "from_incentive": "purchased-part unit cost & total-cost-of-ownership savings (PPV)"
+       },
+       {
+        "statement": "Be the strategic buyer whose qualified optical suppliers never cause a stockout or recall",
+        "identity_kind": "role_identity",
+        "from_incentive": "supply assurance / on-time delivery & dual-source coverage"
+       },
+       {
+        "statement": "Be seen as the procurement owner who de-risked a single-source brittle critical optic",
+        "identity_kind": "image_identity",
+        "from_incentive": "supplier quality (PPM, audit pass, MDR-grade QMS) of the optical source"
+       }
+      ]
+     },
+     {
+      "role": "job_beneficiary",
+      "type_label": "Interventional endoscopist (GI / urology physician \u2014 end-user of the lit field)",
+      "prototype_name": "Interventional Endoscopist (Lit-Field Beneficiary)",
+      "cfj": "To receive an evenly lit, glare-free view of the tract every procedure, so the diffuser's homogenized light lets me see and treat the lesion confidently.",
+      "esco": [
+       {
+        "code": "2212.4",
+        "title": "Specialist medical practitioner (gastroenterologist / urologist)",
+        "confidence": 80
+       }
+      ],
+      "incentive_categories": [
+       "diagnostic yield / lesion-detection performance (e.g. adenoma detection)",
+       "procedure throughput / case time & list efficiency",
+       "patient-safety & complication / adverse-event avoidance",
+       "reimbursement & procedure economics",
+       "professional reputation / referral volume & outcomes ranking"
+      ],
+      "core_jobs": [
+       {
+        "statement": "See the whole mucosal field evenly lit, without glare or dark zones, to find lesions",
+        "category": "Control",
+        "incentive_driver": "diagnostic yield / lesion-detection performance (e.g. adenoma detection)"
+       },
+       {
+        "statement": "Complete the diagnostic and therapeutic steps within the planned case time",
+        "category": "Efficiency",
+        "incentive_driver": "procedure throughput / case time & list efficiency"
+       },
+       {
+        "statement": "Avoid missing or mis-treating a lesion because of uneven or color-shifted illumination",
+        "category": "Problem-Solving",
+        "incentive_driver": "patient-safety & complication / adverse-event avoidance"
+       },
+       {
+        "statement": "Deliver the procedure so it documents and bills cleanly for the case performed",
+        "category": "Process",
+        "incentive_driver": "reimbursement & procedure economics"
+       },
+       {
+        "statement": "Achieve the visual clarity that supports a confident, defensible diagnosis",
+        "category": "Control",
+        "incentive_driver": "professional reputation / referral volume & outcomes ranking"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident I haven't missed a flat lesion hiding in a poorly lit corner",
+        "from_incentive": "diagnostic yield / lesion-detection performance (e.g. adenoma detection)"
+       },
+       {
+        "feeling": "Feel unhurried and in command of the scope rather than fighting glare and shadow",
+        "from_incentive": "procedure throughput / case time & list efficiency"
+       },
+       {
+        "feeling": "Feel reassured the patient is safe because I can see exactly what I am treating",
+        "from_incentive": "patient-safety & complication / adverse-event avoidance"
+       },
+       {
+        "feeling": "Feel proud of the image quality my patients and referrers associate with me",
+        "from_incentive": "professional reputation / referral volume & outcomes ranking"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the endoscopist known for high detection rates and clean, confident procedures",
+        "identity_kind": "role_identity",
+        "from_incentive": "diagnostic yield / lesion-detection performance (e.g. adenoma detection)"
+       },
+       {
+        "statement": "Be seen by peers and patients as the physician whose scopes always give a flawless view",
+        "identity_kind": "image_identity",
+        "from_incentive": "professional reputation / referral volume & outcomes ranking"
+       },
+       {
+        "statement": "Be recognized as the safe pair of hands referrers send their hardest cases to",
+        "identity_kind": "role_identity",
+        "from_incentive": "patient-safety & complication / adverse-event avoidance"
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "segment_id": "E3",
@@ -3818,7 +6482,812 @@
      "unit": "Effluent Discharge & Compliance Verification",
      "decides": "Owns the NPDES/discharge-permit outcome and the integrity of the monitoring data; sets the requirement that the analyzer's optics stay accurate over time, indirectly driving demand for a non-degrading reference optic."
     }
-   ]
+   ],
+   "pyramid": {
+    "intersection_unit": "Diffuse-Reference / Beam-Homogenizing Optic",
+    "cfj_path": [
+     {
+      "level": "L7",
+      "unit": "Chemical & Petrochemical Effluent Treatment Plant",
+      "cfj": "To convert a raw, contaminant-laden industrial effluent into a permit-compliant discharge or recoverable water while concentrating the hazardous residual for safe disposition."
+     },
+     {
+      "level": "L6",
+      "unit": "Process Analytics & Monitoring (horizontal)",
+      "cfj": "To continuously sense stream quality and contaminant levels across the whole plant so each treatment stage is controlled and verified against the permit (specialized from the L7 plant CFJ: the plant can only certify a permit-compliant discharge if the monitoring layer continuously and truthfully measures the stream)."
+     },
+     {
+      "level": "L5",
+      "unit": "Online UV-Vis Spectral Effluent Analyzer",
+      "cfj": "To continuously quantify organic load and trace contaminants in the effluent stream by reagent-free spectral absorption, accurately enough to drive dosing control and certify discharge (specialized from the monitoring CFJ: this analyzer is the instrument the monitoring layer relies on to turn 'sense the stream' into a calibrated, permit-grade COD/oil/trace-organics number)."
+     },
+     {
+      "level": "L4",
+      "unit": "Optical Bench",
+      "cfj": "To hold and align the light source, reference channel, dispersion optics and detector so the analyzer can produce a stable, drift-compensated absorbance spectrum of the sample (specialized from the analyzer CFJ: an accurate reagent-free measurement reduces to maintaining a metrologically stable optical path)."
+     },
+     {
+      "level": "L3",
+      "unit": "Diffuse-Reference / Beam-Homogenizing Optic",
+      "cfj": "To provide an incident-angle-independent, near-Lambertian diffuse reference and homogenized source beam so the analyzer can compensate lamp drift, stray light and beam-geometry change and keep the absorbance measurement true across UV (incl. DUV/UV-C) to NIR under harsh chemical/petrochemical service (specialized from the Optical Bench CFJ: optical-path stability reduces, at this module, to a reference optic that does not yellow, melt or etch and that fixes the reference signal the whole measurement is normalized against)."
+     }
+    ],
+    "top_employers": [
+     {
+      "name": "Veolia Environnement",
+      "employee_count": "~215,000 (2025, group; Water division ~95,000)",
+      "source": "https://www.veolia.com/en/veolia-group/veolia-in-brief"
+     },
+     {
+      "name": "Ecolab (incl. Nalco Water)",
+      "employee_count": "~48,000 (2025; Nalco Water industrial-water arm ~12,000)",
+      "source": "https://www.sec.gov/Archives/edgar/data/0000031462/000110465926032785/tm268255d1_ars.pdf"
+     },
+     {
+      "name": "SUEZ",
+      "employee_count": "~40,000 (2025, across 40 countries)",
+      "source": "https://www.suez.com/en/group/about-us"
+     },
+     {
+      "name": "Xylem (incl. Evoqua)",
+      "employee_count": "~23,000 (2025, post-Evoqua)",
+      "source": "https://en.wikipedia.org/wiki/Xylem_Inc."
+     },
+     {
+      "name": "Saur",
+      "employee_count": "~12,000 (2025, >25 countries)",
+      "source": "https://en.wikipedia.org/wiki/Saur_(company)"
+     },
+     {
+      "name": "Pentair plc",
+      "employee_count": "~9,750 (2025, >150 countries)",
+      "source": "https://www.sec.gov/Archives/edgar/data/0000077360/000007736025000044/q32025pressrelease.htm"
+     },
+     {
+      "name": "Kurita Water Industries",
+      "employee_count": "~8,150-9,120 (consolidated, FY ending Mar 2025)",
+      "source": "https://www.en.kurita-water.com/company/profile.html"
+     },
+     {
+      "name": "Acciona Agua",
+      "employee_count": "~2,000 (water-cycle division)",
+      "source": "https://www.acciona.com/solutions/water"
+     },
+     {
+      "name": "Befesa",
+      "employee_count": "~1,839 (H1 2025)",
+      "source": "https://images.befesa.com/media/2025/07/H1_2025_Interim_Report-6888f9fbe0438.pdf"
+     },
+     {
+      "name": "Aquatech International",
+      "employee_count": "~1,100 (2025, 6 continents)",
+      "source": "https://pitchbook.com/profiles/company/64426-78"
+     }
+    ],
+    "prototype_roles": [
+     {
+      "role": "job_executor",
+      "type_label": "Effluent-train analyzer operator (plant line)",
+      "prototype_name": "Online Effluent Analyzer Operator / Instrument Technician",
+      "cfj": "To operate and verify the online UV-Vis effluent analyzer at the treatment train so that the COD/oil/trace-organics reading stays true and the reference optic's drift never silently corrupts a permit-grade number.",
+      "esco": [
+       {
+        "code": "3132.1",
+        "title": "Water treatment plant operator",
+        "confidence": 0.9
+       },
+       {
+        "code": "3133.2",
+        "title": "Process control technician",
+        "confidence": 0.78
+       },
+       {
+        "code": "3114.4",
+        "title": "Electronics / instrument technician",
+        "confidence": 0.74
+       }
+      ],
+      "incentive_categories": [
+       "measurement uptime / analyzer availability",
+       "data validity (no missed or false readings on shift)",
+       "permit-exceedance avoidance during their shift",
+       "low maintenance/recalibration burden"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To keep the online effluent analyzer producing a trustworthy reading throughout the shift.",
+        "category": "Control",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "To verify each analyzer reading against the discharge limit before acting on it.",
+        "category": "Process",
+        "incentive_driver": "data validity (no missed or false readings on shift)"
+       },
+       {
+        "statement": "To detect and react to reference-optic drift before it corrupts the measurement.",
+        "category": "Problem-Solving",
+        "incentive_driver": "data validity (no missed or false readings on shift)"
+       },
+       {
+        "statement": "To minimize the time the analyzer is offline for cleaning, recalibration or reference replacement.",
+        "category": "Efficiency",
+        "incentive_driver": "low maintenance/recalibration burden"
+       },
+       {
+        "statement": "To keep the stream within permit during the shift by trusting the analyzer to flag excursions early.",
+        "category": "Control",
+        "incentive_driver": "permit-exceedance avoidance during their shift"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel secure that nothing in the measurement chain will fail silently on my shift.",
+        "from_incentive": "measurement uptime / analyzer availability"
+       },
+       {
+        "feeling": "Feel confident that the number I report is real and not optic drift.",
+        "from_incentive": "data validity (no missed or false readings on shift)"
+       },
+       {
+        "feeling": "Feel relief that I am not the one who let an exceedance slip through unnoticed.",
+        "from_incentive": "permit-exceedance avoidance during their shift"
+       },
+       {
+        "feeling": "Feel unburdened by not having to constantly babysit and recalibrate the instrument.",
+        "from_incentive": "low maintenance/recalibration burden"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the operator the plant trusts to keep the analyzers honest and the data clean.",
+        "identity_kind": "role_identity",
+        "from_incentive": "data validity (no missed or false readings on shift)"
+       },
+       {
+        "statement": "To be seen by the shift team as the one whose instruments never give a bad number.",
+        "identity_kind": "image_identity",
+        "from_incentive": "measurement uptime / analyzer availability"
+       },
+       {
+        "statement": "To embody the diligent guardian who catches drift before it becomes a violation.",
+        "identity_kind": "role_identity",
+        "from_incentive": "permit-exceedance avoidance during their shift"
+       }
+      ]
+     },
+     {
+      "role": "job_executor",
+      "type_label": "Analyzer integration / metrology engineer (instrument OEM or plant lab)",
+      "prototype_name": "Analyzer Integration & Calibration Engineer",
+      "cfj": "To integrate and calibrate the diffuse-reference optic into the analyzer's optical path so the instrument holds its spectral accuracy across DUV-NIR and over service life in corrosive effluent duty.",
+      "esco": [
+       {
+        "code": "2152.1",
+        "title": "Electronics / instrumentation engineer",
+        "confidence": 0.85
+       },
+       {
+        "code": "2151.3",
+        "title": "Optical / photonics engineer",
+        "confidence": 0.8
+       },
+       {
+        "code": "2145.2",
+        "title": "Analytical chemist / measurement scientist",
+        "confidence": 0.72
+       }
+      ],
+      "incentive_categories": [
+       "measurement accuracy / metrological traceability",
+       "calibration stability over service life",
+       "design-cycle / qualification speed",
+       "field-warranty / drift-complaint avoidance"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To align and reference the optical path so the absorbance spectrum is metrologically stable.",
+        "category": "Process",
+        "incentive_driver": "measurement accuracy / metrological traceability"
+       },
+       {
+        "statement": "To hold calibration over the analyzer's service life despite lamp drift, stray light and fouling.",
+        "category": "Control",
+        "incentive_driver": "calibration stability over service life"
+       },
+       {
+        "statement": "To diagnose and eliminate sources of reference-channel error in the optical design.",
+        "category": "Problem-Solving",
+        "incentive_driver": "field-warranty / drift-complaint avoidance"
+       },
+       {
+        "statement": "To qualify the reference optic against DUV/UV-C, thermal and chemical-resistance requirements quickly.",
+        "category": "Efficiency",
+        "incentive_driver": "design-cycle / qualification speed"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the instrument I sign off will hold its accuracy in the field.",
+        "from_incentive": "measurement accuracy / metrological traceability"
+       },
+       {
+        "feeling": "Feel reassured the reference optic will not yellow, melt or etch and trigger drift complaints.",
+        "from_incentive": "field-warranty / drift-complaint avoidance"
+       },
+       {
+        "feeling": "Feel in control of the calibration budget across the whole service life.",
+        "from_incentive": "calibration stability over service life"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the metrology engineer known for instruments that simply hold their calibration.",
+        "identity_kind": "role_identity",
+        "from_incentive": "measurement accuracy / metrological traceability"
+       },
+       {
+        "statement": "To be seen by the design team as the one who chose the optic that ended drift warranty claims.",
+        "identity_kind": "image_identity",
+        "from_incentive": "field-warranty / drift-complaint avoidance"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Plant environmental & compliance manager (permit accountable)",
+      "prototype_name": "Environmental / Discharge-Compliance Manager",
+      "cfj": "To ensure the treated effluent provably meets its discharge permit by guaranteeing the monitoring data \u2014 and the reference optics underneath it \u2014 stay accurate and defensible over time.",
+      "esco": [
+       {
+        "code": "1322.3",
+        "title": "Environmental / utilities operations manager",
+        "confidence": 0.82
+       },
+       {
+        "code": "2143.2",
+        "title": "Environmental engineer",
+        "confidence": 0.78
+       },
+       {
+        "code": "2133.1",
+        "title": "Environmental compliance / protection professional",
+        "confidence": 0.75
+       }
+      ],
+      "incentive_categories": [
+       "permit conformance (zero NPDES/discharge violations)",
+       "monitoring-data integrity & auditability",
+       "regulatory & reputational risk reduction",
+       "reportable-incident avoidance"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To ensure the discharged stream provably meets its permit at all times.",
+        "category": "Control",
+        "incentive_driver": "permit conformance (zero NPDES/discharge violations)"
+       },
+       {
+        "statement": "To guarantee the monitoring data is accurate, traceable and defensible in an audit.",
+        "category": "Process",
+        "incentive_driver": "monitoring-data integrity & auditability"
+       },
+       {
+        "statement": "To eliminate latent measurement failure modes (e.g. degrading reference optics) before they cause a false pass.",
+        "category": "Problem-Solving",
+        "incentive_driver": "regulatory & reputational risk reduction"
+       },
+       {
+        "statement": "To prevent any reportable exceedance from reaching the regulator.",
+        "category": "Control",
+        "incentive_driver": "reportable-incident avoidance"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel secure that the plant will not be caught in a violation we could have prevented.",
+        "from_incentive": "permit conformance (zero NPDES/discharge violations)"
+       },
+       {
+        "feeling": "Feel confident the data would hold up if the regulator audited it tomorrow.",
+        "from_incentive": "monitoring-data integrity & auditability"
+       },
+       {
+        "feeling": "Feel reassured that a quietly drifting optic is not hiding a real exceedance.",
+        "from_incentive": "regulatory & reputational risk reduction"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the compliance manager whose plant has never had a defensible-data failure.",
+        "identity_kind": "role_identity",
+        "from_incentive": "monitoring-data integrity & auditability"
+       },
+       {
+        "statement": "To be seen by leadership and the regulator as the steward who keeps the permit untouchable.",
+        "identity_kind": "image_identity",
+        "from_incentive": "permit conformance (zero NPDES/discharge violations)"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Analyzer product / quality manager (instrument OEM)",
+      "prototype_name": "Analyzer Product-Line / Quality Owner",
+      "cfj": "To ensure the analyzer product line delivers and sustains spec'd measurement accuracy in the field so field drift, warranty returns and accuracy complaints stay near zero.",
+      "esco": [
+       {
+        "code": "1321.2",
+        "title": "Manufacturing / product quality manager",
+        "confidence": 0.8
+       },
+       {
+        "code": "2152.2",
+        "title": "R&D / instrumentation engineering lead",
+        "confidence": 0.74
+       },
+       {
+        "code": "1330.1",
+        "title": "Product / technical line manager",
+        "confidence": 0.71
+       }
+      ],
+      "incentive_categories": [
+       "field accuracy & reliability of the product line",
+       "warranty / RMA cost reduction",
+       "spec compliance & datasheet credibility",
+       "customer accuracy-complaint reduction"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To ensure every shipped analyzer meets its accuracy spec and holds it in the field.",
+        "category": "Control",
+        "incentive_driver": "field accuracy & reliability of the product line"
+       },
+       {
+        "statement": "To drive down warranty returns caused by reference-optic degradation.",
+        "category": "Efficiency",
+        "incentive_driver": "warranty / RMA cost reduction"
+       },
+       {
+        "statement": "To resolve recurring accuracy complaints at their optical root cause.",
+        "category": "Problem-Solving",
+        "incentive_driver": "customer accuracy-complaint reduction"
+       },
+       {
+        "statement": "To keep the product's datasheet claims credible against harsh chemical/petrochemical service.",
+        "category": "Control",
+        "incentive_driver": "spec compliance & datasheet credibility"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the product line will not generate a wave of drift-related returns.",
+        "from_incentive": "warranty / RMA cost reduction"
+       },
+       {
+        "feeling": "Feel reassured the datasheet accuracy claims are honest under real chemical service.",
+        "from_incentive": "spec compliance & datasheet credibility"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the product owner of the analyzer line known for accuracy that just holds.",
+        "identity_kind": "role_identity",
+        "from_incentive": "field accuracy & reliability of the product line"
+       },
+       {
+        "statement": "To be seen across the OEM as the manager who killed the drift-RMA problem.",
+        "identity_kind": "image_identity",
+        "from_incentive": "warranty / RMA cost reduction"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Analyzer-OEM procurement / strategic sourcing manager",
+      "prototype_name": "Optical-Component Sourcing Manager (Instrument OEM)",
+      "cfj": "To fund and procure the qualified diffuse-reference optic for the analyzer at the right price, lead-time and supply-assurance so the designed-in part becomes a reliable, dual-sourceable line item.",
+      "esco": [
+       {
+        "code": "1324.2",
+        "title": "Procurement / purchasing manager",
+        "confidence": 0.88
+       },
+       {
+        "code": "3323.1",
+        "title": "Purchasing / sourcing agent",
+        "confidence": 0.76
+       },
+       {
+        "code": "2421.4",
+        "title": "Supply-chain / sourcing analyst",
+        "confidence": 0.71
+       }
+      ],
+      "incentive_categories": [
+       "landed component cost",
+       "supply assurance / lead-time & dual-sourcing",
+       "supplier quality / PPM defect rate",
+       "qualification & changeover cost"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To procure the qualified reference optic at the lowest total landed cost.",
+        "category": "Efficiency",
+        "incentive_driver": "landed component cost"
+       },
+       {
+        "statement": "To secure assured supply and acceptable lead-time for the designed-in optic.",
+        "category": "Control",
+        "incentive_driver": "supply assurance / lead-time & dual-sourcing"
+       },
+       {
+        "statement": "To keep the supplier's defect rate within the analyzer's incoming-quality limits.",
+        "category": "Control",
+        "incentive_driver": "supplier quality / PPM defect rate"
+       },
+       {
+        "statement": "To minimize the cost and disruption of qualifying or changing the optical-component source.",
+        "category": "Problem-Solving",
+        "incentive_driver": "qualification & changeover cost"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the optic will be on the dock when the line needs it.",
+        "from_incentive": "supply assurance / lead-time & dual-sourcing"
+       },
+       {
+        "feeling": "Feel reassured I am not single-sourced on a part that can stop the build.",
+        "from_incentive": "supply assurance / lead-time & dual-sourcing"
+       },
+       {
+        "feeling": "Feel in control of the cost of this designed-in line item.",
+        "from_incentive": "landed component cost"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the sourcing manager who secured a reliable, cost-controlled optical supply.",
+        "identity_kind": "role_identity",
+        "from_incentive": "landed component cost"
+       },
+       {
+        "statement": "To be seen by engineering as the buyer whose supplier never caused a line stop.",
+        "identity_kind": "image_identity",
+        "from_incentive": "supply assurance / lead-time & dual-sourcing"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Plant capex / instrumentation buyer (operator)",
+      "prototype_name": "Plant Instrumentation Capex Buyer",
+      "cfj": "To fund and procure the online effluent analyzers (and their consumable optics over life) so the plant gets reliable compliance monitoring at a defensible total cost of ownership.",
+      "esco": [
+       {
+        "code": "1324.3",
+        "title": "Procurement / purchasing manager (utility/plant)",
+        "confidence": 0.82
+       },
+       {
+        "code": "3323.2",
+        "title": "Technical purchasing officer",
+        "confidence": 0.73
+       }
+      ],
+      "incentive_categories": [
+       "total cost of ownership / lifecycle cost",
+       "capex budget adherence",
+       "vendor reliability & service coverage",
+       "consumable / recalibration spend control"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To procure compliance monitoring at the lowest defensible total cost of ownership.",
+        "category": "Efficiency",
+        "incentive_driver": "total cost of ownership / lifecycle cost"
+       },
+       {
+        "statement": "To keep the analyzer purchase within the plant's capex budget.",
+        "category": "Control",
+        "incentive_driver": "capex budget adherence"
+       },
+       {
+        "statement": "To select a vendor whose service and parts coverage keeps the monitoring running.",
+        "category": "Control",
+        "incentive_driver": "vendor reliability & service coverage"
+       },
+       {
+        "statement": "To curb recurring consumable and recalibration spend over the analyzer's life.",
+        "category": "Efficiency",
+        "incentive_driver": "consumable / recalibration spend control"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the cheaper instrument will not become the expensive one through drift and recalibration.",
+        "from_incentive": "total cost of ownership / lifecycle cost"
+       },
+       {
+        "feeling": "Feel reassured the vendor will support the asset through its life.",
+        "from_incentive": "vendor reliability & service coverage"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the buyer who delivers reliable compliance monitoring inside budget.",
+        "identity_kind": "role_identity",
+        "from_incentive": "capex budget adherence"
+       },
+       {
+        "statement": "To be seen as the buyer whose lifecycle math actually held up.",
+        "identity_kind": "image_identity",
+        "from_incentive": "total cost of ownership / lifecycle cost"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Optical / instrumentation design engineer (specifier of the reference optic)",
+      "prototype_name": "Reference-Optic Specifying Engineer",
+      "cfj": "To evaluate and specify the diffuse-reference / homogenizer optic and its material so the analyzer meets DUV/UV-C, thermal and chemical-resistance requirements better than degrading polymer (Spectralon) alternatives.",
+      "esco": [
+       {
+        "code": "2151.2",
+        "title": "Optical / photonics design engineer",
+        "confidence": 0.86
+       },
+       {
+        "code": "2152.3",
+        "title": "Electronics / instrumentation engineer",
+        "confidence": 0.81
+       },
+       {
+        "code": "2145.3",
+        "title": "Analytical-instrument / measurement scientist",
+        "confidence": 0.72
+       }
+      ],
+      "incentive_categories": [
+       "achieving the measurement-accuracy / spectral-stability spec",
+       "DUV/UV-C, thermal & chemical robustness of the design",
+       "BOM / design risk reduction (no field drift, no obsolescence)",
+       "design elegance / fewer compensating workarounds"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To specify a reference optic that delivers an angle-independent, stable reference signal.",
+        "category": "Process",
+        "incentive_driver": "achieving the measurement-accuracy / spectral-stability spec"
+       },
+       {
+        "statement": "To select an optic material that survives DUV/UV-C, heat and acid/base service without degrading.",
+        "category": "Problem-Solving",
+        "incentive_driver": "DUV/UV-C, thermal & chemical robustness of the design"
+       },
+       {
+        "statement": "To remove field-drift and reference-degradation risk from the optical design.",
+        "category": "Control",
+        "incentive_driver": "BOM / design risk reduction (no field drift, no obsolescence)"
+       },
+       {
+        "statement": "To reduce the number of compensating tricks the firmware needs to cover a weak reference.",
+        "category": "Efficiency",
+        "incentive_driver": "design elegance / fewer compensating workarounds"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the optic I spec will not be the part that drifts in the field.",
+        "from_incentive": "BOM / design risk reduction (no field drift, no obsolescence)"
+       },
+       {
+        "feeling": "Feel reassured the reference will survive UV-C and hot acid/base where Spectralon would degrade.",
+        "from_incentive": "DUV/UV-C, thermal & chemical robustness of the design"
+       },
+       {
+        "feeling": "Feel satisfied that the measurement is right at the source, not patched in firmware.",
+        "from_incentive": "design elegance / fewer compensating workarounds"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the design engineer trusted to make the hard optical-material call correctly.",
+        "identity_kind": "role_identity",
+        "from_incentive": "DUV/UV-C, thermal & chemical robustness of the design"
+       },
+       {
+        "statement": "To be seen by peers as the one whose reference design simply does not drift.",
+        "identity_kind": "image_identity",
+        "from_incentive": "BOM / design risk reduction (no field drift, no obsolescence)"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Plant technical/QA authority recommending the analyzer (operator side)",
+      "prototype_name": "Plant Analyzer Evaluation & QA Authority",
+      "cfj": "To evaluate and recommend which online analyzer the plant standardizes on, weighting which reference-optic technology keeps measurement accurate and audit-defensible in corrosive effluent service.",
+      "esco": [
+       {
+        "code": "2143.3",
+        "title": "Environmental / process engineer",
+        "confidence": 0.78
+       },
+       {
+        "code": "2145.4",
+        "title": "Laboratory / QA chemist",
+        "confidence": 0.73
+       }
+      ],
+      "incentive_categories": [
+       "selecting analyzers that stay accurate and audit-defensible",
+       "standardization / fleet maintainability",
+       "minimizing false readings & nuisance recalibration",
+       "technical-risk reduction in the monitoring fleet"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To evaluate which analyzer keeps its accuracy in corrosive effluent service.",
+        "category": "Problem-Solving",
+        "incentive_driver": "selecting analyzers that stay accurate and audit-defensible"
+       },
+       {
+        "statement": "To recommend a standard analyzer the plant can maintain consistently across the fleet.",
+        "category": "Process",
+        "incentive_driver": "standardization / fleet maintainability"
+       },
+       {
+        "statement": "To screen out instruments whose reference optics cause false readings or frequent recalibration.",
+        "category": "Control",
+        "incentive_driver": "minimizing false readings & nuisance recalibration"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel confident the analyzer I recommend will not embarrass us in an audit.",
+        "from_incentive": "selecting analyzers that stay accurate and audit-defensible"
+       },
+       {
+        "feeling": "Feel reassured the fleet will not be plagued by nuisance recalibration.",
+        "from_incentive": "minimizing false readings & nuisance recalibration"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the technical authority whose analyzer standard proved itself in service.",
+        "identity_kind": "role_identity",
+        "from_incentive": "standardization / fleet maintainability"
+       },
+       {
+        "statement": "To be seen as the QA voice who keeps unreliable instruments out of the plant.",
+        "identity_kind": "image_identity",
+        "from_incentive": "technical-risk reduction in the monitoring fleet"
+       }
+      ]
+     },
+     {
+      "role": "job_beneficiary",
+      "type_label": "Plant / operator (the entity whose permit and brand depend on the measurement)",
+      "prototype_name": "Effluent Treatment Plant & Its Operator",
+      "cfj": "To receive a continuously trustworthy effluent measurement so the plant can prove permit compliance, run dosing efficiently and protect its licence-to-operate without latent monitoring failure.",
+      "esco": [
+       {
+        "code": "1322.4",
+        "title": "Water/utility plant manager (beneficiary org lead)",
+        "confidence": 0.74
+       },
+       {
+        "code": "1219.2",
+        "title": "Operations / business services manager",
+        "confidence": 0.71
+       }
+      ],
+      "incentive_categories": [
+       "license-to-operate / permit retention",
+       "operating-cost efficiency (reagent/energy dosing accuracy)",
+       "regulatory & reputational risk avoidance",
+       "operational continuity (no monitoring blind spots)"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To realize provable, continuous permit compliance from the monitoring it relies on.",
+        "category": "Control",
+        "incentive_driver": "license-to-operate / permit retention"
+       },
+       {
+        "statement": "To dose reagents and energy efficiently by trusting accurate online measurement.",
+        "category": "Efficiency",
+        "incentive_driver": "operating-cost efficiency (reagent/energy dosing accuracy)"
+       },
+       {
+        "statement": "To avoid regulatory penalties and reputational damage from undetected exceedances.",
+        "category": "Problem-Solving",
+        "incentive_driver": "regulatory & reputational risk avoidance"
+       },
+       {
+        "statement": "To sustain uninterrupted, blind-spot-free monitoring of the discharge.",
+        "category": "Control",
+        "incentive_driver": "operational continuity (no monitoring blind spots)"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel secure that our licence to operate is not quietly at risk from a drifting sensor.",
+        "from_incentive": "license-to-operate / permit retention"
+       },
+       {
+        "feeling": "Feel reassured we are not over-dosing chemicals to cover for an untrustworthy reading.",
+        "from_incentive": "operating-cost efficiency (reagent/energy dosing accuracy)"
+       },
+       {
+        "feeling": "Feel confident no monitoring blind spot is hiding a real exceedance.",
+        "from_incentive": "operational continuity (no monitoring blind spots)"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be the plant recognized as a dependable, compliant neighbor and operator.",
+        "identity_kind": "role_identity",
+        "from_incentive": "regulatory & reputational risk avoidance"
+       },
+       {
+        "statement": "To be seen by the regulator and community as a site whose discharge is always under control.",
+        "identity_kind": "image_identity",
+        "from_incentive": "license-to-operate / permit retention"
+       }
+      ]
+     },
+     {
+      "role": "job_beneficiary",
+      "type_label": "End-of-chain environment & downstream water users (ultimate beneficiary of true measurement)",
+      "prototype_name": "Receiving Water Body & Downstream Community / Reuse User",
+      "cfj": "To receive water whose contaminant load has been truly measured and verified to permit limits before discharge or reuse, so the environment and downstream users are actually protected rather than nominally.",
+      "esco": [],
+      "incentive_categories": [
+       "real environmental & public-health protection",
+       "trust in the discharge declaration",
+       "safe reuse / recovered-water quality"
+      ],
+      "core_jobs": [
+       {
+        "statement": "To receive water whose contaminant load has been truthfully verified before release.",
+        "category": "Control",
+        "incentive_driver": "real environmental & public-health protection"
+       },
+       {
+        "statement": "To rely on a discharge declaration that reflects the real measured stream, not a drifted one.",
+        "category": "Problem-Solving",
+        "incentive_driver": "trust in the discharge declaration"
+       },
+       {
+        "statement": "To safely use recovered/reused water that was measured to true reuse limits.",
+        "category": "Control",
+        "incentive_driver": "safe reuse / recovered-water quality"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "Feel safe that the discharged water is genuinely within limits, not just on paper.",
+        "from_incentive": "real environmental & public-health protection"
+       },
+       {
+        "feeling": "Feel trust that the reported numbers reflect what is actually in the water.",
+        "from_incentive": "trust in the discharge declaration"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "To be a protected, healthy receiving environment / community by right.",
+        "identity_kind": "role_identity",
+        "from_incentive": "real environmental & public-health protection"
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "segment_id": "F4",
@@ -4058,7 +7527,552 @@
      "unit": "Position and Attitude Sensor Suite \u2014 Sensor Optical Bench Assembly (sensor supplier's flat-field test fixture)",
      "decides": "Whether the sensor's flat-field and stray-light calibration uses a fused-silica diffuser that survives the space-grade bake-out and UV screening the sensor itself must pass."
     }
-   ]
+   ],
+   "pyramid": {
+    "intersection_unit": "Radiometric / Optical Calibration Station (Integrating Sphere + Uniform Light Source)",
+    "cfj_path": [
+     {
+      "level": "L7",
+      "unit": "Satellite Connectivity Terminal Manufacturing System",
+      "cfj": "To produce qualified satellite-connectivity terminals that link a ground, maritime, aero or land-mobile platform to a satellite."
+     },
+     {
+      "level": "L6",
+      "unit": "Calibration, Alignment and Acceptance Test",
+      "cfj": "To verify and bring the assembled terminal's RF and optical performance to specification before release, so that the L7 system ships only qualified terminals."
+     },
+     {
+      "level": "L5 (intersection unit)",
+      "unit": "Radiometric / Optical Calibration Station (Integrating Sphere + Uniform Light Source)",
+      "cfj": "To calibrate the responsivity and spatial uniformity of the terminal's optical receivers and sensors against a traceable diffuse reference, so the L6 acceptance test can certify the terminal's optical performance to specification."
+     }
+    ],
+    "top_employers": [
+     {
+      "name": "EchoStar Corporation (Hughes Network Systems)",
+      "employee_count": "~12,100 (EchoStar group; Hughes terminal/ground-equipment manufacturing subsidiary ~2,000)",
+      "source": "Wikipedia/EchoStar 2025; Hughes Network Systems profile"
+     },
+     {
+      "name": "Viasat, Inc. (incl. Inmarsat)",
+      "employee_count": "~7,000 (as of March 31, 2025)",
+      "source": "Macrotrends VSAT employee count 2025; Viasat FY2025 10-K"
+     },
+     {
+      "name": "Comtech Telecommunications Corp.",
+      "employee_count": "~1,345\u20131,676 (FY2025)",
+      "source": "Macrotrends CMTL 2025; GlobalData company profile"
+     },
+     {
+      "name": "Gilat Satellite Networks Ltd.",
+      "employee_count": "~1,159",
+      "source": "Craft.co Gilat Satellite Networks company profile 2025"
+     },
+     {
+      "name": "CPI Satcom & Antenna Technologies (ex-General Dynamics SATCOM)",
+      "employee_count": "~1,000 (acquired antenna/SATCOM business headcount, US/Europe/India)",
+      "source": "CPI / SpaceNews acquisition announcement 2020 (~1,000 employees)"
+     },
+     {
+      "name": "Cobham SATCOM (Thrane & Thrane A/S)",
+      "employee_count": "~645 (across 5 continents, April 2026)",
+      "source": "CB Insights / LeadIQ Cobham SATCOM profile 2026"
+     },
+     {
+      "name": "Intellian Technologies Inc.",
+      "employee_count": "~498 (2025)",
+      "source": "EMIS company profile 2025; PitchBook (~488)"
+     },
+     {
+      "name": "ST Engineering iDirect",
+      "employee_count": "~400\u2013500 (ground-systems division)",
+      "source": "ST Engineering iDirect LinkedIn / Via Satellite 2025"
+     },
+     {
+      "name": "Kymeta Corporation",
+      "employee_count": "~226 (April 2025)",
+      "source": "LeadIQ / Wikipedia Kymeta profile 2025"
+     },
+     {
+      "name": "Orbit Communication Systems Ltd.",
+      "employee_count": "~218 (March 2026)",
+      "source": "LeadIQ / PitchBook Orbit Communication Systems profile"
+     }
+    ],
+    "prototype_roles": [
+     {
+      "role": "job_executor",
+      "type_label": "Optical/radiometric calibration technician (line operator of the integrating-sphere acceptance station)",
+      "prototype_name": "Terminal Acceptance-Test Calibration Technician",
+      "cfj": "To operate the integrating-sphere radiometric station and run the responsivity and spatial-uniformity calibrations of the terminal's optical receivers and sensors against the traceable diffuse reference, so each terminal passes its optical acceptance test.",
+      "esco": [
+       {
+        "code": "3119.4",
+        "title": "calibration technician",
+        "confidence": 0.9
+       },
+       {
+        "code": "3114.1",
+        "title": "electronics engineering technician",
+        "confidence": 0.74
+       }
+      ],
+      "incentive_categories": [
+       "test throughput / units accepted per shift",
+       "first-pass yield and avoidance of measurement re-runs",
+       "measurement repeatability and reference-condition uptime",
+       "safety and compliance with the calibration procedure"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Calibrate the responsivity and spatial uniformity of the terminal's optical receivers against the diffuse reference",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Maintain the integrating sphere's reference output in a stable, in-spec state across the shift",
+        "category": "Control",
+        "incentive_driver": "measurement repeatability and reference-condition uptime"
+       },
+       {
+        "statement": "Maximize the number of terminals accepted per shift without re-running measurements",
+        "category": "Efficiency",
+        "incentive_driver": "test throughput / units accepted per shift"
+       },
+       {
+        "statement": "Diagnose why a calibration reads out of tolerance and isolate reference drift from terminal fault",
+        "category": "Problem-Solving",
+        "incentive_driver": "first-pass yield and avoidance of measurement re-runs"
+       },
+       {
+        "statement": "Verify the reference standard's condition still meets the procedure before starting a run",
+        "category": "Control",
+        "incentive_driver": "safety and compliance with the calibration procedure"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "feel confident that the calibration reading reflects the terminal, not a drifting reference",
+        "from_incentive": "first-pass yield and avoidance of measurement re-runs"
+       },
+       {
+        "feeling": "feel in control of the station because the reference holds steady all shift",
+        "from_incentive": "measurement repeatability and reference-condition uptime"
+       },
+       {
+        "feeling": "feel unhurried and unblocked when units flow through acceptance without re-runs",
+        "from_incentive": "test throughput / units accepted per shift"
+       },
+       {
+        "feeling": "feel reassured that I followed the procedure and nothing will bounce back from QA",
+        "from_incentive": "safety and compliance with the calibration procedure"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the technician the line trusts to get optical acceptance right the first time",
+        "identity_kind": "role_identity",
+        "from_incentive": "first-pass yield and avoidance of measurement re-runs"
+       },
+       {
+        "statement": "Be seen as the steady hand who keeps the calibration station running and never holds up the line",
+        "identity_kind": "image_identity",
+        "from_incentive": "test throughput / units accepted per shift"
+       },
+       {
+        "statement": "Live into the identity of a meticulous metrology operator whose references are always in-condition",
+        "identity_kind": "role_identity",
+        "from_incentive": "measurement repeatability and reference-condition uptime"
+       }
+      ]
+     },
+     {
+      "role": "job_overseer",
+      "type_label": "Test & quality manager accountable for acceptance-test traceability and repeatability",
+      "prototype_name": "Acceptance-Test Quality & Metrology Manager",
+      "cfj": "To ensure the terminal's optical responsivity and uniformity calibrations are measured against a traceable, stable diffuse reference and remain repeatable and audit-defensible, so released terminals are certifiably to spec.",
+      "esco": [
+       {
+        "code": "2141.7",
+        "title": "quality engineer",
+        "confidence": 0.85
+       },
+       {
+        "code": "1321.3",
+        "title": "manufacturing quality manager",
+        "confidence": 0.77
+       }
+      ],
+      "incentive_categories": [
+       "audit-pass rate and zero non-conformances on the calibration reference",
+       "measurement-system stability / reduced calibration uncertainty",
+       "escape rate (defects reaching the customer) at acceptance",
+       "metrological traceability to national standards"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Ensure the optical acceptance calibration is traceable and repeatable across every terminal released",
+        "category": "Control",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Govern the reference standard so its stability satisfies the acceptance-test quality plan and audit",
+        "category": "Control",
+        "incentive_driver": "audit-pass rate and zero non-conformances on the calibration reference"
+       },
+       {
+        "statement": "Drive down the calibration measurement uncertainty contributed by the diffuse reference",
+        "category": "Efficiency",
+        "incentive_driver": "measurement-system stability / reduced calibration uncertainty"
+       },
+       {
+        "statement": "Diagnose and eliminate sources of reference drift that create non-conformance risk",
+        "category": "Problem-Solving",
+        "incentive_driver": "escape rate (defects reaching the customer) at acceptance"
+       },
+       {
+        "statement": "Maintain the traceability chain from the diffuse reference to national radiometric standards",
+        "category": "Process",
+        "incentive_driver": "metrological traceability to national standards"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "feel secure walking into an audit knowing the reference standard cannot be flagged",
+        "from_incentive": "audit-pass rate and zero non-conformances on the calibration reference"
+       },
+       {
+        "feeling": "feel assured that no degraded-reference defect can escape to a customer terminal",
+        "from_incentive": "escape rate (defects reaching the customer) at acceptance"
+       },
+       {
+        "feeling": "feel confident signing off the quality plan because the measurement system is stable",
+        "from_incentive": "measurement-system stability / reduced calibration uncertainty"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be recognized as the quality leader whose acceptance line never produces a metrology non-conformance",
+        "identity_kind": "image_identity",
+        "from_incentive": "audit-pass rate and zero non-conformances on the calibration reference"
+       },
+       {
+        "statement": "Live into the role of the guardian of measurement traceability for the terminal program",
+        "identity_kind": "role_identity",
+        "from_incentive": "metrological traceability to national standards"
+       },
+       {
+        "statement": "Be seen by leadership as the manager who drove escapes to zero at acceptance",
+        "identity_kind": "image_identity",
+        "from_incentive": "escape rate (defects reaching the customer) at acceptance"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Optical / radiometric metrology engineer who specifies the diffuse reference and sphere optics (terminal-line test stand)",
+      "prototype_name": "Calibration-Stand Optical Metrology Engineer",
+      "cfj": "To specify and recommend the diffuse-reference standard and integrating-sphere optics for the terminal acceptance station so the optical calibration is traceable and stable across the terminal's UV/DUV wavelength range and thermal load.",
+      "esco": [
+       {
+        "code": "2152.1",
+        "title": "optical engineer",
+        "confidence": 0.9
+       },
+       {
+        "code": "2149.7",
+        "title": "metrology engineer",
+        "confidence": 0.8
+       },
+       {
+        "code": "2151.4",
+        "title": "electronics engineer",
+        "confidence": 0.71
+       }
+      ],
+      "incentive_categories": [
+       "calibration accuracy / low measurement uncertainty of the chosen reference",
+       "long-term stability (no drift, no re-certification churn)",
+       "wavelength and thermal coverage of the specified standard",
+       "technical reputation for a robust, defensible test-stand design"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Specify the diffuse reference and sphere optics that calibrate the terminal's optical receivers traceably",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Evaluate candidate reference materials for stability under UV/DUV exposure and thermal load",
+        "category": "Problem-Solving",
+        "incentive_driver": "long-term stability (no drift, no re-certification churn)"
+       },
+       {
+        "statement": "Optimize the reference choice for the lowest achievable calibration uncertainty",
+        "category": "Efficiency",
+        "incentive_driver": "calibration accuracy / low measurement uncertainty of the chosen reference"
+       },
+       {
+        "statement": "Maintain near-Lambertian, angle-independent uniformity across the full operating band",
+        "category": "Control",
+        "incentive_driver": "wavelength and thermal coverage of the specified standard"
+       },
+       {
+        "statement": "Recommend a test-stand design that survives the terminal's service and screening envelope",
+        "category": "Process",
+        "incentive_driver": "technical reputation for a robust, defensible test-stand design"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "feel confident the reference I specified will not drift and embarrass the calibration data",
+        "from_incentive": "long-term stability (no drift, no re-certification churn)"
+       },
+       {
+        "feeling": "feel intellectually satisfied that the chosen standard gives the tightest uncertainty budget",
+        "from_incentive": "calibration accuracy / low measurement uncertainty of the chosen reference"
+       },
+       {
+        "feeling": "feel reassured that the stand will hold up across UV/DUV and heat without re-spec",
+        "from_incentive": "wavelength and thermal coverage of the specified standard"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the engineer known for specifying calibration references that never come back as a problem",
+        "identity_kind": "image_identity",
+        "from_incentive": "technical reputation for a robust, defensible test-stand design"
+       },
+       {
+        "statement": "Live into the identity of the optical-metrology authority on the terminal program",
+        "identity_kind": "role_identity",
+        "from_incentive": "calibration accuracy / low measurement uncertainty of the chosen reference"
+       },
+       {
+        "statement": "Be seen as the engineer who future-proofed the stand against drift and re-certification churn",
+        "identity_kind": "image_identity",
+        "from_incentive": "long-term stability (no drift, no re-certification churn)"
+       }
+      ]
+     },
+     {
+      "role": "purchase_influencer",
+      "type_label": "Sensor / photonics design engineer at the optical-sensor sub-supplier (one tier up, sensor flat-field fixture)",
+      "prototype_name": "Optical-Sensor Sub-Supplier Photonics Engineer",
+      "cfj": "To select the flat-field reference diffuser for the optical attitude/position sensor's own calibration fixture so the sensor's pixel-response and stray-light calibration survives the space-grade bake-out and UV screening before it reaches the terminal line.",
+      "esco": [
+       {
+        "code": "2152.1",
+        "title": "optical engineer",
+        "confidence": 0.85
+       },
+       {
+        "code": "2149.7",
+        "title": "metrology engineer",
+        "confidence": 0.72
+       }
+      ],
+      "incentive_categories": [
+       "sensor calibration accuracy (flat-field / stray-light)",
+       "reference survivability through bake-out and UV screening",
+       "design-win robustness / qualification pass at the customer terminal line",
+       "technical credibility with the terminal integrator"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Select the flat-field diffuse reference for the optical sensor's pixel-response calibration",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Evaluate whether the reference survives space-grade bake-out and UV screening without outgassing or yellowing",
+        "category": "Problem-Solving",
+        "incentive_driver": "reference survivability through bake-out and UV screening"
+       },
+       {
+        "statement": "Maintain uniform, angle-independent illumination to characterize stray light accurately",
+        "category": "Control",
+        "incentive_driver": "sensor calibration accuracy (flat-field / stray-light)"
+       },
+       {
+        "statement": "Optimize the sensor's calibration so it qualifies cleanly at the terminal integrator",
+        "category": "Efficiency",
+        "incentive_driver": "design-win robustness / qualification pass at the customer terminal line"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "feel confident the sensor's flat-field data is trustworthy because the diffuser held up",
+        "from_incentive": "sensor calibration accuracy (flat-field / stray-light)"
+       },
+       {
+        "feeling": "feel relieved the reference won't outgas or yellow during qualification and blow the schedule",
+        "from_incentive": "reference survivability through bake-out and UV screening"
+       },
+       {
+        "feeling": "feel proud presenting a sensor that qualifies cleanly at the integrator",
+        "from_incentive": "technical credibility with the terminal integrator"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the photonics engineer whose sensors pass terminal-line qualification without rework",
+        "identity_kind": "image_identity",
+        "from_incentive": "design-win robustness / qualification pass at the customer terminal line"
+       },
+       {
+        "statement": "Live into the identity of a space-grade optical-sensor design expert",
+        "identity_kind": "role_identity",
+        "from_incentive": "reference survivability through bake-out and UV screening"
+       }
+      ]
+     },
+     {
+      "role": "purchase_executor",
+      "type_label": "Procurement / strategic buyer for test-stand optics and reference components",
+      "prototype_name": "Test-Equipment & Optics Procurement Manager",
+      "cfj": "To fund and procure the specified diffuse-reference component or integrating-sphere test-stand package on the best total-cost-of-ownership terms once the metrology engineer has specified it, so the acceptance line gets a qualified reference at a defensible cost.",
+      "esco": [
+       {
+        "code": "1324.2",
+        "title": "purchasing manager",
+        "confidence": 0.88
+       },
+       {
+        "code": "3323.1",
+        "title": "procurement specialist / buyer",
+        "confidence": 0.8
+       }
+      ],
+      "incentive_categories": [
+       "unit cost and total-cost-of-ownership of the reference / test stand",
+       "supplier reliability and on-time delivery",
+       "avoided recalibration / replacement cost of a degrading reference",
+       "supplier-base risk reduction and qualified-source compliance"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Procure the specified diffuse reference / test-stand optics on qualified, compliant terms",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Negotiate the lowest total-cost-of-ownership accounting for reference lifetime and re-cert avoidance",
+        "category": "Efficiency",
+        "incentive_driver": "avoided recalibration / replacement cost of a degrading reference"
+       },
+       {
+        "statement": "Maintain a reliable, on-time supply of the calibration component to the acceptance line",
+        "category": "Control",
+        "incentive_driver": "supplier reliability and on-time delivery"
+       },
+       {
+        "statement": "Resolve sourcing risk when the specified reference has a single or sole supplier",
+        "category": "Problem-Solving",
+        "incentive_driver": "supplier-base risk reduction and qualified-source compliance"
+       },
+       {
+        "statement": "Hold the spend on the test-stand optics within the program's equipment budget",
+        "category": "Efficiency",
+        "incentive_driver": "unit cost and total-cost-of-ownership of the reference / test stand"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "feel justified in the purchase because the lifetime savings beat the polymer alternative",
+        "from_incentive": "avoided recalibration / replacement cost of a degrading reference"
+       },
+       {
+        "feeling": "feel secure that the supplier will deliver on time and not stall the acceptance line",
+        "from_incentive": "supplier reliability and on-time delivery"
+       },
+       {
+        "feeling": "feel in control of the equipment budget when the spend lands within target",
+        "from_incentive": "unit cost and total-cost-of-ownership of the reference / test stand"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be seen as the buyer who lands engineering-critical optics at the best total cost without delaying the line",
+        "identity_kind": "image_identity",
+        "from_incentive": "unit cost and total-cost-of-ownership of the reference / test stand"
+       },
+       {
+        "statement": "Live into the role of a strategic-sourcing partner the engineers actually trust on technical buys",
+        "identity_kind": "role_identity",
+        "from_incentive": "avoided recalibration / replacement cost of a degrading reference"
+       }
+      ]
+     },
+     {
+      "role": "job_beneficiary",
+      "type_label": "Satellite-network operator / end customer receiving the qualified, optically-accurate terminal",
+      "prototype_name": "Terminal End-Operator (Network/Fleet Beneficiary)",
+      "cfj": "To receive a terminal whose optical receivers and sensors were calibrated against a traceable, stable reference, so the deployed terminal points accurately and holds a reliable link without field re-calibration.",
+      "esco": [
+       {
+        "code": "3522.1",
+        "title": "telecommunications technician",
+        "confidence": 0.72
+       }
+      ],
+      "incentive_categories": [
+       "link reliability / uptime of the deployed terminal",
+       "pointing and tracking accuracy in the field",
+       "low field-maintenance and no re-calibration burden",
+       "service-level / mission assurance to their own customers"
+      ],
+      "core_jobs": [
+       {
+        "statement": "Receive a terminal that points accurately and holds the satellite link in service",
+        "category": "Process",
+        "incentive_driver": ""
+       },
+       {
+        "statement": "Keep the deployed terminal's link reliable without field re-calibration",
+        "category": "Control",
+        "incentive_driver": "link reliability / uptime of the deployed terminal"
+       },
+       {
+        "statement": "Minimize field maintenance and truck-rolls caused by drifting optical references",
+        "category": "Efficiency",
+        "incentive_driver": "low field-maintenance and no re-calibration burden"
+       },
+       {
+        "statement": "Resolve any pointing or tracking shortfall traceable to as-built calibration quality",
+        "category": "Problem-Solving",
+        "incentive_driver": "pointing and tracking accuracy in the field"
+       }
+      ],
+      "emotional_jobs": [
+       {
+        "feeling": "feel reassured the terminal will perform in the field as it did at acceptance",
+        "from_incentive": "link reliability / uptime of the deployed terminal"
+       },
+       {
+        "feeling": "feel free of worry about field re-calibration and surprise truck-rolls",
+        "from_incentive": "low field-maintenance and no re-calibration burden"
+       },
+       {
+        "feeling": "feel confident promising service levels to my own customers",
+        "from_incentive": "service-level / mission assurance to their own customers"
+       }
+      ],
+      "status_jobs": [
+       {
+        "statement": "Be the operator known for a network that just stays up",
+        "identity_kind": "image_identity",
+        "from_incentive": "link reliability / uptime of the deployed terminal"
+       },
+       {
+        "statement": "Live into the role of a mission-assured connectivity provider",
+        "identity_kind": "role_identity",
+        "from_incentive": "service-level / mission assurance to their own customers"
+       }
+      ]
+     }
+    ]
+   }
   }
  ],
  "meta": {

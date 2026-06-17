@@ -1,13 +1,16 @@
-import { Table } from "@node42/ui-kit";
-import { ReportPage, Section } from "../ReportPage";
+import { Table, Text } from "@node42/ui-kit";
+import { AppShell } from "../AppShell";
 import report from "../data";
 
 export default function Glossary() {
   const { glossary } = report;
 
   return (
-    <ReportPage title="Glossary" description="Terms and abbreviations used throughout the report">
-      <Section label="Terms">
+    <AppShell title="Glossary" description="Terms and abbreviations used throughout the report">
+      <section
+        style={{ display: "flex", flexDirection: "column", gap: "var(--space-300)" }}
+      >
+        <Text variant="page-chapter">Terms</Text>
         <Table striped="rows">
           <Table.Head>
             <Table.Row>
@@ -26,7 +29,7 @@ export default function Glossary() {
             ))}
           </Table.Body>
         </Table>
-      </Section>
-    </ReportPage>
+      </section>
+    </AppShell>
   );
 }
