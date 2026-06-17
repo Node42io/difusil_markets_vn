@@ -1,5 +1,11 @@
-/* Minimal reset — the real design tokens come from @node42/ui-kit
-   (its barrel imports tokens.css + globals.css automatically). */
+/* The kit's design tokens + global styles, imported EXPLICITLY at the app entry.
+   The kit barrel imports these as side-effects, but Rollup tree-shakes bare CSS
+   side-effect imports out of the barrel in the production build — so importing
+   them here (from the entry CSS) guarantees the :root token definitions ship. */
+@import '../packages/ui-kit/src/styles/tokens.css';
+@import '../packages/ui-kit/src/styles/globals.css';
+
+/* Minimal reset. */
 * {
   box-sizing: border-box;
 }

@@ -62,6 +62,10 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-200);
+  /* Allow the row to shrink below its content size so wrapped prose can
+     fill the available width instead of forcing horizontal overflow. */
+  min-width: 0;
+  width: 100%;
 }
 .size-sm .iconText {
   align-items: center;
@@ -101,6 +105,17 @@
   font-weight: var(--font-weight-medium);
   color: var(--text-body);
   white-space: nowrap;
+}
+
+/* Horizontal is a single-line pill — keep the label on one line.
+   Vertical is a rounded box that holds multi-sentence prose, so the text
+   must wrap and break long words instead of overflowing the viewport. */
+.vertical .text {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .size-lg .text {
