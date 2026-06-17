@@ -1,0 +1,4111 @@
+{
+ "product": {
+  "name": "diffusil\u00ae",
+  "vendor": "opsira GmbH",
+  "technology_class": "Volume Optical Diffusers (Synthetic Silica Glass)",
+  "functional_promise": "Homogenize light into a near-Lambertian, incident-angle-independent distribution across UV-to-NIR in extreme thermal and chemical environments",
+  "commodity_functional_promise": "Convert directional light into a uniform, near-Lambertian distribution through bulk material scattering, independent of incidence angle and across the UV-to-NIR spectrum",
+  "custom_product_group": "Volume Silica Light Diffusers",
+  "features": [
+   "Volume micro-bubble scattering",
+   "Near-Lambertian angular output",
+   "Dual transmission/reflection mode",
+   "Broadband UV-NIR transmittance",
+   "High-temperature stability",
+   "Acid and alkali resistance",
+   "Ultra-low outgassing and purity",
+   "Sol-gel net-shape forming",
+   "Selectable bubble-density grades",
+   "Honed or polished surface finish",
+   "Calibrated BSDF reference grade"
+  ],
+  "constraints": [
+   "Low optical transmission",
+   "Brittle fracture",
+   "Maximum single-piece size",
+   "High material and process cost",
+   "Thickness-dependent scatter",
+   "Hydrofluoric-acid attack"
+  ],
+  "specifications": [
+   "SiO2 purity: 99.999 %",
+   "Bubble diameter: 3-4 (~4 +/- 0.5) um",
+   "Bubble density (grade T200): ~200 million/cm3",
+   "Bubble density (grade T300): ~300 million/cm3",
+   "Bubble density (grade T500): ~500 million/cm3",
+   "Bubble density (grade T1000): ~1000 (1 billion) million/cm3",
+   "Bubble density (grade T2000): ~2000 (2 billion) million/cm3",
+   "Spectral range: 190-3200 (UV to NIR/SWIR) nm",
+   "Transmission: 30-40 %",
+   "Refractive index: 1.4770 -",
+   "Max working temperature (continuous): 1000 C",
+   "Max working temperature (short-term): 1200 C",
+   "Softening point: ~1610 C",
+   "Coefficient of thermal expansion (CTE): 0.4-0.56e-6 (5.6e-7) 1/K",
+   "Thermal conductivity: 1.24-1.85 (1.29-1.47) W/mK",
+   "Density: 2.05-2.19 g/cm3",
+   "Porosity (non-open): 0.5-7 %",
+   "Modulus of elasticity: 50-54 kN/mm2",
+   "Bending strength (3-point): 80-84 N/mm2",
+   "Dielectric constant: 3.70-3.81 -",
+   "Electrical resistivity: 1e18 ohm.cm",
+   "Acid resistance: Class 1 DIN 12116",
+   "Alkali resistance: Class 1 DIN 52322",
+   "Trace impurities: <0.15 (Al <0.08) ppm"
+  ]
+ },
+ "universe": [
+  {
+   "rank": 1,
+   "naics": "333242",
+   "title": "Semiconductor Machinery Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 8.67,
+   "scores": {
+    "feature_fit": 10,
+    "constraint_compat": 8,
+    "cost_position": 9,
+    "incumbent_vulnerability": 7,
+    "vn_position": 9,
+    "market_size": 9
+   },
+   "rationale": "Bullseye: DUV beam homogenizing, low-outgassing purity, and traceable diffuse-reference accuracy are all load-bearing, and at semicap price points the cost/size constraints are irrelevant with strong design-in lock-in. Dominant driver: differentiators are decisive in a large, high-value market."
+  },
+  {
+   "rank": 2,
+   "naics": "334516",
+   "title": "Analytical Laboratory Instrument Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 8.5,
+   "scores": {
+    "feature_fit": 10,
+    "constraint_compat": 9,
+    "cost_position": 9,
+    "incumbent_vulnerability": 8,
+    "vn_position": 9,
+    "market_size": 6
+   },
+   "rationale": "Integrating spheres, UV-Vis-NIR spectrophotometer diffuser windows, and diffuse-reflectance/radiometric reference standards are diffusil's home turf: angle-independent near-Lambertian accuracy, broadband UV transmission, and a harder/cleaner/non-yellowing alternative to soft Spectralon and ground glass \u2014 and these instruments tolerate a premium component. Dominant driver: feature fit is maximal (this is literally the product's verified current application)."
+  },
+  {
+   "rank": 3,
+   "naics": "334511",
+   "title": "Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 8.17,
+   "scores": {
+    "feature_fit": 10,
+    "constraint_compat": 9,
+    "cost_position": 9,
+    "incumbent_vulnerability": 8,
+    "vn_position": 9,
+    "market_size": 4
+   },
+   "rationale": "On-board/ground satellite-imager calibration diffuser panels are exactly diffusil's sweet spot: UV->NIR diffuse-reference accuracy, near-Lambertian angle-independence, ultra-low outgassing for vacuum/space, and no UV-yellowing where Spectralon degrades; cost and size are non-issues on a payload and design-in is sticky. Dominant driver: differentiators are fully load-bearing (space-grade diffuse reference) \u2014 only the small unit volume caps it."
+  },
+  {
+   "rank": 4,
+   "naics": "325412",
+   "title": "Pharmaceutical Preparation Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 7.83,
+   "scores": {
+    "feature_fit": 9,
+    "constraint_compat": 7,
+    "cost_position": 8,
+    "incumbent_vulnerability": 7,
+    "vn_position": 9,
+    "market_size": 7
+   },
+   "rationale": "Pharma PAT/lab analyzer reference-diffuser optics are diffusil's home turf \u2014 traceable diffuse-reference accuracy, UV-Vis spectral flatness, autoclave/chemical/heat survival, and design-in certifiable lock-in all make its differentiators load-bearing, with $5-50/part trivial against high-value validated instrumentation."
+  },
+  {
+   "rank": 5,
+   "naics": "541380",
+   "title": "Testing Laboratories",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 7.67,
+   "scores": {
+    "feature_fit": 9,
+    "constraint_compat": 9,
+    "cost_position": 8,
+    "incumbent_vulnerability": 7,
+    "vn_position": 8,
+    "market_size": 5
+   },
+   "rationale": "Dominant driver = maximal feature fit on home turf: diffuse-reflectance/transmittance reference standards and integrating-sphere/BSDF optics buy precisely diffusil's angle-independence, UV-NIR flatness and reference accuracy, beating soft, contaminating, UV-yellowing Spectralon/PTFE, with constraints irrelevant and the premium easily justified though the standards/instrument niche is modest in size."
+  },
+  {
+   "rank": 6,
+   "naics": "333998",
+   "title": "All Other Miscellaneous General Purpose Machinery Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 7.33,
+   "scores": {
+    "feature_fit": 9,
+    "constraint_compat": 8,
+    "cost_position": 7,
+    "incumbent_vulnerability": 8,
+    "vn_position": 7,
+    "market_size": 5
+   },
+   "rationale": "UV-C/DUV plus ozone/chlorine chemical exposure and lamp heat destroy polymer diffusers, so diffusil's UV+temp+chemical durability and diffuse-reference accuracy are genuinely load-bearing; dominant driver is feature_fit in a market where the incumbent has no durable diffuser, tempered by a moderate (not huge) equipment volume."
+  },
+  {
+   "rank": 7,
+   "naics": "334519",
+   "title": "Other Measuring and Controlling Device Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 7.17,
+   "scores": {
+    "feature_fit": 8,
+    "constraint_compat": 7,
+    "cost_position": 7,
+    "incumbent_vulnerability": 7,
+    "vn_position": 8,
+    "market_size": 6
+   },
+   "rationale": "UV radiometers, spectroradiometers, cosine correctors, and pyranometer/meteorological diffusers reward exactly diffusil's UV-stable, accurate, angle-independent (cosine) diffusion where polymer cosine-correctors yellow and drift \u2014 a strong, certifiable, design-in fit; LiDAR/PM-scatter sub-parts are more cost-sensitive but the calibration-grade core carries it. Dominant driver: cosine/UV-radiometry accuracy is load-bearing and incumbents (PTFE/polymer) degrade in UV."
+  },
+  {
+   "rank": 8,
+   "naics": "333314",
+   "title": "Optical Instrument and Lens Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 7,
+   "scores": {
+    "feature_fit": 8,
+    "constraint_compat": 7,
+    "cost_position": 7,
+    "incumbent_vulnerability": 6,
+    "vn_position": 8,
+    "market_size": 6
+   },
+   "rationale": "Calibration uniform-source and diffuse-reference standards are diffusil's native, premium use (integrating spheres, traceable BSDF) where accuracy justifies the price and parts are certifiable mid-chain units; plain machine-vision windows are weaker. Dominant driver: diffuse-reference accuracy and pricing power, sized by a moderate instruments market."
+  },
+  {
+   "rank": 9,
+   "naics": "339112",
+   "title": "Surgical and Medical Instrument Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 6.83,
+   "scores": {
+    "feature_fit": 8,
+    "constraint_compat": 7,
+    "cost_position": 7,
+    "incumbent_vulnerability": 7,
+    "vn_position": 6,
+    "market_size": 6
+   },
+   "rationale": "Dominant driver = load-bearing UV-C + autoclave fit: UV-C disinfection isolators/robots and autoclavable luminaire/endoscope optics need exactly diffusil's UV-non-yellowing, chemical and high-temp survival with dose-uniform diffusion, where polymer optics fail and medical pricing absorbs the premium."
+  },
+  {
+   "rank": 10,
+   "naics": "333248",
+   "title": "All Other Industrial Machinery Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 6.67,
+   "scores": {
+    "feature_fit": 8,
+    "constraint_compat": 6,
+    "cost_position": 6,
+    "incumbent_vulnerability": 7,
+    "vn_position": 6,
+    "market_size": 7
+   },
+   "rationale": "UV-cure beam homogenizing and SLA/DLP/LCD 3D-print exposure-uniformity are real pain points where UV durability and angle-independent uniformity matter, and most resin-printer build areas fit under the 220mm cap. Dominant driver: strong UV-uniformity feature_fit across a broad equipment bucket, with size-cap limiting large-format LCD/web."
+  },
+  {
+   "rank": 11,
+   "naics": "334413",
+   "title": "Semiconductor and Related Device Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 6.67,
+   "scores": {
+    "feature_fit": 7,
+    "constraint_compat": 6,
+    "cost_position": 6,
+    "incumbent_vulnerability": 6,
+    "vn_position": 7,
+    "market_size": 8
+   },
+   "rationale": "Bimodal: the Face ID flood-illuminator sub-app is cost-sensitive consumer NIR (poor), but fab DUV metrology/inspection references and PV flash/EL-PL uniform-source QC genuinely need DUV-capable, thermally stable, angle-independent diffuse-reference accuracy \u2014 those premium, design-in segments plus a very large overall market are the dominant driver."
+  },
+  {
+   "rank": 12,
+   "naics": "334513",
+   "title": "Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 6.5,
+   "scores": {
+    "feature_fit": 7,
+    "constraint_compat": 6,
+    "cost_position": 6,
+    "incumbent_vulnerability": 6,
+    "vn_position": 7,
+    "market_size": 7
+   },
+   "rationale": "UV solar-blind flame detectors and inline UV/NIR/Raman PAT analyzers genuinely need UV transmission, high-temp survival, and chemically robust reference-diffuser optics \u2014 a real fit \u2014 but the high-volume photoelectric-sensor and NDIR-CO2 sub-parts are cost-driven where polymer wins, diluting the average. Dominant driver: mixed bag \u2014 strong fit in UV/PAT optics, cost-killed in commodity light barriers/gas sensors."
+  },
+  {
+   "rank": 13,
+   "naics": "333241",
+   "title": "Food Product Machinery Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 6.33,
+   "scores": {
+    "feature_fit": 7,
+    "constraint_compat": 6,
+    "cost_position": 6,
+    "incumbent_vulnerability": 6,
+    "vn_position": 6,
+    "market_size": 7
+   },
+   "rationale": "UV-C/pulsed-light packaging disinfection windows genuinely need UV-durable, aggressively-cleanable optics where polymers yellow and degrade, and food-machinery is a large market. Dominant driver: UV-C + chemical-cleanability feature_fit on a sizable installed base, tempered by quartz-window incumbency."
+  },
+  {
+   "rank": 14,
+   "naics": "334412",
+   "title": "Bare Printed Circuit Board Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 6,
+   "scores": {
+    "feature_fit": 7,
+    "constraint_compat": 7,
+    "cost_position": 6,
+    "incumbent_vulnerability": 6,
+    "vn_position": 6,
+    "market_size": 4
+   },
+   "rationale": "UV-cure solder-mask/encapsulant exposure needs UV-stable, heat-tolerant homogenization where diffusil's UV+temp durability matters, but incumbent fly's-eye/microlens homogenizers are competent and the addressable units are tool-level (low volume); feature_fit drives the score up, small market caps it."
+  },
+  {
+   "rank": 15,
+   "naics": "323120",
+   "title": "Support Activities for Printing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 5.83,
+   "scores": {
+    "feature_fit": 7,
+    "constraint_compat": 6,
+    "cost_position": 6,
+    "incumbent_vulnerability": 6,
+    "vn_position": 6,
+    "market_size": 4
+   },
+   "rationale": "Plate/stencil UV exposure prepress is diffusil's best curing fit because exposure UNIFORMITY is the explicit spec and UV is the light, so near-Lambertian angle-independent homogenization is directly load-bearing and a per-machine diffuser is design-in \u2014 limited mainly by the small prepress-equipment market size."
+  },
+  {
+   "rank": 16,
+   "naics": "325520",
+   "title": "Adhesive Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 5.5,
+   "scores": {
+    "feature_fit": 6,
+    "constraint_compat": 5,
+    "cost_position": 5,
+    "incumbent_vulnerability": 6,
+    "vn_position": 5,
+    "market_size": 6
+   },
+   "rationale": "UV flood/conveyor curing of coatings/adhesives is a strong UV-homogenization fit where polymer optics fail under UV and process heat, and a durable mid-chain certifiable diffuser commands value \u2014 but transmission loss and cheap quartz/fluoropolymer alternatives temper the cost win."
+  },
+  {
+   "rank": 17,
+   "naics": "333914",
+   "title": "Measuring, Dispensing, and Other Pumping Equipment Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 5.5,
+   "scores": {
+    "feature_fit": 6,
+    "constraint_compat": 6,
+    "cost_position": 6,
+    "incumbent_vulnerability": 5,
+    "vn_position": 6,
+    "market_size": 4
+   },
+   "rationale": "Marine ballast-water UV dose-monitor optics combine UV durability, saltwater chemical resistance, and reference accuracy \u2014 a real fit \u2014 but it is a small, regulated niche where the reactor window itself is mostly bare quartz. Dominant driver: good feature_fit on a tiny, certification-gated dose-sensor slice."
+  },
+  {
+   "rank": 18,
+   "naics": "323111",
+   "title": "Commercial Printing (except Screen)",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 5.33,
+   "scores": {
+    "feature_fit": 6,
+    "constraint_compat": 4,
+    "cost_position": 5,
+    "incumbent_vulnerability": 6,
+    "vn_position": 5,
+    "market_size": 6
+   },
+   "rationale": "UV inkjet/narrow-web curing genuinely needs UV beam homogenization where polymer diffusers yellow and degrade, so UV survival is load-bearing \u2014 but curing prizes throughput, and diffusil's 30-40% transmission is a real penalty that caps its win to the uniformity-critical optical path."
+  },
+  {
+   "rank": 19,
+   "naics": "333413",
+   "title": "Industrial and Commercial Fan, Blower, and Air Purification Equipment Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 5,
+   "scores": {
+    "feature_fit": 5,
+    "constraint_compat": 6,
+    "cost_position": 4,
+    "incumbent_vulnerability": 5,
+    "vn_position": 4,
+    "market_size": 6
+   },
+   "rationale": "UV-C-resistant optics matter for GUV/in-duct disinfection, but these systems mostly use bare quartz/reflectors and rarely require Lambertian diffusion, while HVAC OEMs are price-sensitive. Dominant driver: uniformity is nice-to-have not load-bearing here, and cost pressure undercuts the premium."
+  },
+  {
+   "rank": 20,
+   "naics": "336390",
+   "title": "Other Motor Vehicle Parts Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 5,
+   "scores": {
+    "feature_fit": 6,
+    "constraint_compat": 6,
+    "cost_position": 6,
+    "incumbent_vulnerability": 4,
+    "vn_position": 4,
+    "market_size": 4
+   },
+   "rationale": "Dominant driver = decent feature fit but good-enough incumbents: angle-independent Lambertian uniformity genuinely helps machine-vision inspection heads (small parts, capex cost tolerated), but existing engineered/opal diffusers are good enough and UV/temp/chem resistance is irrelevant here."
+  },
+  {
+   "rank": 21,
+   "naics": "334510",
+   "title": "Electromedical and Electrotherapeutic Apparatus Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 4.83,
+   "scores": {
+    "feature_fit": 5,
+    "constraint_compat": 4,
+    "cost_position": 4,
+    "incumbent_vulnerability": 4,
+    "vn_position": 5,
+    "market_size": 7
+   },
+   "rationale": "Optical patient-monitoring diffusers (pulse-ox, capnography) are small, high-volume, cost-sensitive parts where molded polymer/opal does the job and diffusil's UV/1000C edge is largely irrelevant; autoclave survival is a mild plus but doesn't justify $5-50/part. Dominant driver: cost/incumbent good-enough kills a strong-fit story despite a large medical-device market."
+  },
+  {
+   "rank": 22,
+   "naics": "221320",
+   "title": "Sewage Treatment Facilities",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 4.67,
+   "scores": {
+    "feature_fit": 5,
+    "constraint_compat": 5,
+    "cost_position": 4,
+    "incumbent_vulnerability": 4,
+    "vn_position": 4,
+    "market_size": 6
+   },
+   "rationale": "Wastewater UV-Vis online analyzers are diffusil's real entry: harsh, fouling, chemically aggressive process where a UV-stable acid/base-resistant near-Lambertian reference diffuser holds accuracy that polymer/opal references can't \u2014 a small but high-fit analyzer-optics slice inside a large process market."
+  },
+  {
+   "rank": 23,
+   "naics": "334418",
+   "title": "Printed Circuit Assembly (Electronic Assembly) Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 4.67,
+   "scores": {
+    "feature_fit": 4,
+    "constraint_compat": 6,
+    "cost_position": 5,
+    "incumbent_vulnerability": 4,
+    "vn_position": 5,
+    "market_size": 4
+   },
+   "rationale": "AOI/SPI uniform illumination is visible-light, cool-running and well-served by cheap engineered diffusers and light guides, so angle-independence is a nice-to-have rather than load-bearing and the UV/temp/chemical edge goes unused; low feature_fit against a good-enough incumbent in a low-volume tool-parts market is the dominant driver."
+  },
+  {
+   "rank": 24,
+   "naics": "335139",
+   "title": "Electric Lamp Bulb and Other Lighting Equipment Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 4.33,
+   "scores": {
+    "feature_fit": 4,
+    "constraint_compat": 3,
+    "cost_position": 3,
+    "incumbent_vulnerability": 4,
+    "vn_position": 4,
+    "market_size": 8
+   },
+   "rationale": "Most general/architectural/decorative/traffic diffusers are cost- and efficiency-driven (polymer/opal wins), but a thin slice \u2014 industrial high-temperature/hazardous-location luminaires and UV/horticulture optics \u2014 actually values 1000C and UV stability, lifting it above pure residential. Dominant driver: large market but cost/transmission lock diffusil out of the mainstream, leaving only a high-temp niche."
+  },
+  {
+   "rank": 25,
+   "naics": "335210",
+   "title": "Small Electrical Appliance Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 4.33,
+   "scores": {
+    "feature_fit": 4,
+    "constraint_compat": 4,
+    "cost_position": 3,
+    "incumbent_vulnerability": 4,
+    "vn_position": 4,
+    "market_size": 7
+   },
+   "rationale": "Robot-vacuum LiDAR/ToF/cliff-sensor diffuser optics are mass-market, sub-cent-polymer parts where diffusil is priced out; portable UV-C disinfection optics are the one sub-part where UV-C transmission and non-degradation genuinely matter, but it's a small, cost-pressured slice. Dominant driver: consumer cost structure kills the volume parts, leaving only a thin UV-C fit."
+  },
+  {
+   "rank": 26,
+   "naics": "339114",
+   "title": "Dental Equipment and Supplies Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 4.33,
+   "scores": {
+    "feature_fit": 5,
+    "constraint_compat": 6,
+    "cost_position": 4,
+    "incumbent_vulnerability": 4,
+    "vn_position": 4,
+    "market_size": 3
+   },
+   "rationale": "Dominant driver = modest fit in a small niche: cure-light exposure uniformity matters, but dental LED cure units run blue light (not UV-C/high-temp), so diffusil's harsh-environment edge is mostly idle, polymer/lens optics are good enough, and the small handheld market limits upside."
+  },
+  {
+   "rank": 27,
+   "naics": "327215",
+   "title": "Glass Product Manufacturing Made of Purchased Glass",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 4.17,
+   "scores": {
+    "feature_fit": 5,
+    "constraint_compat": 4,
+    "cost_position": 4,
+    "incumbent_vulnerability": 4,
+    "vn_position": 4,
+    "market_size": 4
+   },
+   "rationale": "UV-cure resistance is a genuine fit, but cheaper bare-quartz/coated reflector diffusers are good-enough on UV-finishing lines and the 220mm size cap fights wide web/laminate widths. Dominant driver: low incumbent vulnerability plus size-cap constraint cap the value."
+  },
+  {
+   "rank": 28,
+   "naics": "221310",
+   "title": "Water Supply and Irrigation Systems",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 4,
+   "scores": {
+    "feature_fit": 4,
+    "constraint_compat": 4,
+    "cost_position": 3,
+    "incumbent_vulnerability": 3,
+    "vn_position": 4,
+    "market_size": 6
+   },
+   "rationale": "Large drinking-water UV market, but the optical need is UV-transmissive quartz sleeves plus online UV-Vis analyzer reference optics \u2014 the analyzer/diffuse-reference niche fits diffusil while the bulk disinfection window does not, and cheap quartz incumbents are entrenched."
+  },
+  {
+   "rank": 29,
+   "naics": "335921",
+   "title": "Fiber Optic Cable Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 3.83,
+   "scores": {
+    "feature_fit": 4,
+    "constraint_compat": 4,
+    "cost_position": 5,
+    "incumbent_vulnerability": 3,
+    "vn_position": 3,
+    "market_size": 4
+   },
+   "rationale": "Dominant driver = weak incumbent vulnerability: UV-acrylate cure on draw towers already gets uniform exposure from lamp/reflector arrays, so diffusil's UV-survival edge is non-load-bearing and the brittle 220mm part is awkward on a draw line."
+  },
+  {
+   "rank": 30,
+   "naics": "336320",
+   "title": "Motor Vehicle Electrical and Electronic Equipment Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 3.67,
+   "scores": {
+    "feature_fit": 4,
+    "constraint_compat": 3,
+    "cost_position": 1,
+    "incumbent_vulnerability": 2,
+    "vn_position": 3,
+    "market_size": 9
+   },
+   "rationale": "Dominant driver = cost kill: automotive lighting/in-cabin ToF diffusers are a huge BOM market but demand sub-cent-to-few-cent polymer/DOE optics, so diffusil's $5-50 premium and unneeded UV/temp/autoclave edge make it non-competitive despite the volume."
+  },
+  {
+   "rank": 31,
+   "naics": "333111",
+   "title": "Farm Machinery and Equipment Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 3.5,
+   "scores": {
+    "feature_fit": 3,
+    "constraint_compat": 5,
+    "cost_position": 3,
+    "incumbent_vulnerability": 3,
+    "vn_position": 3,
+    "market_size": 4
+   },
+   "rationale": "Produce-grading/NIR illumination needs uniformity but no UV/high-temp/chemical/autoclave duty, so diffusil's load-bearing differentiators are dormant and cheap polymer/LED-bar diffusers win. Dominant driver: weak feature_fit \u2014 generic diffusion any polymer does."
+  },
+  {
+   "rank": 32,
+   "naics": "334290",
+   "title": "Other Communications Equipment Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 3.5,
+   "scores": {
+    "feature_fit": 3,
+    "constraint_compat": 4,
+    "cost_position": 2,
+    "incumbent_vulnerability": 3,
+    "vn_position": 3,
+    "market_size": 6
+   },
+   "rationale": "Smoke-detector scatter chambers and NIR biometric illuminators run cool, visible/NIR and high-volume, so the UV/high-temp/chemical edge is irrelevant and cheap molded or engineered (micro-lens/holographic) diffusers dominate; weak cost_position is the dominant driver against an entrenched good-enough incumbent."
+  },
+  {
+   "rank": 33,
+   "naics": "334220",
+   "title": "Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 3.33,
+   "scores": {
+    "feature_fit": 2,
+    "constraint_compat": 3,
+    "cost_position": 1,
+    "incumbent_vulnerability": 2,
+    "vn_position": 2,
+    "market_size": 10
+   },
+   "rationale": "Smartphone/laptop ALS caps are a billion-unit market but the incumbent is a good-enough sub-cent injection-molded polymer with no UV/temp/chemical requirement; cost_position kills it and diffusil's differentiators are simply not exercised \u2014 the classic huge-market/no-fit trap."
+  },
+  {
+   "rank": 34,
+   "naics": "334419",
+   "title": "Other Electronic Component Manufacturing",
+   "paths": [
+    "BOM",
+    "Process-VN"
+   ],
+   "composite": 3.33,
+   "scores": {
+    "feature_fit": 3,
+    "constraint_compat": 2,
+    "cost_position": 2,
+    "incumbent_vulnerability": 2,
+    "vn_position": 4,
+    "market_size": 7
+   },
+   "rationale": "Display BLU diffuser films are large-area (far past the 220x220mm cap) and demand high transmission and sub-cent cost \u2014 diffusil's 30-40% transmission, size limit and price are flatly disqualifying; only the tiny FPD mura/demura inspection-reference niche fits, so constraint_compat is the dominant (negative) driver despite a large nominal market."
+  },
+  {
+   "rank": 35,
+   "naics": "336111",
+   "title": "Automobile Manufacturing",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 3.33,
+   "scores": {
+    "feature_fit": 3,
+    "constraint_compat": 2,
+    "cost_position": 3,
+    "incumbent_vulnerability": 3,
+    "vn_position": 3,
+    "market_size": 6
+   },
+   "rationale": "Dominant driver = constraint mismatch: large-area clearcoat/gelcoat cure lines need wide uniform beams, and the 220x220mm single-piece cap plus brittleness disqualify diffusil for line-scale coating cure despite the large industry."
+  },
+  {
+   "rank": 36,
+   "naics": "112511",
+   "title": "Finfish Farming and Fish Hatcheries",
+   "paths": [
+    "Process-VN"
+   ],
+   "composite": 3.17,
+   "scores": {
+    "feature_fit": 3,
+    "constraint_compat": 4,
+    "cost_position": 3,
+    "incumbent_vulnerability": 3,
+    "vn_position": 3,
+    "market_size": 3
+   },
+   "rationale": "Aquaculture/RAS UV-C disinfection needs UV-transmissive quartz windows, not a diffuser \u2014 UV survival matters but plain fused-silica quartz already delivers it cheaply, and diffusion (with 30-40% throughput loss) is actively unwanted in a disinfection dose path."
+  },
+  {
+   "rank": 37,
+   "naics": "335131",
+   "title": "Residential Electric Lighting Fixture Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 3,
+   "scores": {
+    "feature_fit": 2,
+    "constraint_compat": 2,
+    "cost_position": 1,
+    "incumbent_vulnerability": 2,
+    "vn_position": 3,
+    "market_size": 8
+   },
+   "rationale": "Residential luminaire diffusers are the textbook anti-fit: buyers want cheap, high-transmission, large-area glare control that sub-cent PMMA/PC and opal deliver, while diffusil's 30-40% transmission, 220mm size cap, brittleness and $5-50 price are all disqualifying. Dominant driver: cost/transmission make this a near-zero fit despite a huge market."
+  },
+  {
+   "rank": 38,
+   "naics": "334310",
+   "title": "Audio and Video Equipment Manufacturing",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 2.83,
+   "scores": {
+    "feature_fit": 2,
+    "constraint_compat": 2,
+    "cost_position": 1,
+    "incumbent_vulnerability": 2,
+    "vn_position": 2,
+    "market_size": 8
+   },
+   "rationale": "Wearable PPG/IR, AR/VR eye-tracking illuminators and consumer-display ALS are NIR, ultra-cost-sensitive, miniaturized and impact-prone \u2014 diffusil's brittleness and cost are disqualifying and its UV/temp edge is unused; large volume cannot rescue a near-total feature/cost/constraint mismatch."
+  },
+  {
+   "rank": 39,
+   "naics": "111419",
+   "title": "Other Food Crops Grown Under Cover",
+   "paths": [
+    "BOM"
+   ],
+   "composite": 2.17,
+   "scores": {
+    "feature_fit": 2,
+    "constraint_compat": 2,
+    "cost_position": 1,
+    "incumbent_vulnerability": 2,
+    "vn_position": 2,
+    "market_size": 4
+   },
+   "rationale": "Cost-driven horticulture grow-light/sensor optics operate in visible PAR with no UV/temp/chemical stress, so diffusil's entire edge is irrelevant and sub-cent polymer/PC lenses dominate; cost kills it outright."
+  }
+ ],
+ "universe_stats": {
+  "total": 39,
+  "bom": 12,
+  "process_vn": 13,
+  "both": 14
+ },
+ "dimension_markets": [
+  {
+   "rank": 1,
+   "naics": "333242",
+   "title": "Semiconductor Machinery Manufacturing",
+   "job": "Fabricating / Producing semiconductor devices",
+   "activity_scope": "Patterning and assembling microstructures",
+   "demand_primary": {
+    "name": "process_step_domain",
+    "values": [
+     "Lithography / patterning",
+     "Deposition (CVD / PVD / ALD / epitaxy)",
+     "Etch / removal",
+     "Surface preparation & cleaning",
+     "Ion implantation / doping",
+     "Chemical-mechanical planarization (CMP)",
+     "Thermal processing (anneal / oxidation / diffusion)",
+     "Process control: metrology & inspection",
+     "Assembly / die-attach & interconnect (back-end)",
+     "Packaging / encapsulation (back-end)"
+    ],
+    "sources": [
+     "SEMI / SEAJ Worldwide Semiconductor Equipment Market Statistics (WWSEMS)",
+     "Gartner 'Market Share Analysis: Semiconductor Wafer Fab Equipment, Worldwide'",
+     "SEMI International Standards (equipment-class taxonomy)"
+    ]
+   },
+   "supply_primary": {
+    "name": "production_capability_platform",
+    "values": [
+     "Vacuum / plasma process systems (etch, PVD, CVD/ALD)",
+     "Photolithography / precision-optics systems",
+     "Wet / chemical processing & clean systems",
+     "Thermal / furnace systems",
+     "Ion-implant / beam systems",
+     "Planarization (CMP) systems",
+     "Metrology & inspection / process-control systems",
+     "Assembly, bonding & packaging mechatronics",
+     "Wafer-handling / factory-automation systems"
+    ],
+    "sources": [
+     "SEC 10-K business-segment disclosures of semiconductor-equipment OEMs (e.g. Applied Materials Semiconductor Systems segment)",
+     "TechInsights / Gartner semiconductor-equipment supplier rankings",
+     "SEMI (Semiconductor Equipment and Materials International) membership/standards structure"
+    ]
+   },
+   "all_dimensions": [
+    {
+     "name": "process_step_domain",
+     "side": "demand",
+     "role": "primary",
+     "values": [
+      "Lithography / patterning",
+      "Deposition (CVD / PVD / ALD / epitaxy)",
+      "Etch / removal",
+      "Surface preparation & cleaning",
+      "Ion implantation / doping",
+      "Chemical-mechanical planarization (CMP)",
+      "Thermal processing (anneal / oxidation / diffusion)",
+      "Process control: metrology & inspection",
+      "Assembly / die-attach & interconnect (back-end)",
+      "Packaging / encapsulation (back-end)"
+     ],
+     "sources": [
+      "SEMI / SEAJ Worldwide Semiconductor Equipment Market Statistics (WWSEMS)",
+      "Gartner 'Market Share Analysis: Semiconductor Wafer Fab Equipment, Worldwide'",
+      "SEMI International Standards (equipment-class taxonomy)"
+     ]
+    },
+    {
+     "name": "device_type_served",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Foundry & logic",
+      "DRAM memory",
+      "NAND / 3D-NAND memory",
+      "Analog & mixed-signal",
+      "Discrete & power devices",
+      "Optoelectronics, sensors & MEMS",
+      "Compound-semiconductor (SiC / GaN) devices"
+     ],
+     "sources": [
+      "SEMI World Fab Forecast / SEMI WFE-by-application capex reporting",
+      "Lam Research 'Memory, Foundry, and Logic Markets Explained'"
+     ]
+    },
+    {
+     "name": "fab_stage",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Front-end-of-line wafer processing (FEOL)",
+      "Back-end-of-line interconnect (BEOL)",
+      "Wafer-level / advanced packaging",
+      "Back-end assembly & packaging (die-level)",
+      "Final test handling (adjacent stage)"
+     ],
+     "sources": [
+      "SEMI Worldwide Semiconductor Equipment Billings (front-end vs back-end segmentation)",
+      "U.S. Census NAICS 333242 industry definition"
+     ]
+    },
+    {
+     "name": "substrate_format",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "300 mm silicon wafer",
+      "200 mm silicon wafer",
+      "150 mm and smaller silicon wafer",
+      "Compound-semiconductor wafer (SiC / GaN / GaAs)",
+      "Panel / glass-core advanced-packaging format"
+     ],
+     "sources": [
+      "SEMI M1 'Specification for Polished Single Crystal Silicon Wafers'",
+      "SEMI Equipment & Materials wafer-size market reporting (300mm vs 200mm)"
+     ]
+    },
+    {
+     "name": "production_capability_platform",
+     "side": "supply",
+     "role": "primary",
+     "values": [
+      "Vacuum / plasma process systems (etch, PVD, CVD/ALD)",
+      "Photolithography / precision-optics systems",
+      "Wet / chemical processing & clean systems",
+      "Thermal / furnace systems",
+      "Ion-implant / beam systems",
+      "Planarization (CMP) systems",
+      "Metrology & inspection / process-control systems",
+      "Assembly, bonding & packaging mechatronics",
+      "Wafer-handling / factory-automation systems"
+     ],
+     "sources": [
+      "SEC 10-K business-segment disclosures of semiconductor-equipment OEMs (e.g. Applied Materials Semiconductor Systems segment)",
+      "TechInsights / Gartner semiconductor-equipment supplier rankings",
+      "SEMI (Semiconductor Equipment and Materials International) membership/standards structure"
+     ]
+    },
+    {
+     "name": "establishment_scale_integration",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Diversified multi-platform OEM (broad tool portfolio)",
+      "Pure-play single-process / single-tool specialist",
+      "Subsystem & critical-components supplier",
+      "Vertically integrated OEM (tools + parts + services)"
+     ],
+     "sources": [
+      "GICS Sub-Industry 45301010 'Semiconductor Materials & Equipment'",
+      "U.S. SBA size standard for NAICS 333242 (1,500 employees) / Census Bureau establishment data"
+     ]
+    },
+    {
+     "name": "export_control_designation",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Controlled advanced-node SME (BIS / ECCN-restricted)",
+      "Dual-use / license-required equipment",
+      "EAR99 / non-controlled equipment",
+      "Allied-regime-restricted (Wassenaar / Netherlands / Japan-aligned controls)"
+     ],
+     "sources": [
+      "U.S. BIS Export Administration Regulations -- Commerce Control List / ECCN categories for semiconductor manufacturing equipment",
+      "Wassenaar Arrangement dual-use controls on semiconductor manufacturing equipment"
+     ]
+    }
+   ],
+   "l2_markets": [
+    {
+     "name": "Patterning & lithography processing",
+     "cfj": "To transfer a designed circuit pattern onto a substrate layer at production resolution and overlay.",
+     "l3": [
+      "Optical projection patterning",
+      "Extreme-wavelength patterning",
+      "Immersion patterning",
+      "Direct-write patterning",
+      "Imprint patterning",
+      "Resist coating & develop",
+      "Mask & reticle handling",
+      "Overlay alignment",
+      "Multi-patterning splits",
+      "Maskless patterning",
+      "Double exposure",
+      "Directed self-assembly"
+     ]
+    },
+    {
+     "name": "Thin-film deposition processing",
+     "cfj": "To build up conductive, insulating and semiconducting material layers on a substrate to specified thickness and uniformity.",
+     "l3": [
+      "Chemical vapor formation",
+      "Physical sputter coating",
+      "Atomic-layer growth",
+      "Epitaxial layer growth",
+      "Plasma-enhanced deposition",
+      "Electrochemical plating",
+      "Spin-on coating",
+      "Evaporation coating",
+      "Dielectric film formation",
+      "Metal barrier & seed",
+      "Selective area deposition",
+      "High-aspect gapfill"
+     ]
+    },
+    {
+     "name": "Etch & material removal",
+     "cfj": "To selectively remove patterned material from a substrate to realize the designed structure with controlled profile.",
+     "l3": [
+      "Plasma dry etch",
+      "Wet chemical etch",
+      "Deep reactive etch",
+      "Atomic-layer etch",
+      "Selective material removal",
+      "Resist strip & ash",
+      "Vapor-phase etch",
+      "Polymer & residue removal",
+      "Backgrind & thinning",
+      "Isotropic etch",
+      "Bevel & edge etch",
+      "Selective epi removal"
+     ]
+    },
+    {
+     "name": "Surface preparation & cleaning",
+     "cfj": "To bring a substrate surface to a defect-free, contaminant-free condition ready for the next process step.",
+     "l3": [
+      "Wet bench cleaning",
+      "Single-substrate cleaning",
+      "Particle removal",
+      "Native oxide removal",
+      "Metallic contamination clean",
+      "Post-CMP cleaning",
+      "Cryogenic & aerosol clean",
+      "Drying & surface conditioning",
+      "Megasonic cleaning",
+      "Supercritical drying",
+      "Surface passivation",
+      "Edge & bevel clean"
+     ]
+    },
+    {
+     "name": "Ion implantation & doping",
+     "cfj": "To introduce dopant species into a substrate at controlled depth and concentration to define electrical properties.",
+     "l3": [
+      "High-current implant",
+      "High-energy implant",
+      "Medium-current implant",
+      "Ultra-shallow doping",
+      "Plasma doping",
+      "Tilt & angled implant",
+      "Dopant activation anneal",
+      "Selective area doping",
+      "Cluster & molecular implant",
+      "Material modification implant",
+      "Cryogenic implant",
+      "Junction profiling"
+     ]
+    },
+    {
+     "name": "Surface planarization processing",
+     "cfj": "To flatten and smooth a substrate surface so successive layers can be built up with global uniformity.",
+     "l3": [
+      "Oxide planarization",
+      "Metal planarization",
+      "Tungsten polish",
+      "Copper polish",
+      "Shallow-trench planarization",
+      "Barrier removal polish",
+      "Slurry & pad conditioning",
+      "Endpoint detection",
+      "Buff & touch polish",
+      "Fixed-abrasive planarization",
+      "Stress-free polishing",
+      "Substrate thinning polish"
+     ]
+    },
+    {
+     "name": "Thermal processing & annealing",
+     "cfj": "To apply controlled heat to a substrate to activate, diffuse, grow or restructure material at the atomic level.",
+     "l3": [
+      "Furnace batch processing",
+      "Rapid thermal processing",
+      "Thermal oxidation",
+      "Dopant diffusion",
+      "Spike & flash anneal",
+      "Laser anneal",
+      "Low-temperature anneal",
+      "Forming-gas anneal",
+      "Epitaxial pre-bake",
+      "Crystallization anneal",
+      "Millisecond anneal",
+      "Stress relief anneal"
+     ]
+    },
+    {
+     "name": "Process control & metrology",
+     "cfj": "To measure and verify that each process step met its dimensional, material and defect specifications.",
+     "l3": [
+      "Critical-dimension measurement",
+      "Film thickness measurement",
+      "Overlay metrology",
+      "Defect inspection",
+      "Surface profilometry",
+      "Macro & edge inspection",
+      "Composition & dopant analysis",
+      "Electrical parametric test",
+      "Review & defect classification",
+      "Stress & strain metrology",
+      "Buried-feature metrology",
+      "In-situ process sensing"
+     ]
+    },
+    {
+     "name": "Die-level assembly & interconnect",
+     "cfj": "To separate finished substrates into individual devices and electrically join them to a carrier or each other.",
+     "l3": [
+      "Substrate dicing",
+      "Die attach & bonding",
+      "Wire bonding",
+      "Flip-chip interconnect",
+      "Bump & pillar formation",
+      "Wafer-to-wafer bonding",
+      "Thermocompression bonding",
+      "Underfill dispense",
+      "Through-substrate vias",
+      "Hybrid direct bonding",
+      "Die-to-wafer placement",
+      "Redistribution layering"
+     ]
+    },
+    {
+     "name": "Device packaging & encapsulation",
+     "cfj": "To house and protect a finished device while providing its external mechanical, thermal and electrical interface.",
+     "l3": [
+      "Molding & encapsulation",
+      "Wafer-level packaging",
+      "Substrate & laminate packaging",
+      "Leadframe packaging",
+      "Ball-grid array forming",
+      "Panel-level packaging",
+      "Fan-out packaging",
+      "Stacked & 3D packaging",
+      "Hermetic sealing",
+      "Marking & singulation",
+      "Thermal interface integration",
+      "Embedded die packaging"
+     ]
+    }
+   ]
+  },
+  {
+   "rank": 2,
+   "naics": "334516",
+   "title": "Analytical Laboratory Instrument Manufacturing",
+   "job": "Analyzing / Determining material composition",
+   "activity_scope": "Separating and quantifying constituents",
+   "demand_primary": {
+    "name": "analytical_application_domain",
+    "values": [
+     "Pharmaceutical & biopharmaceutical (drug development, QC, batch release)",
+     "Clinical & diagnostic (biomarker, toxicology, clinical chemistry)",
+     "Food, beverage & agriculture safety/quality",
+     "Environmental (air, water, soil monitoring & compliance)",
+     "Chemical, petrochemical & energy",
+     "Materials science, semiconductor & advanced materials",
+     "Academic & government research",
+     "Forensic & defense/security"
+    ],
+    "sources": [
+     "SDi (Strategic Directions International) / Science and Medicine Group \u2014 Global Assessment Report on Analytical & Life Science Instruments",
+     "AOAC INTERNATIONAL \u2014 Official Methods of Analysis (OMA)",
+     "U.S. EPA Approved Analytical Methods (e.g., Methods 8260/8270, 537/533 for PFAS) and USP General Chapter <1058> Analytical Instrument Qualification"
+    ]
+   },
+   "supply_primary": {
+    "name": "measurement_technique_platform",
+    "values": [
+     "Chromatography (GC, LC/HPLC/UHPLC, IC, SFC)",
+     "Mass spectrometry (LC-MS, GC-MS, ICP-MS, MALDI, high-res Orbitrap/FT-MS)",
+     "Molecular spectroscopy (UV-Vis, IR/FTIR, Raman, NMR, fluorescence)",
+     "Atomic / elemental spectroscopy (ICP-OES, AAS, XRF)",
+     "Microscopy & materials/surface characterization (electron microscopy, electron microprobe, surface science)",
+     "Thermal & physical-property analysis (DSC/TGA, particle size, rheology)",
+     "Electrochemistry & pH measurement",
+     "Life-science / molecular analysis (electrophoresis, PCR-adjacent analytical platforms)"
+    ],
+    "sources": [
+     "SDi / Science and Medicine Group \u2014 analytical instrumentation organized into ~10 technology chapters covering ~83 instrument technologies",
+     "Waters Corporation Form 10-K \u2014 segment/technology disclosure (HPLC instruments, chromatography columns & consumables and service; mass spectrometry; thermal analysis)",
+     "Thermo Fisher Scientific Form 10-K \u2014 Chromatography and Mass Spectrometry business within Analytical Instruments segment",
+     "Harmonized System Heading 9027 / UNSPSC Segment 41 (Laboratory, Measuring, Observing and Testing Equipment)"
+    ]
+   },
+   "all_dimensions": [
+    {
+     "name": "analytical_application_domain",
+     "side": "demand",
+     "role": "primary",
+     "values": [
+      "Pharmaceutical & biopharmaceutical (drug development, QC, batch release)",
+      "Clinical & diagnostic (biomarker, toxicology, clinical chemistry)",
+      "Food, beverage & agriculture safety/quality",
+      "Environmental (air, water, soil monitoring & compliance)",
+      "Chemical, petrochemical & energy",
+      "Materials science, semiconductor & advanced materials",
+      "Academic & government research",
+      "Forensic & defense/security"
+     ],
+     "sources": [
+      "SDi (Strategic Directions International) / Science and Medicine Group \u2014 Global Assessment Report on Analytical & Life Science Instruments",
+      "AOAC INTERNATIONAL \u2014 Official Methods of Analysis (OMA)",
+      "U.S. EPA Approved Analytical Methods (e.g., Methods 8260/8270, 537/533 for PFAS) and USP General Chapter <1058> Analytical Instrument Qualification"
+     ]
+    },
+    {
+     "name": "sample_matrix_material_type",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Aqueous / liquid solutions",
+      "Gaseous / volatile samples",
+      "Solid & powdered materials",
+      "Biological fluids & tissues",
+      "Biomolecules & large molecules (proteins, nucleic acids, biologics)",
+      "Polymers, plastics & advanced materials",
+      "Complex environmental matrices (soil, sludge, particulate)",
+      "Petroleum, fuels & hydrocarbon mixtures"
+     ],
+     "sources": [
+      "Harmonized System (HS) Heading 9027 \u2014 Instruments and apparatus for physical or chemical analysis of solid, fluid or gaseous material",
+      "ASTM Annual Book of Standards, Section 14 (Analytical Methods \u2014 Spectroscopy; Chromatography) and matrix-specific committees (e.g., D02 petroleum, D19 water, D20 plastics)"
+     ]
+    },
+    {
+     "name": "analyte_class",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Small organic molecules / trace organics",
+      "Inorganic elements & trace metals",
+      "Large biomolecules (proteins, peptides, nucleic acids, glycans)",
+      "Ions & electrochemical species",
+      "Particulates & particle-size distributions",
+      "Bulk & surface physical/thermal properties",
+      "Isotopes & radionuclides"
+     ],
+     "sources": [
+      "United States Pharmacopeia (USP) General Chapters \u2014 compendial analytical chapters by analyte/test type (e.g., <621> Chromatography, <851> Spectrophotometry, <233> Elemental Impurities)",
+      "SDi / Science and Medicine Group instrument-technology coverage mapped to analyte targets (atomic spectroscopy for elements, LC/MS for organics & biomolecules)"
+     ]
+    },
+    {
+     "name": "measurement_objective",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Separation / resolution of mixtures",
+      "Qualitative identification of unknowns",
+      "Quantification of known target analytes (assay, trace, ultratrace)",
+      "Structural elucidation / molecular characterization",
+      "Imaging & morphological / surface characterization",
+      "Purity & impurity profiling"
+     ],
+     "sources": [
+      "ASTM E2857 Standard Guide for Validating Analytical Methods (identification, quantitation, limit/purity test categories)",
+      "ICH Q2(R2) Validation of Analytical Procedures (test-category taxonomy)"
+     ]
+    },
+    {
+     "name": "measurement_technique_platform",
+     "side": "supply",
+     "role": "primary",
+     "values": [
+      "Chromatography (GC, LC/HPLC/UHPLC, IC, SFC)",
+      "Mass spectrometry (LC-MS, GC-MS, ICP-MS, MALDI, high-res Orbitrap/FT-MS)",
+      "Molecular spectroscopy (UV-Vis, IR/FTIR, Raman, NMR, fluorescence)",
+      "Atomic / elemental spectroscopy (ICP-OES, AAS, XRF)",
+      "Microscopy & materials/surface characterization (electron microscopy, electron microprobe, surface science)",
+      "Thermal & physical-property analysis (DSC/TGA, particle size, rheology)",
+      "Electrochemistry & pH measurement",
+      "Life-science / molecular analysis (electrophoresis, PCR-adjacent analytical platforms)"
+     ],
+     "sources": [
+      "SDi / Science and Medicine Group \u2014 analytical instrumentation organized into ~10 technology chapters covering ~83 instrument technologies",
+      "Waters Corporation Form 10-K \u2014 segment/technology disclosure (HPLC instruments, chromatography columns & consumables and service; mass spectrometry; thermal analysis)",
+      "Thermo Fisher Scientific Form 10-K \u2014 Chromatography and Mass Spectrometry business within Analytical Instruments segment"
+     ]
+    },
+    {
+     "name": "offering_revenue_stream_type",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Capital analytical instruments / systems",
+      "Consumables, columns, reagents & standards (recurring)",
+      "Aftermarket service, maintenance & qualification contracts",
+      "Software, informatics & data systems (CDS/LIMS)"
+     ],
+     "sources": [
+      "Waters Corporation Form 10-K \u2014 revenue split of instruments/data products (~two-thirds) vs recurring consumables and service (~one-third)",
+      "SDi / Science and Medicine Group \u2014 Analytical & Life Science Instrumentation Service Market report"
+     ]
+    },
+    {
+     "name": "firm_scale_integration",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Diversified multi-platform majors (full-line, global service)",
+      "Focused multi-line instrument makers",
+      "Single-technique specialist OEMs",
+      "Component / consumables & column specialists",
+      "Niche / emerging-technology startups"
+     ],
+     "sources": [
+      "U.S. Census Bureau \u2014 NAICS 334516 establishment statistics (County Business Patterns / Economic Census)",
+      "SEC EDGAR 10-K filings of diversified instrument majors (Thermo Fisher, Agilent, Danaher) vs single-line specialist filers"
+     ]
+    }
+   ],
+   "l2_markets": [
+    {
+     "name": "Pharmaceutical Analysis",
+     "cfj": "To separate and quantify the constituents of drug substances and products to support development, quality control, and batch release.",
+     "l3": [
+      "Assay & Potency",
+      "Impurity Profiling",
+      "Dissolution Testing",
+      "Stability Testing",
+      "Residual Solvents",
+      "Elemental Impurities",
+      "Biologics Characterization",
+      "Extractables & Leachables",
+      "Content Uniformity",
+      "Cleaning Validation",
+      "Polymorph Screening",
+      "Nitrosamine Testing"
+     ]
+    },
+    {
+     "name": "Clinical & Diagnostic Analysis",
+     "cfj": "To separate and quantify biomarkers, drugs, and metabolites in patient samples to inform clinical and toxicological decisions.",
+     "l3": [
+      "Clinical Chemistry",
+      "Therapeutic Drug Monitoring",
+      "Clinical Toxicology",
+      "Newborn Screening",
+      "Endocrine & Hormone Testing",
+      "Vitamin & Micronutrient",
+      "Biomarker Discovery",
+      "Trace Element Diagnostics",
+      "Proteomic Profiling",
+      "Metabolomic Profiling",
+      "Pain Management Testing"
+     ]
+    },
+    {
+     "name": "Food & Beverage Analysis",
+     "cfj": "To separate and quantify the constituents of food, beverage, and agricultural samples to verify safety, authenticity, and quality.",
+     "l3": [
+      "Pesticide Residue",
+      "Mycotoxin Testing",
+      "Nutritional Labeling",
+      "Food Authenticity",
+      "Veterinary Drug Residue",
+      "Heavy Metals in Food",
+      "Allergen Detection",
+      "Flavor & Aroma Profiling",
+      "Additive & Preservative",
+      "Beverage & Alcohol Analysis",
+      "Process Contaminants"
+     ]
+    },
+    {
+     "name": "Environmental Analysis",
+     "cfj": "To separate and quantify contaminants in air, water, and soil samples to demonstrate compliance and monitor pollution.",
+     "l3": [
+      "Drinking Water Testing",
+      "Wastewater Monitoring",
+      "Soil & Sediment",
+      "Air & Emissions",
+      "PFAS Testing",
+      "Volatile Organics",
+      "Semivolatile Organics",
+      "Trace Metals Monitoring",
+      "Microplastics Analysis",
+      "Pesticide & Herbicide",
+      "Radiological Monitoring"
+     ]
+    },
+    {
+     "name": "Chemical & Petrochemical Analysis",
+     "cfj": "To separate and quantify the constituents of chemical, petrochemical, and energy products to control composition and specification.",
+     "l3": [
+      "Fuel & Lubricant Analysis",
+      "Petroleum Refining QC",
+      "Polymer Composition",
+      "Catalyst Characterization",
+      "Trace Impurity Control",
+      "Gas Composition",
+      "Petrochemical Feedstock",
+      "Specialty Chemicals QC",
+      "Battery & Energy Materials",
+      "Lubricant Wear Metals"
+     ]
+    },
+    {
+     "name": "Materials & Semiconductor Analysis",
+     "cfj": "To separate, characterize, and quantify the constituents of materials and semiconductor samples to define structure, purity, and properties.",
+     "l3": [
+      "Surface Characterization",
+      "Trace Contamination",
+      "Thin Film Analysis",
+      "Particle & Defect",
+      "Elemental Microanalysis",
+      "Failure Analysis",
+      "Crystallography",
+      "Thermal Property Analysis",
+      "Nanomaterial Characterization",
+      "Bulk Composition",
+      "Mechanical & Rheological"
+     ]
+    },
+    {
+     "name": "Academic & Government Research Analysis",
+     "cfj": "To separate and quantify constituents across diverse samples in support of scientific discovery and public research programs.",
+     "l3": [
+      "Synthetic Chemistry",
+      "Life Science Research",
+      "Geochemistry",
+      "Atmospheric Science",
+      "Natural Products",
+      "Isotope Analysis",
+      "Catalysis Research",
+      "Energy Materials Research",
+      "Astrochemistry",
+      "Core Facility Services"
+     ]
+    },
+    {
+     "name": "Forensic & Security Analysis",
+     "cfj": "To separate and quantify constituents in evidentiary and security-related samples to support investigations and threat detection.",
+     "l3": [
+      "Seized Drug Analysis",
+      "Forensic Toxicology",
+      "Trace Evidence",
+      "Explosives Detection",
+      "Gunshot Residue",
+      "Arson & Fire Debris",
+      "Chemical Threat Agents",
+      "Doping Control",
+      "Counterfeit Analysis",
+      "Questioned Documents"
+     ]
+    }
+   ]
+  },
+  {
+   "rank": 8,
+   "naics": "333314",
+   "title": "Optical Instrument and Lens Manufacturing",
+   "job": "Seeing / Manipulating light",
+   "activity_scope": "Shaping and directing light",
+   "demand_primary": {
+    "name": "application_end_market",
+    "values": [
+     "Defense & aerospace (targeting, thermal imaging, avionics, surveillance)",
+     "Medical & life sciences (endoscopy, OCT, microscopy, diagnostics)",
+     "Semiconductor & lithography (wafer inspection, photolithography, metrology)",
+     "Industrial & machine vision / metrology / laser materials processing",
+     "Consumer & imaging electronics (cameras, AR/VR, smartphone optics)",
+     "Scientific, astronomy & research instrumentation"
+    ],
+    "sources": [
+     "IBISWorld Industry Report NAICS 333314 \u2014 Optical Instrument & Lens Manufacturing",
+     "Kentley Insights \u2014 Optical Instrument & Lens Manufacturing Market Research Report",
+     "SPIE Photonics West / SPIE Optifab conference tracks"
+    ]
+   },
+   "supply_primary": {
+    "name": "material_fabrication_platform",
+    "values": [
+     "Glass grinding & polishing (conventional precision optics)",
+     "Single-point diamond turning (polymer & crystalline/IR)",
+     "Precision glass molding (PGM)",
+     "Polymer / plastic injection-molded optics",
+     "Crystalline & infrared material fabrication (Ge, ZnSe, ZnS, CaF2, sapphire)"
+    ],
+    "sources": [
+     "APOMA \u2014 American Precision Optics Manufacturers Association supplier directory",
+     "SPIE Optifab \u2014 North America's largest optical fabrication exhibition",
+     "SPIE optical fabrication literature (Field Guide to Optical Fabrication; Handbook of Optics)"
+    ]
+   },
+   "all_dimensions": [
+    {
+     "name": "application_end_market",
+     "side": "demand",
+     "role": "primary",
+     "values": [
+      "Defense & aerospace (targeting, thermal imaging, avionics, surveillance)",
+      "Medical & life sciences (endoscopy, OCT, microscopy, diagnostics)",
+      "Semiconductor & lithography (wafer inspection, photolithography, metrology)",
+      "Industrial & machine vision / metrology / laser materials processing",
+      "Consumer & imaging electronics (cameras, AR/VR, smartphone optics)",
+      "Scientific, astronomy & research instrumentation"
+     ],
+     "sources": [
+      "IBISWorld Industry Report NAICS 333314 \u2014 Optical Instrument & Lens Manufacturing",
+      "Kentley Insights \u2014 Optical Instrument & Lens Manufacturing Market Research Report",
+      "SPIE Photonics West / SPIE Optifab conference tracks"
+     ]
+    },
+    {
+     "name": "spectral_band",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Ultraviolet (UV / DUV)",
+      "Visible",
+      "Near-infrared (NIR)",
+      "Short-wave infrared (SWIR)",
+      "Mid-wave infrared (MWIR)",
+      "Long-wave / thermal infrared (LWIR)"
+     ],
+     "sources": [
+      "SPIE Field Guide to Optical Fabrication / SPIE optics literature",
+      "ISO 20473 \u2014 Optics and photonics, spectral bands"
+     ]
+    },
+    {
+     "name": "optical_element_type",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Lenses (singlet, doublet, aspheric, achromatic \u2014 except ophthalmic)",
+      "Prisms & beamsplitters",
+      "Mirrors / reflective optics",
+      "Windows & domes",
+      "Filters",
+      "Assembled instruments (binoculars, microscopes, telescopes, objectives)"
+     ],
+     "sources": [
+      "US Census Bureau NAICS 333314 industry definition",
+      "UNSPSC Family 41-11 \u2014 Laboratory and scientific optical equipment / lens classes"
+     ]
+    },
+    {
+     "name": "precision_quality_grade",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Commercial grade",
+      "Precision grade",
+      "High-precision / diffraction-limited",
+      "High-energy-laser / damage-threshold grade"
+     ],
+     "sources": [
+      "ISO 10110 \u2014 Optics and photonics: Preparation of drawings for optical elements and systems",
+      "MIL-PRF-13830B \u2014 Optical Components for Fire Control Instruments (scratch-dig)"
+     ]
+    },
+    {
+     "name": "material_fabrication_platform",
+     "side": "supply",
+     "role": "primary",
+     "values": [
+      "Glass grinding & polishing (conventional precision optics)",
+      "Single-point diamond turning (polymer & crystalline/IR)",
+      "Precision glass molding (PGM)",
+      "Polymer / plastic injection-molded optics",
+      "Crystalline & infrared material fabrication (Ge, ZnSe, ZnS, CaF2, sapphire)"
+     ],
+     "sources": [
+      "APOMA \u2014 American Precision Optics Manufacturers Association supplier directory",
+      "SPIE Optifab \u2014 North America's largest optical fabrication exhibition",
+      "SPIE optical fabrication literature (Field Guide to Optical Fabrication; Handbook of Optics)"
+     ]
+    },
+    {
+     "name": "establishment_scale_integration",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Single-process job shop / contract fabricator",
+      "Catalog / stock optics manufacturer",
+      "Custom build-to-print optics manufacturer",
+      "Vertically integrated design-build (design + fab + coating + assembly)"
+     ],
+     "sources": [
+      "US Census Bureau \u2014 County Business Patterns / NAICS Manual establishment structure for 333314",
+      "SEC EDGAR 10-K segment/operations disclosures (e.g., II-VI/Coherent, G&H, Jenoptik, Syntec Optics)"
+     ]
+    },
+    {
+     "name": "quality_regulatory_certification",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "ISO 9001 (baseline quality)",
+      "AS9100 (aerospace/defense quality)",
+      "ITAR-registered / EAR-controlled (defense export)",
+      "ISO 13485 (medical devices)"
+     ],
+     "sources": [
+      "ISO 9001 / ISO 13485 quality management system standards",
+      "SAE AS9100 \u2014 Quality Management Systems for Aviation, Space & Defense",
+      "ITAR (International Traffic in Arms Regulations) registration"
+     ]
+    }
+   ],
+   "l2_markets": [
+    {
+     "name": "Defense & Aerospace Optics",
+     "cfj": "To shape and direct light so airborne, ground and space platforms can target, see in the dark, navigate and survey under harsh field conditions.",
+     "l3": [
+      "Thermal Imaging",
+      "Targeting & Designation",
+      "Night Vision",
+      "Surveillance & Reconnaissance",
+      "Avionics Displays",
+      "Head-Up Display Optics",
+      "Missile Seekers",
+      "Space Imaging",
+      "Laser Rangefinding",
+      "Periscope & Sighting",
+      "Directed Energy Optics",
+      "Gimbal Stabilized Optics"
+     ]
+    },
+    {
+     "name": "Medical & Life Science Optics",
+     "cfj": "To shape and direct light inside diagnostic, surgical and analytical instruments so clinicians and researchers can image and measure living tissue and biological samples.",
+     "l3": [
+      "Endoscopic Imaging",
+      "Surgical Visualization",
+      "Diagnostic Microscopy",
+      "Optical Coherence Tomography",
+      "Ophthalmic Examination",
+      "Flow Cytometry",
+      "DNA Sequencing Optics",
+      "Fluorescence Imaging",
+      "Dental Imaging",
+      "Point-of-Care Diagnostics",
+      "Laser Therapy Delivery",
+      "Confocal Imaging"
+     ]
+    },
+    {
+     "name": "Semiconductor Lithography Optics",
+     "cfj": "To shape and direct light with extreme precision so chipmakers can pattern, inspect and measure features on semiconductor wafers.",
+     "l3": [
+      "Photolithography Projection",
+      "Wafer Inspection",
+      "Overlay Metrology",
+      "Critical Dimension Metrology",
+      "Mask & Reticle Inspection",
+      "Deep Ultraviolet Optics",
+      "Extreme Ultraviolet Optics",
+      "Laser Annealing Optics",
+      "Wafer Bonding Alignment",
+      "Thin-Film Metrology",
+      "Beam Homogenization"
+     ]
+    },
+    {
+     "name": "Machine Vision & Metrology Optics",
+     "cfj": "To shape and direct light so automated production and measurement systems can inspect, guide and dimensionally verify parts and processes.",
+     "l3": [
+      "Automated Inspection",
+      "Dimensional Gauging",
+      "Surface Profiling",
+      "Barcode & Code Reading",
+      "Robotic Guidance",
+      "Laser Materials Processing",
+      "3D Scanning",
+      "Telecentric Measurement",
+      "Coordinate Metrology",
+      "Spectroscopic Sorting",
+      "Web Inspection",
+      "Optical Sensing"
+     ]
+    },
+    {
+     "name": "Consumer Imaging Optics",
+     "cfj": "To shape and direct light in compact, low-cost form so mass-market devices can capture, display and immerse users in images.",
+     "l3": [
+      "Smartphone Camera",
+      "Augmented Reality Optics",
+      "Virtual Reality Optics",
+      "Action & Wearable Cameras",
+      "Projection Optics",
+      "Webcam & Videoconferencing",
+      "Automotive Camera",
+      "Drone Imaging",
+      "Depth Sensing",
+      "Display Backlight Optics",
+      "Periscope Zoom"
+     ]
+    },
+    {
+     "name": "Scientific & Astronomy Optics",
+     "cfj": "To shape and direct light so researchers and observatories can collect, resolve and analyze faint or distant light for scientific discovery.",
+     "l3": [
+      "Telescope Optics",
+      "Spectrometer Optics",
+      "Research Microscopy",
+      "Laser Spectroscopy",
+      "Synchrotron Beamline Optics",
+      "Adaptive Optics",
+      "Interferometry",
+      "Astronomical Imaging",
+      "Gravitational Wave Optics",
+      "Particle Physics Detection",
+      "Hyperspectral Imaging",
+      "Coronagraphy"
+     ]
+    }
+   ]
+  },
+  {
+   "rank": 9,
+   "naics": "339112",
+   "title": "Surgical and Medical Instrument Manufacturing",
+   "job": "Treating / Intervening on the body",
+   "activity_scope": "Accessing and manipulating tissue",
+   "demand_primary": {
+    "name": "clinical_specialty_target",
+    "values": [
+     "Cardiovascular (21 CFR 870)",
+     "Orthopedic (21 CFR 888)",
+     "Ophthalmic (21 CFR 886)",
+     "General & plastic surgery (21 CFR 878)",
+     "Neurological (21 CFR 882)",
+     "Obstetrical & gynecological (21 CFR 884)",
+     "Ear, nose & throat (21 CFR 874)",
+     "Dental (21 CFR 872)",
+     "Gastroenterology & urology (21 CFR 876)",
+     "Anesthesiology (21 CFR 868)",
+     "General hospital & personal use (21 CFR 880)",
+     "Veterinary instruments"
+    ],
+    "sources": [
+     "FDA Medical Device Classification Panels (21 CFR Parts 862-892)",
+     "21 CFR Part 878 - General and Plastic Surgery Devices",
+     "Grand View Research / Mordor Intelligence Surgical & Medical Device market reports"
+    ]
+   },
+   "supply_primary": {
+    "name": "regulatory_establishment_designation",
+    "values": [
+     "Class I (general controls, mostly 510(k)-exempt)",
+     "Class II (510(k) clearance, special controls)",
+     "Class III (PMA approval)",
+     "Specification developer / legal manufacturer (own-label)",
+     "Contract / OEM manufacturer (under others' specifications)"
+    ],
+    "sources": [
+     "FDA Device Classification (Class I/II/III) and 510(k) vs PMA pathways",
+     "21 CFR Part 807 - Establishment Registration and Device Listing",
+     "FDA Quality System Regulation 21 CFR Part 820 (QMSR)"
+    ]
+   },
+   "all_dimensions": [
+    {
+     "name": "clinical_specialty_target",
+     "side": "demand",
+     "role": "primary",
+     "values": [
+      "Cardiovascular (21 CFR 870)",
+      "Orthopedic (21 CFR 888)",
+      "Ophthalmic (21 CFR 886)",
+      "General & plastic surgery (21 CFR 878)",
+      "Neurological (21 CFR 882)",
+      "Obstetrical & gynecological (21 CFR 884)",
+      "Ear, nose & throat (21 CFR 874)",
+      "Dental (21 CFR 872)",
+      "Gastroenterology & urology (21 CFR 876)",
+      "Anesthesiology (21 CFR 868)",
+      "General hospital & personal use (21 CFR 880)",
+      "Veterinary instruments"
+     ],
+     "sources": [
+      "FDA Medical Device Classification Panels (21 CFR Parts 862-892)",
+      "21 CFR Part 878 - General and Plastic Surgery Devices",
+      "Grand View Research / Mordor Intelligence Surgical & Medical Device market reports"
+     ]
+    },
+    {
+     "name": "instrument_product_category",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Cutting & dissecting instruments (scalpels, scissors)",
+      "Grasping, clamping & occluding instruments (forceps, clamps, hemostats)",
+      "Retracting & exposing instruments",
+      "Suturing, stapling & closure devices",
+      "Catheters & access devices",
+      "Injection & aspiration devices (syringes, hypodermic needles, cannulae)",
+      "Anesthesia & respiratory apparatus",
+      "Infusion & transfusion sets",
+      "Measuring & monitoring instruments (thermometers, manometers)"
+     ],
+     "sources": [
+      "Global Medical Device Nomenclature (GMDN), ISO 15225",
+      "European Medical Device Nomenclature (EMDN)",
+      "NAICS 339112 product examples (US Census/NAICS Manual)"
+     ]
+    },
+    {
+     "name": "care_setting_site_of_use",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Hospital operating room",
+      "Ambulatory surgical center",
+      "Physician office / outpatient clinic",
+      "Dental practice",
+      "Emergency / pre-hospital / field",
+      "Veterinary clinic",
+      "Home / personal use"
+     ],
+     "sources": [
+      "Vizient / Premier GPO contract category structure",
+      "IBISWorld NAICS 339112 industry report - major markets / demand segmentation"
+     ]
+    },
+    {
+     "name": "reuse_lifecycle_model",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Single-use / disposable",
+      "Reusable / resterilizable",
+      "Reposable / hybrid"
+     ],
+     "sources": [
+      "FDA Reprocessing of Reusable Medical Devices guidance / single-use device labeling",
+      "Mordor Intelligence / Grand View Surgical Instruments market segmentation by usability (disposable vs reusable)"
+     ]
+    },
+    {
+     "name": "regulatory_establishment_designation",
+     "side": "supply",
+     "role": "primary",
+     "values": [
+      "Class I (general controls, mostly 510(k)-exempt)",
+      "Class II (510(k) clearance, special controls)",
+      "Class III (PMA approval)",
+      "Specification developer / legal manufacturer (own-label)",
+      "Contract / OEM manufacturer (under others' specifications)"
+     ],
+     "sources": [
+      "FDA Device Classification (Class I/II/III) and 510(k) vs PMA pathways",
+      "21 CFR Part 807 - Establishment Registration and Device Listing",
+      "FDA Quality System Regulation 21 CFR Part 820 (QMSR)"
+     ]
+    },
+    {
+     "name": "production_capability_platform",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Precision metal machining & forming (stainless/titanium instruments)",
+      "Polymer molding, extrusion & tubing",
+      "Fine needle / cannula / catheter forming",
+      "Surface treatment & coating (passivation, electropolishing)",
+      "Device assembly & sterile barrier packaging"
+     ],
+     "sources": [
+      "Grand View Research Medical Device Contract Manufacturing market - service segmentation",
+      "ISO 13485 Medical Devices Quality Management Systems"
+     ]
+    },
+    {
+     "name": "firm_scale_integration",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Large diversified integrated medtech OEM",
+      "Mid-size specialized instrument manufacturer",
+      "Component / contract (CDMO/OEM) supplier",
+      "Small / artisan specialty instrument maker"
+     ],
+     "sources": [
+      "AdvaMed (The MedTech Association) membership structure",
+      "SEC 10-K segment reporting for diversified medtech firms",
+      "US Census County Business Patterns / Economic Census for NAICS 339112"
+     ]
+    }
+   ],
+   "l2_markets": [
+    {
+     "name": "Cardiovascular Surgery",
+     "cfj": "To access and manipulate the heart, vessels, and circulatory structures during intervention.",
+     "l3": [
+      "Vascular Clamping",
+      "Vessel Dissection",
+      "Anastomosis Closure",
+      "Cannulation",
+      "Endovascular Access",
+      "Cardiac Retraction",
+      "Coronary Probing",
+      "Valve Manipulation",
+      "Hemostasis Control",
+      "Vein Harvesting",
+      "Septal Access",
+      "Aortic Occlusion"
+     ]
+    },
+    {
+     "name": "Orthopedic Surgery",
+     "cfj": "To access and manipulate bone, joint, and musculoskeletal tissue during intervention.",
+     "l3": [
+      "Bone Cutting",
+      "Drilling & Reaming",
+      "Fracture Fixation",
+      "Joint Distraction",
+      "Bone Grasping",
+      "Implant Insertion",
+      "Soft-Tissue Retraction",
+      "Rasping & Filing",
+      "Arthroscopic Access",
+      "Spinal Decompression",
+      "Cement Delivery",
+      "Tendon Repair"
+     ]
+    },
+    {
+     "name": "Ophthalmic Surgery",
+     "cfj": "To access and manipulate the eye and ocular structures during intervention.",
+     "l3": [
+      "Microincision",
+      "Capsule Manipulation",
+      "Iris Retraction",
+      "Vitreous Access",
+      "Corneal Suturing",
+      "Lens Fragmentation",
+      "Forceps Grasping",
+      "Cannula Irrigation",
+      "Scleral Fixation",
+      "Lacrimal Probing"
+     ]
+    },
+    {
+     "name": "General & Plastic Surgery",
+     "cfj": "To access and manipulate soft tissue and body surfaces during open and reconstructive intervention.",
+     "l3": [
+      "Incision & Dissection",
+      "Tissue Grasping",
+      "Wound Closure",
+      "Retraction & Exposure",
+      "Clamping & Occluding",
+      "Suturing & Stapling",
+      "Skin Grafting",
+      "Flap Elevation",
+      "Cautery Dissection",
+      "Drain Placement",
+      "Liposuction Access",
+      "Microsurgical Repair"
+     ]
+    },
+    {
+     "name": "Neurosurgery",
+     "cfj": "To access and manipulate the brain, spine, and nervous-system tissue during intervention.",
+     "l3": [
+      "Cranial Access",
+      "Dural Manipulation",
+      "Microdissection",
+      "Aneurysm Clipping",
+      "Spinal Access",
+      "Brain Retraction",
+      "Stereotactic Targeting",
+      "Nerve Probing",
+      "Tumor Resection",
+      "Hemostatic Control",
+      "Shunt Placement"
+     ]
+    },
+    {
+     "name": "Gynecologic & Obstetric Surgery",
+     "cfj": "To access and manipulate the reproductive tract and pelvic structures during intervention.",
+     "l3": [
+      "Uterine Access",
+      "Cervical Dilation",
+      "Tissue Grasping",
+      "Speculum Exposure",
+      "Curettage",
+      "Tubal Occlusion",
+      "Delivery Assistance",
+      "Laparoscopic Access",
+      "Suturing & Closure",
+      "Biopsy Sampling",
+      "Hysteroscopic Resection"
+     ]
+    },
+    {
+     "name": "Otolaryngologic Surgery",
+     "cfj": "To access and manipulate the ear, nose, throat, and head-and-neck tissue during intervention.",
+     "l3": [
+      "Nasal Access",
+      "Tissue Grasping",
+      "Sinus Dissection",
+      "Ear Speculum Exposure",
+      "Laryngeal Access",
+      "Tonsil Removal",
+      "Microear Manipulation",
+      "Biopsy Sampling",
+      "Cautery Dissection",
+      "Foreign-Body Extraction"
+     ]
+    },
+    {
+     "name": "Dental & Oral Surgery",
+     "cfj": "To access and manipulate teeth, gums, and oral structures during intervention.",
+     "l3": [
+      "Tooth Extraction",
+      "Bone Contouring",
+      "Soft-Tissue Incision",
+      "Periodontal Scaling",
+      "Implant Site Preparation",
+      "Gingival Retraction",
+      "Suturing & Closure",
+      "Root Canal Access",
+      "Tissue Grasping",
+      "Cyst Enucleation"
+     ]
+    },
+    {
+     "name": "Gastroenterology & Urology",
+     "cfj": "To access and manipulate the digestive and urinary tracts during intervention.",
+     "l3": [
+      "Luminal Access",
+      "Catheter Insertion",
+      "Tissue Grasping",
+      "Stone Retrieval",
+      "Dilation",
+      "Biopsy Sampling",
+      "Polyp Resection",
+      "Stent Placement",
+      "Sphincter Manipulation",
+      "Irrigation & Aspiration",
+      "Endoscopic Access"
+     ]
+    },
+    {
+     "name": "Anesthesia & Airway Management",
+     "cfj": "To access and maintain the airway and deliver agents during procedural care.",
+     "l3": [
+      "Airway Intubation",
+      "Mask Ventilation",
+      "Regional Block Access",
+      "Vascular Cannulation",
+      "Gas Delivery",
+      "Suction & Aspiration",
+      "Laryngeal Visualization",
+      "Spinal Needle Access",
+      "Airway Adjunct Placement",
+      "Ventilatory Circuit Setup"
+     ]
+    },
+    {
+     "name": "General Hospital & Patient Care",
+     "cfj": "To access, support, and manipulate the body during routine clinical and bedside care.",
+     "l3": [
+      "Wound Dressing",
+      "Specimen Collection",
+      "Injection & Aspiration",
+      "Vital Measurement",
+      "Fluid Drainage",
+      "Catheter Care",
+      "Suture Removal",
+      "Tissue Examination",
+      "Mobility Support",
+      "Sterile Field Setup"
+     ]
+    },
+    {
+     "name": "Veterinary Surgery",
+     "cfj": "To access and manipulate animal tissue and anatomical structures during intervention.",
+     "l3": [
+      "Soft-Tissue Incision",
+      "Tissue Grasping",
+      "Bone Fixation",
+      "Wound Closure",
+      "Retraction & Exposure",
+      "Spaying & Neutering",
+      "Dental Extraction",
+      "Hoof & Claw Work",
+      "Clamping & Occluding",
+      "Large-Animal Access"
+     ]
+    }
+   ]
+  },
+  {
+   "rank": 22,
+   "naics": "221320",
+   "title": "Sewage Treatment Facilities",
+   "job": "Purifying / Reclaiming wastewater",
+   "activity_scope": "Collecting and treating effluent",
+   "demand_primary": {
+    "name": "wastewater_source_class",
+    "values": [
+     "Municipal/domestic sewage (POTW collection systems)",
+     "Industrial effluent \u2014 food & beverage",
+     "Industrial effluent \u2014 chemicals & petrochemical",
+     "Industrial effluent \u2014 pulp & paper",
+     "Industrial effluent \u2014 pharmaceuticals",
+     "Industrial effluent \u2014 power generation",
+     "Industrial effluent \u2014 oil & gas",
+     "Decentralized / cluster & small-community flows"
+    ],
+    "sources": [
+     "EPA NPDES Program \u2014 Publicly Owned Treatment Works (POTW) vs. Industrial/Categorical Dischargers",
+     "EPA National Pretreatment Program (40 CFR Part 403) \u2014 categorical industrial users",
+     "Fortune Business Insights / Meticulous Research \u2014 Water & Wastewater Treatment Market segmentation by application (municipal vs. industrial)"
+    ]
+   },
+   "supply_primary": {
+    "name": "utility_ownership_operating_model",
+    "values": [
+     "Publicly owned treatment works (municipal / special district)",
+     "Investor-owned regulated water/wastewater utility",
+     "Privately contract-operated (O&M contract / public-private partnership)"
+    ],
+    "sources": [
+     "EPA Clean Watersheds Needs Survey (CWNS) \u2014 publicly owned treatment works inventory",
+     "U.S. Census NAICS Manual \u2014 Sector 22 Utilities (establishment ownership) and SEC EDGAR 10-K segment structure of investor-owned water utilities",
+     "EPA Clean Water State Revolving Fund (CWSRF) program"
+    ]
+   },
+   "all_dimensions": [
+    {
+     "name": "wastewater_source_class",
+     "side": "demand",
+     "role": "primary",
+     "values": [
+      "Municipal/domestic sewage (POTW collection systems)",
+      "Industrial effluent \u2014 food & beverage",
+      "Industrial effluent \u2014 chemicals & petrochemical",
+      "Industrial effluent \u2014 pulp & paper",
+      "Industrial effluent \u2014 pharmaceuticals",
+      "Industrial effluent \u2014 power generation",
+      "Industrial effluent \u2014 oil & gas",
+      "Decentralized / cluster & small-community flows"
+     ],
+     "sources": [
+      "EPA NPDES Program \u2014 Publicly Owned Treatment Works (POTW) vs. Industrial/Categorical Dischargers",
+      "EPA National Pretreatment Program (40 CFR Part 403) \u2014 categorical industrial users",
+      "Fortune Business Insights / Meticulous Research \u2014 Water & Wastewater Treatment Market segmentation by application (municipal vs. industrial)"
+     ]
+    },
+    {
+     "name": "treatment_level_attained",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Preliminary / primary (settling, screening)",
+      "Secondary (biological BOD/TSS removal)",
+      "Tertiary / advanced (nutrient removal, filtration)",
+      "Disinfection & reuse-grade (reclaimed water)"
+     ],
+     "sources": [
+      "40 CFR Part 133 \u2014 Secondary Treatment Regulation (EPA)",
+      "EPA / FAO wastewater-treatment process classification (preliminary, primary, secondary, advanced/tertiary)"
+     ]
+    },
+    {
+     "name": "discharge_destination",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Surface-water discharge (NPDES-permitted outfall)",
+      "Land application / agricultural reuse",
+      "Groundwater / aquifer recharge",
+      "Non-potable and potable water reuse"
+     ],
+     "sources": [
+      "EPA NPDES Permit Program (Clean Water Act \u00a7402) \u2014 surface-water discharge permits",
+      "EPA Guidelines for Water Reuse"
+     ]
+    },
+    {
+     "name": "utility_ownership_operating_model",
+     "side": "supply",
+     "role": "primary",
+     "values": [
+      "Publicly owned treatment works (municipal / special district)",
+      "Investor-owned regulated water/wastewater utility",
+      "Privately contract-operated (O&M contract / public-private partnership)"
+     ],
+     "sources": [
+      "EPA Clean Watersheds Needs Survey (CWNS) \u2014 publicly owned treatment works inventory",
+      "U.S. Census NAICS Manual \u2014 Sector 22 Utilities (establishment ownership) and SEC EDGAR 10-K segment structure of investor-owned water utilities",
+      "EPA Clean Water State Revolving Fund (CWSRF) program"
+     ]
+    },
+    {
+     "name": "facility_size_operator_class",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Class I (small, basic plants)",
+      "Class II",
+      "Class III",
+      "Class IV (large / complex plants)"
+     ],
+     "sources": [
+      "Association of Boards of Certification (ABC) \u2014 Wastewater Treatment Operator Certification standardized classification (Class I\u2013IV)",
+      "Water Environment Federation (WEF) \u2014 operator training & certification resources / Wastewater Treatment Fundamentals"
+     ]
+    },
+    {
+     "name": "service_integration_scope",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Collection/sewer-system operation only",
+      "Treatment-plant operation only",
+      "Fully integrated collection + treatment + disposal/reuse"
+     ],
+     "sources": [
+      "U.S. Census NAICS 221320 industry definition (operating sewer systems or sewage treatment facilities)",
+      "Water Environment Federation (WEF) \u2014 collection-system vs. water-resource-recovery-facility practice areas"
+     ]
+    }
+   ],
+   "l2_markets": [
+    {
+     "name": "Municipal Sewage Treatment",
+     "cfj": "To collect and treat domestic sewage conveyed from a community's collection system so it can be safely returned to the environment.",
+     "l3": [
+      "Preliminary Screening",
+      "Primary Settling",
+      "Secondary Biological",
+      "Nutrient Removal",
+      "Tertiary Filtration",
+      "Effluent Disinfection",
+      "Biosolids Handling",
+      "Wet-Weather Flow",
+      "Reclaimed Water Production",
+      "Potable Reuse",
+      "Land Application",
+      "Odor Control"
+     ]
+    },
+    {
+     "name": "Food & Beverage Effluent Treatment",
+     "cfj": "To treat high-organic, high-strength process effluent from food and beverage operations before discharge or reuse.",
+     "l3": [
+      "Flow Equalization",
+      "Fats Oils Grease",
+      "Dissolved Air Flotation",
+      "Anaerobic Pretreatment",
+      "Aerobic Polishing",
+      "Nutrient Reduction",
+      "Sugar Load Treatment",
+      "Sewer Pretreatment",
+      "Water Reclamation",
+      "Sludge Dewatering"
+     ]
+    },
+    {
+     "name": "Chemical & Petrochemical Effluent Treatment",
+     "cfj": "To treat complex chemical and petrochemical process effluent laden with dissolved organics and trace contaminants before discharge.",
+     "l3": [
+      "Oil Water Separation",
+      "Heavy Metals Removal",
+      "Chemical Oxidation",
+      "Biological Treatment",
+      "Trace Organics Removal",
+      "pH Neutralization",
+      "Dissolved Solids Reduction",
+      "Zero Liquid Discharge",
+      "Effluent Polishing",
+      "Hazardous Residual Handling"
+     ]
+    },
+    {
+     "name": "Pulp & Paper Effluent Treatment",
+     "cfj": "To treat fiber-, color-, and organic-laden mill effluent so it meets receiving-water limits.",
+     "l3": [
+      "Fiber Recovery",
+      "Primary Clarification",
+      "Color Removal",
+      "Aerated Lagoon",
+      "Activated Treatment",
+      "Adsorbable Organics Control",
+      "Toxicity Reduction",
+      "Process Water Reuse",
+      "Sludge Management",
+      "Outfall Compliance"
+     ]
+    },
+    {
+     "name": "Pharmaceutical Effluent Treatment",
+     "cfj": "To treat pharmaceutical manufacturing effluent containing active compounds and recalcitrant organics before discharge.",
+     "l3": [
+      "Stream Segregation",
+      "Active Compound Destruction",
+      "Advanced Oxidation",
+      "Membrane Concentration",
+      "Biological Reduction",
+      "Solvent Recovery",
+      "Effluent Polishing",
+      "Sewer Pretreatment",
+      "High-Salinity Handling"
+     ]
+    },
+    {
+     "name": "Power Generation Effluent Treatment",
+     "cfj": "To treat cooling, blowdown, and process wastewater streams from power generation before discharge or recycle.",
+     "l3": [
+      "Cooling Blowdown",
+      "Metals Precipitation",
+      "Suspended Solids Removal",
+      "Dissolved Solids Reduction",
+      "Thermal Control",
+      "Scrubber Wastewater",
+      "Water Recycle",
+      "Zero Liquid Discharge",
+      "Effluent Compliance"
+     ]
+    },
+    {
+     "name": "Oil & Gas Effluent Treatment",
+     "cfj": "To treat produced, flowback, and process water from oil and gas operations before disposal or reuse.",
+     "l3": [
+      "De-Oiling",
+      "Suspended Solids Removal",
+      "Dissolved Hydrocarbons",
+      "Desalination",
+      "Flowback Treatment",
+      "Produced Water Reuse",
+      "Disposal Conditioning",
+      "Heavy Metals Removal",
+      "Naturally Occurring Radioactivity"
+     ]
+    },
+    {
+     "name": "Decentralized Cluster Treatment",
+     "cfj": "To collect and treat flows from small communities and clustered sources where centralized sewer infrastructure is not feasible.",
+     "l3": [
+      "Septic Onsite",
+      "Cluster Collection",
+      "Packaged Plants",
+      "Lagoon Treatment",
+      "Constructed Wetlands",
+      "Subsurface Dispersal",
+      "Effluent Disinfection",
+      "Nutrient Reduction",
+      "Local Water Reuse",
+      "Septage Management"
+     ]
+    }
+   ]
+  },
+  {
+   "rank": 33,
+   "naics": "334220",
+   "title": "Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing",
+   "job": "Communicating / Conveying information remotely",
+   "activity_scope": "Transmitting and receiving signals",
+   "demand_primary": {
+    "name": "communication_application_domain",
+    "values": [
+     "Cellular / mobile network infrastructure (base stations, RAN, small cells, antennas)",
+     "Broadcast media distribution (radio & TV transmitters, broadcast antennas, studio equipment, encoders/decoders)",
+     "Land mobile radio / public-safety & mission-critical communications (LMR, P25)",
+     "Satellite communications / SATCOM (earth stations, satellite terminals, satellite broadcast)",
+     "Fixed wireless & microwave backhaul / point-to-point links",
+     "IoT / M2M wireless connectivity modules",
+     "Navigation & positioning (GPS / GNSS equipment)"
+    ],
+    "sources": [
+     "FCC Rules Title 47 CFR service parts (Part 22/24/27 commercial mobile, Part 25 satellite, Part 73/74 broadcast, Part 90 land mobile & public safety, Part 101 fixed microwave)",
+     "Telecommunications Industry Association (TIA) engineering committees",
+     "Dell'Oro Group RAN & Wireless Infrastructure market reports",
+     "IBISWorld Industry Report \u2014 NAICS 334220 Radio, Television Broadcasting & Wireless Communications Equipment Manufacturing"
+    ]
+   },
+   "supply_primary": {
+    "name": "firm_value_chain_position",
+    "values": [
+     "System OEM / equipment integrator (sells finished communications equipment)",
+     "Component & subsystem supplier (RF front-ends, antennas, transceivers, modules)",
+     "Electronics manufacturing services (EMS) / ODM contract manufacturer",
+     "Design house / fabless RF & wireless IP supplier"
+    ],
+    "sources": [
+     "SEC EDGAR 10-K segment reporting (ASC 280) for communications-equipment manufacturers",
+     "U.S. Census Bureau \u2014 NAICS Manual establishment definition for 334220",
+     "GICS Sub-Industry 45201020 \u2014 Communications Equipment (MSCI / S&P Global)"
+    ]
+   },
+   "all_dimensions": [
+    {
+     "name": "communication_application_domain",
+     "side": "demand",
+     "role": "primary",
+     "values": [
+      "Cellular / mobile network infrastructure (base stations, RAN, small cells, antennas)",
+      "Broadcast media distribution (radio & TV transmitters, broadcast antennas, studio equipment, encoders/decoders)",
+      "Land mobile radio / public-safety & mission-critical communications (LMR, P25)",
+      "Satellite communications / SATCOM (earth stations, satellite terminals, satellite broadcast)",
+      "Fixed wireless & microwave backhaul / point-to-point links",
+      "IoT / M2M wireless connectivity modules",
+      "Navigation & positioning (GPS / GNSS equipment)"
+     ],
+     "sources": [
+      "FCC Rules Title 47 CFR service parts (Part 22/24/27 commercial mobile, Part 25 satellite, Part 73/74 broadcast, Part 90 land mobile & public safety, Part 101 fixed microwave)",
+      "Telecommunications Industry Association (TIA) engineering committees",
+      "Dell'Oro Group RAN & Wireless Infrastructure market reports"
+     ]
+    },
+    {
+     "name": "equipment_product_family",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Transmitting & receiving antennas",
+      "Base stations / radio access network units",
+      "Transmitters & receivers (broadcast and point-to-point)",
+      "Studio & broadcasting equipment (encoders, decoders, mixers)",
+      "Mobile / handheld communications devices (cellular phones, pagers, two-way radios)",
+      "Wireless modules & transceivers (IoT/M2M, GPS/GNSS)",
+      "Cable television headend & distribution equipment"
+     ],
+     "sources": [
+      "Harmonized System headings 8517 (apparatus for transmission/reception over wireless networks; parts) and 8525 (transmission apparatus for radio-broadcasting or television)",
+      "GICS Sub-Industry 45201020 \u2014 Communications Equipment (MSCI / S&P Global)",
+      "U.S. Census Bureau NAICS 334220 product-line definition"
+     ]
+    },
+    {
+     "name": "end_buyer_vertical",
+     "side": "demand",
+     "role": "context",
+     "values": [
+      "Mobile network operators / carriers",
+      "Broadcasters & media/content distributors",
+      "Government, defense & public-safety agencies",
+      "Enterprises & private-network operators",
+      "Satellite operators & service providers",
+      "Cable & multichannel video distributors"
+     ],
+     "sources": [
+      "CTIA \u2014 The Wireless Association",
+      "National Association of Broadcasters (NAB)",
+      "Society of Cable Telecommunications Engineers (SCTE)"
+     ]
+    },
+    {
+     "name": "firm_value_chain_position",
+     "side": "supply",
+     "role": "primary",
+     "values": [
+      "System OEM / equipment integrator (sells finished communications equipment)",
+      "Component & subsystem supplier (RF front-ends, antennas, transceivers, modules)",
+      "Electronics manufacturing services (EMS) / ODM contract manufacturer",
+      "Design house / fabless RF & wireless IP supplier"
+     ],
+     "sources": [
+      "SEC EDGAR 10-K segment reporting (ASC 280) for communications-equipment manufacturers",
+      "U.S. Census Bureau \u2014 NAICS Manual establishment definition for 334220",
+      "GICS Sub-Industry 45201020 \u2014 Communications Equipment (MSCI / S&P Global)"
+     ]
+    },
+    {
+     "name": "regulatory_establishment_designation",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "FCC Certification grantees (FCC ID / grantee code holders)",
+      "Supplier's Declaration of Conformity (SDoC) manufacturers",
+      "Equipment also subject to international type-approval (ETSI/CE, ISED) regimes",
+      "Defense / ITAR-controlled equipment producers"
+     ],
+     "sources": [
+      "FCC Equipment Authorization Program \u2014 Grantee Code & FCC ID (47 CFR Part 2 Subpart J)",
+      "TIA / 3GPP base-station equipment conformance standards"
+     ]
+    },
+    {
+     "name": "firm_scale_and_integration",
+     "side": "supply",
+     "role": "context",
+     "values": [
+      "Globally integrated tier-1 infrastructure vendors (full-line, multi-domain)",
+      "Specialist mid-market manufacturers (focused on one or two application domains)",
+      "Small / niche job-shop manufacturers and emerging entrants"
+     ],
+     "sources": [
+      "BLS Industry at a Glance \u2014 NAICS 3342 / 334220 establishment & employment data",
+      "IBISWorld Industry Report \u2014 NAICS 334220 (market-share concentration & major players)"
+     ]
+    }
+   ],
+   "l2_markets": [
+    {
+     "name": "Cellular Network Coverage",
+     "cfj": "To extend reliable mobile voice and data coverage across a service area for a large population of moving subscribers.",
+     "l3": [
+      "Wide-Area Coverage",
+      "Urban Densification",
+      "Indoor Coverage",
+      "Rural Coverage Extension",
+      "Highway and Transport Coverage",
+      "Event and Venue Capacity",
+      "Private On-Site Networks",
+      "Network Edge Distribution",
+      "Coverage Densification Layers",
+      "Fixed Wireless Access",
+      "Underground and Tunnel Coverage",
+      "Border and Roaming Coverage"
+     ]
+    },
+    {
+     "name": "Broadcast Media Distribution",
+     "cfj": "To deliver audio and video programming over the air to a mass audience of receivers across a coverage region.",
+     "l3": [
+      "Audio Origination",
+      "Video Origination",
+      "High-Power Over-the-Air",
+      "Low-Power Local Coverage",
+      "Signal Translation and Fill-In",
+      "Contribution and Backhaul",
+      "Multichannel Last-Mile Delivery",
+      "Datacasting and Ancillary Services",
+      "Emergency Alerting",
+      "Single-Frequency Networks",
+      "Mobile Reception Distribution",
+      "Direct-to-Home Delivery"
+     ]
+    },
+    {
+     "name": "Mission-Critical Field Communications",
+     "cfj": "To keep dispersed field personnel reliably in contact during operations and emergencies where failure is not acceptable.",
+     "l3": [
+      "Group Dispatch Voice",
+      "Wide-Area Trunked Systems",
+      "Direct Unit-to-Unit",
+      "Tactical Deployable Comms",
+      "Interagency Interoperability",
+      "Public-Safety Field Data",
+      "Utility and Industrial Field Radio",
+      "Transportation Operations Radio",
+      "Aviation and Maritime Field Voice",
+      "Body-Worn Personal Comms",
+      "Worker Safety and Lone-Worker",
+      "Encrypted Secure Operations"
+     ]
+    },
+    {
+     "name": "Satellite Connectivity Provision",
+     "cfj": "To exchange voice, data and video with remote, mobile or otherwise unreachable locations beyond terrestrial coverage.",
+     "l3": [
+      "Fixed Earth Stations",
+      "Maritime Terminals",
+      "Aeronautical Terminals",
+      "Land-Mobile Terminals",
+      "Portable and Transportable Units",
+      "Very Small Aperture Terminals",
+      "Mobile Satellite Voice and Data",
+      "Satellite Backhaul",
+      "Direct Broadcast Reception",
+      "Machine and Asset Tracking",
+      "Emergency and Restoration Links",
+      "On-the-Move Terminals"
+     ]
+    },
+    {
+     "name": "Point-to-Point Link Provision",
+     "cfj": "To carry high-capacity traffic between two fixed sites without laying physical cable between them.",
+     "l3": [
+      "Long-Haul Trunk Links",
+      "Short-Haul Access Links",
+      "Licensed-Band Links",
+      "Unlicensed-Band Links",
+      "High-Capacity Backhaul",
+      "Last-Mile Bridging",
+      "Disaster Recovery Links",
+      "Building-to-Building Links",
+      "Low-Latency Trading Links",
+      "Temporary Event Links",
+      "Cross-Water and Terrain Links",
+      "Aggregated Multi-Link Trunks"
+     ]
+    },
+    {
+     "name": "Device Connectivity Enablement",
+     "cfj": "To connect large fleets of unattended machines and sensors so they can report and be controlled remotely.",
+     "l3": [
+      "Short-Range Connectivity",
+      "Low-Power Wide-Area",
+      "Cellular-Embedded Connectivity",
+      "Asset Tracking Connectivity",
+      "Smart Metering Connectivity",
+      "Industrial Sensor Connectivity",
+      "Connected Vehicle Modules",
+      "Wearable Connectivity",
+      "Mesh Sensor Networks",
+      "Critical-Infrastructure Telemetry",
+      "Satellite-Backed IoT",
+      "Agricultural Field Connectivity"
+     ]
+    },
+    {
+     "name": "Positioning and Navigation",
+     "cfj": "To determine precise location, velocity and timing for users and assets anywhere within a coverage region.",
+     "l3": [
+      "Mass-Market Positioning",
+      "High-Precision Positioning",
+      "Survey and Mapping",
+      "Machine Guidance",
+      "Precision Timing Distribution",
+      "Aviation Navigation",
+      "Maritime Navigation",
+      "Assured and Resilient Positioning",
+      "Indoor Positioning",
+      "Asset and Fleet Location",
+      "Augmentation and Correction",
+      "Wearable and Personal Tracking"
+     ]
+    }
+   ]
+  }
+ ],
+ "stage3": [
+  {
+   "segment_id": "A8",
+   "naics": "333242",
+   "l2": "Process control & metrology",
+   "vn_anchor": "Semiconductor Machinery Manufacturing \u2014 Process control & metrology (segment job: To measure and verify that each process step met its dimensional, material and defect specifications.)",
+   "vn_cfj": "To measure and verify that each fabricated layer met its dimensional, material and defect specification before the wafer advances.",
+   "vn_units": [
+    {
+     "level": "L7",
+     "name": "Wafer process-control & metrology system",
+     "cfj": "To measure and verify each fabricated layer against its dimensional, material and defect specification across the device flow."
+    },
+    {
+     "level": "L6",
+     "name": "Lot intake & wafer handling",
+     "cfj": "To receive a wafer lot and present each wafer to the measurement stage without contaminating or damaging it."
+    },
+    {
+     "level": "L6",
+     "name": "Sampling & recipe setup",
+     "cfj": "To select which wafers, sites and layers to measure and load the measurement recipe and reference targets."
+    },
+    {
+     "level": "L6",
+     "name": "Optical dimensional & film measurement",
+     "cfj": "To quantify feature size, layer thickness and layer registration optically against design targets."
+    },
+    {
+     "level": "L6",
+     "name": "Defect detection & imaging",
+     "cfj": "To detect, locate and image particle and pattern defects on the wafer surface."
+    },
+    {
+     "level": "L6",
+     "name": "Material & electrical characterization",
+     "cfj": "To determine layer composition, dopant distribution, stress and in-line electrical parameters."
+    },
+    {
+     "level": "L6",
+     "name": "Data analysis & disposition",
+     "cfj": "To convert raw measurement signals into spec-referenced results and a pass/hold/scrap disposition fed back to the fab."
+    },
+    {
+     "level": "L6",
+     "name": "Calibration & reference standards",
+     "cfj": "To keep every measurement traceable and stable by qualifying the tool against known reference and reference-diffuse standards."
+    },
+    {
+     "level": "L6",
+     "name": "Contamination & environment control",
+     "cfj": "To hold the measurement environment within the particle, vibration, temperature and humidity limits the metrology demands."
+    },
+    {
+     "level": "L6a",
+     "name": "Critical-dimension & profile measurement",
+     "cfj": "To quantify feature width and sidewall profile against design targets."
+    },
+    {
+     "level": "L6a",
+     "name": "Film thickness & optical-property measurement",
+     "cfj": "To verify deposited and grown layers meet thickness and optical-constant specification."
+    },
+    {
+     "level": "L6a",
+     "name": "Overlay & registration measurement",
+     "cfj": "To measure registration error between successive patterned layers."
+    },
+    {
+     "level": "L5",
+     "name": "Wafer load port & EFEM handler",
+     "cfj": "To transfer wafers between the lot carrier and the measurement stage cleanly."
+    },
+    {
+     "level": "L5",
+     "name": "Pre-alignment & notch-finding station",
+     "cfj": "To orient and center each wafer to a known reference before measurement."
+    },
+    {
+     "level": "L5",
+     "name": "Precision measurement stage",
+     "cfj": "To position the wafer site under the optical column with nanometre-class repeatability."
+    },
+    {
+     "level": "L5",
+     "name": "Recipe & sampling controller",
+     "cfj": "To define the sites, layers and reference targets each lot is measured against."
+    }
+   ],
+   "bom_anchor": "Broadband-plasma DUV/UV/VIS optical wafer defect inspection tool",
+   "bom_units": [
+    {
+     "name": "Broadband-plasma DUV/UV/VIS optical wafer defect inspection tool",
+     "function": "Finished metrology/inspection tool (BOM L5 root)",
+     "level": "L5"
+    },
+    {
+     "name": "Illumination subsystem",
+     "function": "Generates and conditions the broadband DUV/UV/VIS beam that floods the wafer (L4)",
+     "level": "L4"
+    },
+    {
+     "name": "Imaging & collection optics subsystem",
+     "function": "Collects scattered/reflected light and forms the wafer image on the sensor (L4)",
+     "level": "L4"
+    },
+    {
+     "name": "Sensor & detection electronics subsystem",
+     "function": "Converts the optical image to defect signals (L4)",
+     "level": "L4"
+    },
+    {
+     "name": "Wafer stage & handling subsystem",
+     "function": "Positions and moves the wafer under the optical column (L4)",
+     "level": "L4"
+    },
+    {
+     "name": "Calibration & reference subsystem",
+     "function": "Holds the on-tool reference standards that fix the photometric/radiometric scale (L4)",
+     "level": "L4"
+    },
+    {
+     "name": "Enclosure, environment & control subsystem",
+     "function": "Frame, mini-environment and control electronics (L4)",
+     "level": "L4"
+    },
+    {
+     "name": "Broadband plasma light-source module",
+     "function": "Laser-sustained-plasma lamp producing 150-500nm+ broadband light (L3, under Illumination subsystem)",
+     "level": "L3"
+    },
+    {
+     "name": "Beam homogenizing & shaping module",
+     "function": "Flattens the source's angular/spatial non-uniformity into a uniform illumination field (L3, under Illumination subsystem)",
+     "level": "L3"
+    },
+    {
+     "name": "Spectral band-selection module",
+     "function": "Selects DUV/UV/VIS wavelength bands (L3, under Illumination subsystem)",
+     "level": "L3"
+    },
+    {
+     "name": "Beam homogenizer optical assembly",
+     "function": "Mount + optics that homogenize the beam (L2, under Beam homogenizing & shaping module)",
+     "level": "L2"
+    },
+    {
+     "name": "Volume diffuser / homogenizing optical element",
+     "function": "The light-scattering element that makes illumination angle-independent and uniform (L1 PART, under Beam homogenizer optical assembly) \u2014 DIFFUSIL-T CANDIDATE POSITION",
+     "level": "L1"
+    },
+    {
+     "name": "Diffuser kinematic mount",
+     "function": "Holds and registers the diffuser element in the beam (L1, under Beam homogenizer optical assembly)",
+     "level": "L1"
+    },
+    {
+     "name": "Synthetic fused silica (99.999% SiO2) with engineered micro-bubble scattering volume",
+     "function": "The diffuser raw material/substance (L0, under Volume diffuser / homogenizing optical element) \u2014 diffusil's material",
+     "level": "L0"
+    },
+    {
+     "name": "UV-grade fused silica (mount-window grade)",
+     "function": "Raw material of the mount window/optics (L0, under Diffuser kinematic mount)",
+     "level": "L0"
+    },
+    {
+     "name": "On-tool diffuse-reflectance reference module",
+     "function": "Presents a known stable diffuse-reflectance target the tool self-calibrates against (L3, under Calibration & reference subsystem)",
+     "level": "L3"
+    },
+    {
+     "name": "Reference mount & shutter module",
+     "function": "Inserts/retracts the reference into the optical path (L3, under Calibration & reference subsystem)",
+     "level": "L3"
+    },
+    {
+     "name": "Diffuse-reflectance reference assembly",
+     "function": "The reference standard + its certificate (L2, under On-tool diffuse-reflectance reference module)",
+     "level": "L2"
+    }
+   ],
+   "intersections": [
+    {
+     "unit": "Diffuse-reflectance reference element  (BOM L1) / Reference-diffuser & reflectance calibration assembly (VN L5)",
+     "path": "process_vn",
+     "fit": "direct",
+     "role": "DUV/UV-C-stable, high-temperature, chemical-resistant volume diffuse-reflectance reference element replacing UV-fragile PTFE/Spectralon and ceramic references",
+     "where": "The diffuse-reflectance REFERENCE STANDARD that every optical metrology/inspection tool (broadband-plasma inspector, spectroscopic reflectometer/ellipsometer) calibrates its photometric and radiometric scale against. diffusil-R is the volume-diffuse reflector inside the on-tool reference module and the integrating-sphere reference. It is a consumable/part inside the segment's equipment, NOT shipped in the customer's wafer.",
+     "rationale": "Spectralon/PTFE and ceramic diffuse references measurably degrade and drift under exactly the DUV/UV-C broadband-plasma illumination (150-500nm, high photon flux) that defines this segment's optical tools; diffusil-R holds near-Lambertian diffuse reflectance over 190-3200nm without UV-induced yellowing, so the tool's calibration stays traceable longer \u2014 the precise accuracy-where-polymer-fails differentiator."
+    },
+    {
+     "unit": "Volume diffuser / homogenizing optical element (BOM L1) / Illumination homogenizer & beam-shaping optics (VN L4) -> Beam homogenizing diffuser element (VN L3)",
+     "path": "process_vn",
+     "fit": "adjacent",
+     "role": "Incident-angle-independent transmission volume homogenizer for DUV/UV broadband-plasma illumination, surviving the source's UV flux and heat load",
+     "where": "The beam HOMOGENIZER in the illumination subsystem of the inspector / reflectometer: it flattens the laser-sustained-plasma source's angular and spatial non-uniformity into a uniform, incident-angle-independent illumination field before the light reaches the wafer. diffusil-T (transmission mode) sits in the optical path as a component.",
+     "rationale": "diffusil's defining property \u2014 homogenization independent of incident angle in transmission across DUV-NIR, withstanding high UV flux and >hundreds-of-degrees thermal load near an LSP source \u2014 fits illumination homogenization; adjacent rather than direct because many inspectors use fly-eye/micro-lens or rod homogenizers, so diffusil competes for the position rather than owning it, but its UV+thermal survival is a genuine edge close to a hot plasma lamp."
+    },
+    {
+     "unit": "Reference-channel diffuser & normalization optics (VN L4) -> Integrating / homogenizing diffuser disc (VN L3) \u2014 inside Spectroscopic reflectometer / ellipsometer (VN L5)",
+     "path": "process_vn",
+     "fit": "direct",
+     "role": "Stable DUV-NIR diffuse reference/normalization disc for the spectrometer reference channel and integrating sphere",
+     "where": "The reference/normalization channel of a spectroscopic reflectometer or ellipsometer used for film-thickness and optical-property metrology: a diffuser disc (often in an integrating sphere) normalizes the broadband source and provides the diffuse reference for the spectral measurement.",
+     "rationale": "Film-thickness/optical-property tools span DUV-NIR and need a diffuse reference that does not drift spectrally; diffusil's volume scattering gives flat, stable diffuse behavior across 190-3200nm where coated PTFE references degrade, making it a direct fit for the reference-channel diffuser and integrating-sphere reference standard."
+    }
+   ],
+   "stakeholders": [
+    {
+     "role": "purchase_influencer \u2014 metrology/optical-component engineer who specifies the diffuse-reflectance reference material and qualifies it against DUV/temperature drift",
+     "esco": "Optical engineer (ESCO 2152.x / 'optical engineer')",
+     "unit": "Reference-diffuser & reflectance calibration assembly (diffuse-reflectance reference element)",
+     "decides": "Specifies the reference-diffuser material and BRDF/reflectance traceability spec, evaluates whether a volume fused-silica reference (diffusil-R) meets DUV-stability and calibration-drift requirements, and recommends it into the tool's calibration BOM."
+    },
+    {
+     "role": "job_executor \u2014 calibration / metrology technician who performs the periodic reference calibration on the tool",
+     "esco": "Calibration technician / precision-instrument maker (ESCO 7311.x 'precision-instrument maker / calibration technician')",
+     "unit": "Reference-diffuser & reflectance calibration assembly (calibration of the optical tool)",
+     "decides": "Decides, during routine calibration, whether the diffuse reference still holds spec; flags reference degradation and drives replacement to a more stable reference element \u2014 first to feel polymer/Spectralon drift."
+    },
+    {
+     "role": "purchase_influencer \u2014 illumination/optical-systems designer who selects the homogenizer technology for the DUV/UV broadband-plasma source",
+     "esco": "Optical engineer (ESCO 2152.x / 'photonics engineer')",
+     "unit": "Illumination homogenizer & beam-shaping optics (beam homogenizing diffuser element)",
+     "decides": "Chooses the beam-homogenization approach (volume diffuser vs micro-lens/fly-eye vs rod) and whether an angle-independent UV/thermally-robust volume diffuser belongs in the illumination path near the plasma lamp."
+    },
+    {
+     "role": "job_overseer \u2014 metrology / process-integration manager accountable for measurement traceability and tool matching across the fab",
+     "esco": "Manufacturing manager / industrial production manager (ESCO 1321.x 'manufacturing manager')",
+     "unit": "Calibration & reference standards (horizontal) / Data analysis & disposition",
+     "decides": "Owns measurement-uncertainty budgets and tool-to-tool matching; approves moving to a more stable diffuse-reference standard when calibration drift threatens yield-affecting metrology, and signs off the qualification."
+    },
+    {
+     "role": "purchase_executor \u2014 equipment-OEM strategic buyer / component sourcing manager who procures merchant optical components for the tool",
+     "esco": "Procurement manager / purchasing manager (ESCO 1212.x 'procurement manager')",
+     "unit": "Broadband optical defect inspector (illumination + calibration subsystems as procured)",
+     "decides": "Makes the financial/sourcing decision to qualify and buy diffusil as a merchant optical component into the inspector's illumination and calibration BOM, weighing cost, lead time, single-source risk and the differentiated DUV/temperature performance."
+    }
+   ]
+  },
+  {
+   "segment_id": "B6",
+   "naics": "334516",
+   "l2": "Materials & Semiconductor Analysis",
+   "vn_anchor": "Analytical Laboratory Instrument Manufacturing (NAICS 334516) \u2014 Materials & Semiconductor Analysis: manufacture of optical-spectroscopy materials-characterization instruments (integrating-sphere UV-Vis-NIR spectrophotometers/reflectometers, thin-film reflectometers, spectroscopic ellipsometers, micro-spectroscopy and reflectance/transmittance benches) that resolve, characterize and quantify the surface composition, thin-film stack, trace contamination and optical/structural properties of materials and semiconductor samples.",
+   "vn_cfj": "To produce instruments that separate, characterize and quantify the constituents and optical/structural properties of materials and semiconductor samples so that structure, purity and properties can be defined.",
+   "vn_units": [
+    {
+     "level": "L7",
+     "name": "Materials & Semiconductor Optical-Analysis Instrument Manufacturing System",
+     "cfj": "To convert optics, photonics, electronics and software into a calibrated materials-characterization instrument that defines the structure, purity and properties of a sample."
+    },
+    {
+     "level": "L6",
+     "name": "Optical & Photonic Component Provisioning",
+     "cfj": "To provision the source, dispersive, diffusing and detector optics that define the instrument's spectral measurement chain."
+    },
+    {
+     "level": "L6",
+     "name": "Mechanical & Optomechanical Fabrication",
+     "cfj": "To fabricate the chassis, optical bench, sample stage and optomechanical mounts that hold the measurement chain in stable alignment."
+    },
+    {
+     "level": "L6",
+     "name": "Electronics & Detector Integration",
+     "cfj": "To build and populate the boards, detector front-ends and acquisition electronics that convert the optical signal into digital data."
+    },
+    {
+     "level": "L6",
+     "name": "Optical Assembly & Alignment",
+     "cfj": "To assemble and align the source, sampling optics, integrating sphere and detector into one light-tight measurement path."
+    },
+    {
+     "level": "L6",
+     "name": "Firmware, Software & Data-System Integration",
+     "cfj": "To integrate the embedded firmware and analysis/chemometrics software that drives acquisition and reports the characterization result."
+    },
+    {
+     "level": "L6",
+     "name": "Calibration & Metrological Qualification",
+     "cfj": "To establish and verify the instrument's photometric, wavelength and reflectance scales against traceable reference standards."
+    },
+    {
+     "level": "L6",
+     "name": "Final Test, Release & Dispatch",
+     "cfj": "To verify end-to-end performance against specification and release the qualified instrument for shipment."
+    },
+    {
+     "level": "L6",
+     "name": "Quality Assurance & Metrological Traceability",
+     "cfj": "To assure conformance and maintain measurement traceability across every production stage."
+    },
+    {
+     "level": "L6",
+     "name": "Cleanroom Environment & Contamination Control",
+     "cfj": "To maintain the particulate- and contamination-controlled environment the optical and detector work requires."
+    },
+    {
+     "level": "L5",
+     "name": "Light Source Module",
+     "cfj": "To emit the stable broadband UV-Vis-NIR (and DUV/UV-C) radiation the measurement requires."
+    },
+    {
+     "level": "L5",
+     "name": "Monochromator / Dispersive Spectrograph",
+     "cfj": "To resolve the optical signal into its spectral components."
+    },
+    {
+     "level": "L5",
+     "name": "Integrating Sphere & Diffuse-Reference Assembly",
+     "cfj": "To collect and spatially homogenize diffusely reflected/transmitted light against a known diffuse reference."
+    },
+    {
+     "level": "L5",
+     "name": "Sample Stage & Probe Optics",
+     "cfj": "To position the sample and deliver/collect light at the measurement spot."
+    },
+    {
+     "level": "L5",
+     "name": "Detector & Acquisition Electronics",
+     "cfj": "To convert the spectral light signal into a quantified digital reading."
+    },
+    {
+     "level": "L5",
+     "name": "Optical Bench & Optomechanical Frame",
+     "cfj": "To hold the optical elements in stable, repeatable relative alignment."
+    }
+   ],
+   "bom_anchor": "Integrating-Sphere UV-Vis-NIR Materials/Semiconductor Spectrophotometer-Reflectometer (benchtop diffuse reflectance/transmittance analyzer for thin-film, surface, trace-contamination and bulk-optical characterization)",
+   "bom_units": [
+    {
+     "name": "Integrating-Sphere UV-Vis-NIR Spectrophotometer-Reflectometer",
+     "function": "The finished materials-characterization instrument (L5 BOM root) shipped to the customer.",
+     "level": "L5"
+    },
+    {
+     "name": "Optical Measurement Engine",
+     "function": "Subsystem carrying the full source-to-detector spectral measurement chain.",
+     "level": "L4"
+    },
+    {
+     "name": "Sample Interface & Stage",
+     "function": "Subsystem that positions the material/wafer sample and couples light in/out.",
+     "level": "L4"
+    },
+    {
+     "name": "Electronics & Signal-Processing Subsystem",
+     "function": "Subsystem digitizing and processing the detector signal and driving the instrument.",
+     "level": "L4"
+    },
+    {
+     "name": "Enclosure & Optomechanical Structure",
+     "function": "Subsystem providing the light-tight chassis, optical bench and mounts.",
+     "level": "L4"
+    },
+    {
+     "name": "Broadband Light Source Module",
+     "function": "L3 module emitting the UV-Vis-NIR / DUV illumination.",
+     "level": "L3"
+    },
+    {
+     "name": "Monochromator / Spectrograph Module",
+     "function": "L3 module dispersing the optical signal into wavelengths.",
+     "level": "L3"
+    },
+    {
+     "name": "Integrating Sphere Module",
+     "function": "L3 module collecting and homogenizing diffuse reflected/transmitted light.",
+     "level": "L3"
+    },
+    {
+     "name": "Beam-Homogenizing & Diffusing Optics",
+     "function": "L3 module homogenizing source illumination and providing diffuse reference geometry.",
+     "level": "L3"
+    },
+    {
+     "name": "Photodetector Module",
+     "function": "L3 module converting light to electrical signal.",
+     "level": "L3"
+    },
+    {
+     "name": "Integrating Sphere Shell",
+     "function": "L2 hollow sphere body forming the photon-mixing cavity.",
+     "level": "L2"
+    },
+    {
+     "name": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
+     "function": "L2 diffusing reference element defining the sphere's near-Lambertian reflectance and the instrument's reflectance scale.",
+     "level": "L2"
+    },
+    {
+     "name": "Volume Diffuser / Homogenizer Plate",
+     "function": "L2 transmissive diffusing element that flattens the incident beam to angle-independent, near-Lambertian illumination at the entrance/exit port.",
+     "level": "L2"
+    },
+    {
+     "name": "Detector Mount & Baffle",
+     "function": "L2 assembly positioning the detector and blocking direct (specular) light.",
+     "level": "L2"
+    },
+    {
+     "name": "Diffuse Optical Element Blank",
+     "function": "L1 the formed optical diffuser part (window/disc) machined to the port geometry.",
+     "level": "L1"
+    },
+    {
+     "name": "Sphere Coating Layer",
+     "function": "L1 the high-reflectance diffuse layer applied to the sphere interior.",
+     "level": "L1"
+    },
+    {
+     "name": "Synthetic Fused Silica (micro-bubble volume-scattering silica, 99.999% SiO2)",
+     "function": "L0 ultra-pure synthetic silica glass with engineered ~4um micro-bubbles giving incident-angle-independent near-Lambertian scatter, UV->NIR (incl DUV/UV-C), to 1000C, acid/base & autoclave resistant \u2014 the diffusil base material.",
+     "level": "L0"
+    },
+    {
+     "name": "Sintered PTFE / Barium Sulfate diffuse-reflectance material",
+     "function": "L0 the incumbent polymer/powder diffuse-reflectance material (Spectralon/BaSO4) used for sphere walls and reference standards.",
+     "level": "L0"
+    }
+   ],
+   "intersections": [
+    {
+     "unit": "Volume Diffuser / Homogenizer Plate",
+     "path": "bom",
+     "fit": "direct",
+     "role": "Merchant optical component: a VOLUME diffuser that delivers incident-angle-independent, near-Lambertian homogenization in transmission across UV->NIR (incl DUV/UV-C), enabling stable port illumination where polymer diffusers degrade.",
+     "where": "Inside the shipped instrument as the transmissive volume-diffuser/homogenizer plate at the integrating sphere's entrance/exit port and in the illumination optics, sitting under L4 'Optical Measurement Engine' -> L3 'Beam-Homogenizing & Diffusing Optics' -> L2 'Volume Diffuser / Homogenizer Plate' -> L0 'Synthetic Fused Silica (diffusil)'.",
+     "rationale": "This is exactly what diffusil is sold as \u2014 a volume diffuser/homogenizer that homogenizes in transmission with angle-independence; for DUV/UV-C materials and semiconductor reflectometry (where short wavelengths and high flux are routine) its UV survival and ~30-40% transmission make it a direct drop-in for the port/illumination diffuser."
+    },
+    {
+     "unit": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
+     "path": "bom",
+     "fit": "direct",
+     "role": "Built-in diffuse reference: an ultra-pure SiO2 near-Lambertian reflector providing the in-instrument reflectance reference that is angle-independent in reflection AND survives UV, high temperature, chemical and autoclave exposure.",
+     "where": "Inside the shipped instrument as the diffuse-reflectance reference element at the sphere's reference port (and as a candidate sphere-wall surface), under L4 'Optical Measurement Engine' -> L3 'Integrating Sphere Module' -> L2 'Diffuse-Reflectance Reference Standard' -> L0 'Synthetic Fused Silica (diffusil)', displacing the L0 'Sintered PTFE / Barium Sulfate' incumbent.",
+     "rationale": "diffusil's headline differentiator is diffuse-reference accuracy in reflection where Spectralon/PTFE/BaSO4 fail \u2014 i.e. under DUV/UV-C, heat, and aggressive cleaning. A materials/semiconductor sphere reference that won't UV-yellow, won't outgas, and can be wet/solvent-cleaned without losing its reflectance scale is a high-value substitution at this exact reference-port position."
+    },
+    {
+     "unit": "Reference / Calibration Standard Set",
+     "path": "process_vn",
+     "fit": "adjacent",
+     "role": "Diffuse-reflectance transfer/working standard: a durable, UV-stable, autoclavable near-Lambertian reflectance artifact used to establish and re-verify the reflectance scale on the production floor and in service.",
+     "where": "Consumed at the L6 'Calibration & Metrological Qualification' stage (and the horizontal L6 'Quality Assurance & Metrological Traceability') as the diffuse-reflectance transfer/working standard the instrument's reflectance scale is set and verified against \u2014 the L5 'Reference / Calibration Standard Set' unit.",
+     "rationale": "Beyond being a built-in part, diffusil is a consumable metrology artifact in the calibration process: its long-term photometric stability under UV and cleaning makes it a better-aging working/transfer standard than degradable PTFE plaques, so it attaches at the calibration node as a reference standard, not only inside the product BOM."
+    }
+   ],
+   "stakeholders": [
+    {
+     "role": "purchase_influencer \u2014 Optical/Photonics Design Engineer who specifies the diffuse-reference material and sphere geometry in the instrument design",
+     "esco": "optical engineer (ESCO: Professionals > Engineering professionals > optical engineer)",
+     "unit": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
+     "decides": "Decides which diffuse-reflectance material and diffuser are designed into the integrating sphere and illumination path \u2014 whether diffusil's UV/temperature/chemical/autoclave-stable SiO2 replaces Spectralon/PTFE/BaSO4 \u2014 based on reflectance accuracy, angle-independence and DUV/UV-C survival; writes diffusil into the bill of materials and the optical spec."
+    },
+    {
+     "role": "job_executor \u2014 Metrologist / Calibration Technician who uses the diffuse-reflectance standard to set and verify the instrument's reflectance scale",
+     "esco": "metrologist (ESCO: Professionals > Physical and earth science professionals > metrologist); associated technician: calibration technician",
+     "unit": "Reference / Calibration Standard Set",
+     "decides": "Decides whether the diffuse-reference standard yields a stable, traceable reflectance scale across UV-Vis-NIR and tolerates routine cleaning without drift; approves diffusil for use as the calibration/transfer standard on the production and service floor and qualifies its measurement uncertainty."
+    },
+    {
+     "role": "job_overseer \u2014 Quality / Metrology Manager accountable for measurement traceability and instrument conformance",
+     "esco": "quality manager (ESCO: Professionals > Business and administration professionals > quality manager / quality services manager)",
+     "unit": "Volume Diffuser / Homogenizer Plate",
+     "decides": "Decides whether the diffuser/homogenizer and diffuse reference meet the conformance and traceability requirements for the released instrument, signing off that the angle-independent homogenization and UV-stable reference keep the characterization result within specified uncertainty."
+    },
+    {
+     "role": "purchase_executor \u2014 Procurement / Strategic Sourcing Manager who places the order for the merchant optical component",
+     "esco": "purchasing manager (ESCO: Managers > Production and specialised services managers > purchasing manager)",
+     "unit": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
+     "decides": "Decides whether to qualify and contract opsira as the supplier of the diffusil diffuse-reference/diffuser component \u2014 weighing single-source risk, brittleness/handling, lead time and unit cost against the longer service life and reduced re-calibration burden of the UV/chemical/autoclave-resistant SiO2 part."
+    }
+   ]
+  },
+  {
+   "segment_id": "C4",
+   "naics": "333314 \u2014 Optical Instrument and Lens Manufacturing",
+   "l2": "Machine Vision & Metrology Optics",
+   "vn_anchor": "Optical Instrument and Lens Manufacturing \u2014 Machine Vision & Metrology Optics (segment job: To shape and direct light so automated production and measurement systems can inspect, guide and dimensionally verify parts and processes.)",
+   "vn_cfj": "To shape and direct light so automated production and measurement systems can inspect, guide and dimensionally verify parts and processes.",
+   "vn_units": [
+    {
+     "level": "L7",
+     "name": "Machine Vision & Metrology Optics Manufacturing System",
+     "cfj": "To convert optical materials and electro-optical components into machine-vision and metrology optical instruments that let automated systems inspect, guide and dimensionally verify parts."
+    },
+    {
+     "level": "L6",
+     "name": "Optical Material & Component Intake",
+     "cfj": "To receive and qualify optical substrates, glasses, coatings and electro-optical components against drawing and spectral specifications before fabrication."
+    },
+    {
+     "level": "L6",
+     "name": "Optical Element Fabrication",
+     "cfj": "To grind, polish, shape and finish optical elements to the figure, surface-quality and tolerance class the instrument demands."
+    },
+    {
+     "level": "L6",
+     "name": "Thin-Film Coating & Surface Functionalization",
+     "cfj": "To deposit and cure anti-reflection, filter and reflective coatings that give each optic its required spectral transmission and reflection."
+    },
+    {
+     "level": "L6",
+     "name": "Illumination & Light-Shaping Subassembly Build",
+     "cfj": "To assemble the light source, homogenizing/diffusing and beam-shaping optics that deliver uniform, controlled illumination onto the inspected part."
+    },
+    {
+     "level": "L6",
+     "name": "Imaging & Sensing Lens Assembly",
+     "cfj": "To align and mount lenses, prisms and sensors into telecentric, fixed-focus or projection optical assemblies that form the measurement image."
+    },
+    {
+     "level": "L6",
+     "name": "Opto-Mechanical Integration & Alignment",
+     "cfj": "To integrate illumination, imaging and sensing assemblies into a rigid, aligned opto-mechanical instrument referenced to a measurement datum."
+    },
+    {
+     "level": "L6",
+     "name": "Radiometric & Dimensional Calibration",
+     "cfj": "To calibrate the instrument's geometry, flat-field response and radiometric/spectral scale against traceable diffuse and dimensional reference standards."
+    },
+    {
+     "level": "L6",
+     "name": "Final Inspection, Test & Dispatch",
+     "cfj": "To verify each instrument's measurement performance against acceptance criteria and release it for shipment."
+    },
+    {
+     "level": "L6",
+     "name": "Quality Assurance & Metrology",
+     "cfj": "To assure that every element, coating and assembly conforms to ISO 10110 / measurement-uncertainty requirements across the whole flow."
+    },
+    {
+     "level": "L6",
+     "name": "Cleanroom Environment & Contamination Control",
+     "cfj": "To maintain the particulate, humidity and temperature environment that optical fabrication and assembly require."
+    },
+    {
+     "level": "L6",
+     "name": "Facility Utilities & Process Media Supply",
+     "cfj": "To supply the deionized water, vacuum, dry gases, chilled water and power the fabrication and coating processes consume."
+    },
+    {
+     "level": "L5",
+     "name": "Incoming Optical Inspection Bench",
+     "cfj": "To verify incoming optical substrates and components against figure, surface-quality and spectral specifications."
+    },
+    {
+     "level": "L5",
+     "name": "Spectrophotometer / Spectral Transmission Tester",
+     "cfj": "To measure the spectral transmission/reflection of incoming optical materials over UV-VIS-NIR."
+    },
+    {
+     "level": "L5",
+     "name": "CNC Grinding & Polishing Machine",
+     "cfj": "To grind and polish optical surfaces to the specified radius, figure and roughness."
+    },
+    {
+     "level": "L5",
+     "name": "Optical Centering & Edging Machine",
+     "cfj": "To center and edge polished lenses to their mechanical and optical axis."
+    }
+   ],
+   "bom_anchor": "Non-contact optical 3D measurement & inspection system (structured-light / fringe-projection metrology station, incl. its shipped diffuse calibration reference target)",
+   "bom_units": [
+    {
+     "name": "Non-contact Optical 3D Measurement & Inspection System",
+     "function": "L5 finished metrology instrument that casts and images light onto a part to measure 3D form and detect defects",
+     "level": "L5"
+    },
+    {
+     "name": "Structured-Light Projection Unit",
+     "function": "L4 subsystem that projects controlled fringe/pattern light onto the inspected part",
+     "level": "L4"
+    },
+    {
+     "name": "Imaging & Sensing Unit",
+     "function": "L4 subsystem that forms and captures the measurement image of the part",
+     "level": "L4"
+    },
+    {
+     "name": "Auxiliary Illumination Unit",
+     "function": "L4 subsystem providing diffuse 2D inspection light for surface/defect imaging",
+     "level": "L4"
+    },
+    {
+     "name": "Opto-Mechanical Frame & Datum",
+     "function": "L4 subsystem holding all optics rigidly on a stable measurement datum",
+     "level": "L4"
+    },
+    {
+     "name": "Control & Processing Electronics",
+     "function": "L4 subsystem driving the light engine, sensor and computing the 3D result",
+     "level": "L4"
+    },
+    {
+     "name": "Diffuse Calibration Reference Target (shipped accessory)",
+     "function": "L4 subsystem providing the traceable diffuse white/transmission reference used for flat-field & radiometric calibration of the instrument",
+     "level": "L4"
+    },
+    {
+     "name": "DMD/DLP Light Engine",
+     "function": "L3 module generating the spatial pattern from a light source",
+     "level": "L3"
+    },
+    {
+     "name": "Projection Beam Homogenizer",
+     "function": "L3 module homogenizing the projector's illumination so the pattern is uniform in brightness",
+     "level": "L3"
+    },
+    {
+     "name": "Projection Lens Assembly",
+     "function": "L3 module imaging the pattern onto the part plane (often telecentric)",
+     "level": "L3"
+    },
+    {
+     "name": "Telecentric Imaging Lens Assembly",
+     "function": "L3 module forming a perspective-free image of the part on the sensor",
+     "level": "L3"
+    },
+    {
+     "name": "Camera / Image Sensor Module",
+     "function": "L3 module converting the optical image to a digital signal",
+     "level": "L3"
+    },
+    {
+     "name": "Diffuse Illumination Head",
+     "function": "L3 module (dome / coaxial-diffuse / line light) producing homogeneous part illumination",
+     "level": "L3"
+    },
+    {
+     "name": "Diffuse Reference Plate / Target",
+     "function": "L3 module: the diffuse-reflectance (or transmission) reference surface the camera images during calibration",
+     "level": "L3"
+    },
+    {
+     "name": "Diffuser / Homogenizer Optic",
+     "function": "L2 assembly: the scattering optical element that turns directional source light into homogeneous, angle-independent light",
+     "level": "L2"
+    },
+    {
+     "name": "Lens Cell & Barrel Assembly",
+     "function": "L2 assembly: mounted, spaced and aligned lens elements forming an objective",
+     "level": "L2"
+    },
+    {
+     "name": "Diffuse Reflectance Reference Insert",
+     "function": "L2 assembly: the certified diffuse-reference element mounted in its target frame",
+     "level": "L2"
+    },
+    {
+     "name": "Spatial Light Modulator Assembly (DMD)",
+     "function": "L2 assembly: the micromirror array and its mount that form the pattern",
+     "level": "L2"
+    }
+   ],
+   "intersections": [
+    {
+     "unit": "Volume Optical Diffuser Element",
+     "path": "bom",
+     "fit": "direct",
+     "role": "Merchant volume transmission diffuser (diffusil-T): replaces ground-glass / opal-glass / polymer engineered diffusers as the homogenizing element, giving incident-angle-independent near-Lambertian output from UV(DUV/UV-C) through NIR with no hot-spot and no aging.",
+     "where": "L1 part inside the Diffuser/Homogenizer Optic (L2) \u2192 Diffuse Illumination Head / Projection Beam Homogenizer (L3) of the shipped 3D inspection system. diffusil-T is the transmission diffuser plate/disc that homogenizes the projector or 2D illumination light.",
+     "rationale": "Machine-vision illuminators and DLP/structured-light projectors explicitly carry a homogenizer/diffuser (confirmed: 'beam homogenizer' is a named subsystem of telecentric DLP optical engines, and 'diffuse structured light' is a patented MV technique). diffusil drops into exactly that L1 position as a merchant optical component \u2014 its stated product role. Its UV-survival and non-aging are real differentiators where polymer/ground-glass diffusers yellow, burn or speckle under UV/high-flux LED or laser sources."
+    },
+    {
+     "unit": "Diffuse Reference Coupon",
+     "path": "bom",
+     "fit": "direct",
+     "role": "Diffuse-reflectance reference standard (diffusil-R): the near-Lambertian white reference the camera images during flat-field / shading / radiometric calibration \u2014 a direct alternative to Spectralon (sintered PTFE) and BaSO4 references.",
+     "where": "L1 part inside the Diffuse Reflectance Reference Insert (L2) \u2192 Diffuse Reference Plate/Target (L3) \u2192 Diffuse Calibration Reference Target accessory (L4) shipped WITH the instrument. diffusil-R is the diffuse white reflectance reference coupon.",
+     "rationale": "Flat-field/shading correction calibration requires imaging a 'homogeneous white target / uniform white reference plate' (confirmed). Spectralon is the incumbent diffuse-reference but is a soft polymer that degrades under UV, heat, solvents, abrasion and contamination on the shop floor. diffusil-R delivers the same near-Lambertian, viewing-angle-independent reflectance while surviving UV/DUV, ~1000C, acid/base and autoclave cleaning \u2014 diffusil's core differentiator exactly where polymer references fail. Accuracy-of-diffuse-reference is the value driver."
+    },
+    {
+     "unit": "Radiometric & Flat-Field Calibration Station",
+     "path": "process_vn",
+     "fit": "direct",
+     "role": "Master/working diffuse white reference used on the production calibration rig itself to flat-field-calibrate every instrument before dispatch (a consumable/reference part inside the segment's process equipment, not in the shipped product).",
+     "where": "L4 'Diffuse White Reference Standard' inside the Radiometric & Flat-Field Calibration Station (L5) of the manufacturer's OWN calibration line (Radiometric & Dimensional Calibration L6).",
+     "rationale": "Every MV/metrology instrument is flat-field and radiometrically calibrated on a station that needs a stable diffuse white reference under the instrument's own illumination. A diffusil-R master reference holds its certified reflectance across UV and through aggressive cleaning, so the factory's calibration reference does not drift or contaminate \u2014 improving the radiometric scale traceability of every unit shipped. This is the process_vn (equipment-consumable) attachment of the same component."
+    },
+    {
+     "unit": "Diffuse-Reference & Calibration-Target Production Cell",
+     "path": "process_vn",
+     "fit": "adjacent",
+     "role": "Bought-in diffuse-reference blank that the target-production cell mounts, certifies and ships; diffusil is the supplied reference element this cell builds around.",
+     "where": "L4 'Diffuse Reference Element' inside the Diffuse-Reference & Calibration-Target Production Cell (L5) \u2014 the cell that produces the calibration targets shipped with instruments.",
+     "rationale": "This cell exists to make the diffuse-reference targets; diffusil-R is the merchant element it consumes and certifies. Adjacent (not direct) because the cell could equally source Spectralon/BaSO4; diffusil wins on durability/UV/thermal/chemical survival and reflectance stability, which is precisely what a certified, long-life reference target needs."
+    },
+    {
+     "unit": "Structured-Light / Fringe Projector Build Station",
+     "path": "process_vn",
+     "fit": "adjacent",
+     "role": "Transmission homogenizer optic the projector-build station integrates into the DLP/structured-light optical engine to flatten illumination uniformity across the DMD/pattern field.",
+     "where": "L4 'Beam Homogenizer' inside the Structured-Light / Fringe Projector Build Station (L5) of the build flow (Illumination & Light-Shaping Subassembly Build L6).",
+     "rationale": "The projector optical engine needs a homogenizer; diffusil-T can serve it. Marked adjacent rather than direct because high-etendue laser/LED projector homogenization is often done with lenslet arrays/light-pipes where diffusil's ~30-40% transmission is a throughput trade-off \u2014 diffusil wins specifically when UV/DUV bands, high thermal load, or wide-angle Lambertian fill are required and polymer/holographic diffusers cannot survive."
+    },
+    {
+     "unit": "Spectroscopic Sorting (L3 task) reference path",
+     "path": "process_vn",
+     "fit": "stretch",
+     "role": "In-line diffuse spectral white/transmission reference for NIR/UV spectroscopic sorters and hyperspectral web-inspection \u2014 survives the dust, UV lamps and cleaning of a sorting line where Spectralon contaminates.",
+     "where": "Diffuse white/transmission reference inside spectroscopic sorting & hyperspectral inspection optics (an L3 inspection-task instrument within this L2), used to white-reference the spectral line every frame.",
+     "rationale": "Spectroscopic sorting and hyperspectral inspection re-reference against a diffuse white every scan; diffusil's UV-NIR Lambertian behaviour and chemical/abrasion survival fit a contaminated production line. Stretch because it is one specific L3 task instrument rather than the anchor 3D-metrology product, and many sorters use ceramic/PTFE tiles today \u2014 diffusil's edge is durability and UV/NIR breadth, not cost."
+    }
+   ],
+   "stakeholders": [
+    {
+     "role": "job_executor \u2014 the metrology/calibration engineer who uses the diffuse reference to flat-field and radiometrically calibrate the instrument",
+     "esco": "Metrology technician / Calibration technician (ESCO: physical sciences technician / metrology technician, 3111-family)",
+     "unit": "Diffuse Reference Coupon (BOM L1 \u2014 diffuse-reference path of the shipped instrument)",
+     "decides": "Decides whether the diffuse reference's reflectance stability, Lambertian quality and cleanability are good enough to anchor flat-field/radiometric calibration, and how often it must be re-certified \u2014 specifies diffusil-R when polymer references drift or contaminate."
+    },
+    {
+     "role": "purchase_influencer \u2014 the optical design engineer who selects the homogenizer/diffuser component for the illumination and projection subsystems",
+     "esco": "Optical engineer (ESCO: optical engineer, 2152-family / engineering professionals)",
+     "unit": "Volume Optical Diffuser Element / Beam Homogenizer (BOM L1 + projector build station \u2014 illumination/homogenization path)",
+     "decides": "Specifies the diffuser optic: weighs near-Lambertian uniformity, spectral band (UV/DUV-NIR), transmission/throughput (~30-40%) and thermal/chemical survival against lenslet-array/holographic/ground-glass alternatives; designs diffusil into the BOM where UV or high-flux survival is required."
+    },
+    {
+     "role": "job_overseer \u2014 the calibration-lab / quality manager accountable for measurement-uncertainty and traceability of every shipped instrument",
+     "esco": "Quality manager / Quality services manager (ESCO: quality services manager, 1349/2149 family)",
+     "unit": "Radiometric & Flat-Field Calibration Station (process_vn L5 \u2014 factory calibration line) / Diffuse-Reference & Calibration-Target Production Cell",
+     "decides": "Owns the calibration reference policy: approves which diffuse white reference (diffusil-R vs Spectralon/BaSO4) is the factory master, sets re-certification intervals, and signs off traceability/uncertainty budgets that depend on the reference's long-term stability."
+    },
+    {
+     "role": "purchase_executor \u2014 the procurement/sourcing buyer who places the order for the merchant diffuser/reference component",
+     "esco": "Purchasing manager / Industrial purchaser (ESCO: purchasing manager, 1324-family)",
+     "unit": "Volume Optical Diffuser Element + Diffuse Reference Coupon (merchant optical component sourcing across both paths)",
+     "decides": "Makes the buy decision and supplier qualification for the diffuser/reference optical component: balances diffusil's unit price and brittleness/lead-time against its lifetime durability and re-certification savings; qualifies opsira as an approved optical-component vendor."
+    }
+   ]
+  },
+  {
+   "segment_id": "D9",
+   "naics": "339112",
+   "l2": "Gastroenterology & Urology",
+   "vn_anchor": "Surgical and Medical Instrument Manufacturing \u2014 Gastroenterology & Urology (segment job: To access and manipulate the digestive and urinary tracts during intervention.)",
+   "vn_cfj": "To access and manipulate the digestive and urinary tracts during intervention.",
+   "vn_units": [
+    {
+     "level": "L7",
+     "name": "Gastroenterology & Urology Instrument Manufacturing System",
+     "cfj": "To produce instruments that access and manipulate the digestive and urinary tracts during intervention."
+    },
+    {
+     "level": "L6",
+     "name": "Material Intake & Qualification",
+     "cfj": "To receive and qualify medical-grade materials and optical components for instrument build."
+    },
+    {
+     "level": "L6",
+     "name": "Optical Chain Fabrication",
+     "cfj": "To build the illumination and imaging light path of the instrument."
+    },
+    {
+     "level": "L6",
+     "name": "Insertion-Tube & Channel Forming",
+     "cfj": "To form the flexible body, working channels and distal tip of the instrument."
+    },
+    {
+     "level": "L6",
+     "name": "Mechanism & Articulation Assembly",
+     "cfj": "To assemble the steering, articulation and tool-actuation mechanism."
+    },
+    {
+     "level": "L6",
+     "name": "Integration & Sealing",
+     "cfj": "To integrate sub-assemblies into a fluid-tight, body-safe instrument."
+    },
+    {
+     "level": "L6",
+     "name": "Reprocessing-Readiness Conditioning",
+     "cfj": "To make the finished instrument withstand repeated cleaning, disinfection and sterilization."
+    },
+    {
+     "level": "L6",
+     "name": "Final Test, Calibration & Release",
+     "cfj": "To verify optical, mechanical and safety performance and release the instrument."
+    },
+    {
+     "level": "L6",
+     "name": "Sterile Packaging & Dispatch",
+     "cfj": "To protect, label and ship the instrument in a controlled state."
+    },
+    {
+     "level": "L6",
+     "name": "Quality, Regulatory & Validation",
+     "cfj": "To assure conformity to device standards across every stage."
+    },
+    {
+     "level": "L6",
+     "name": "Cleanroom Environment & Utilities",
+     "cfj": "To maintain the controlled environment and utilities the build depends on."
+    },
+    {
+     "level": "L5",
+     "name": "Incoming Optical-Component Inspection Station",
+     "cfj": "To verify the optical quality of lenses, fibers and diffusers before build."
+    },
+    {
+     "level": "L5",
+     "name": "Material Lot Qualification Station",
+     "cfj": "To qualify polymer, metal and biocompatible material lots."
+    },
+    {
+     "level": "L5",
+     "name": "Light-Guide Fiber-Bundle Drawing & Bundling Line",
+     "cfj": "To draw and bundle the illumination light-guide fibers."
+    },
+    {
+     "level": "L5",
+     "name": "Distal-Tip Illumination Optics Assembly Cell",
+     "cfj": "To assemble the illumination window, diffuser and exit optics at the distal tip."
+    },
+    {
+     "level": "L5",
+     "name": "Objective Lens & Imaging Sensor Assembly Cell",
+     "cfj": "To assemble the objective optics and imaging sensor."
+    }
+   ],
+   "bom_anchor": "The flexible video endoscope (gastroscope / colonoscope / cystoscope class) is the dominant capital instrument that embodies the 'Endoscopic Access' and 'Luminal Access' jobs of this L2; it is the only line in the segment with an internal OPTICAL chain (illumination + imaging), which is the only place an optical diffuser component can attach.",
+   "bom_units": [
+    {
+     "name": "Flexible Video Endoscope",
+     "function": "Accesses and visualizes the digestive/urinary tract and channels tools to the site",
+     "level": "L5 (finished product, ROOT)"
+    },
+    {
+     "name": "Distal Tip Assembly",
+     "function": "Carries the imaging, illumination and channel exits at the leading end",
+     "level": "L4 (Subsystem)"
+    },
+    {
+     "name": "Illumination Sub-System",
+     "function": "Delivers and shapes light onto the tissue field",
+     "level": "L4 (Subsystem)"
+    },
+    {
+     "name": "Imaging Sub-System",
+     "function": "Captures the image of the illuminated field",
+     "level": "L4 (Subsystem)"
+    },
+    {
+     "name": "Insertion Tube",
+     "function": "Flexible body conveying optics, channels and control wires into the tract",
+     "level": "L4 (Subsystem)"
+    },
+    {
+     "name": "Control Body / Handle",
+     "function": "Operator interface for steering and tool/valve actuation",
+     "level": "L4 (Subsystem)"
+    },
+    {
+     "name": "Working / Irrigation Channels",
+     "function": "Lumens for instruments and for irrigation & aspiration",
+     "level": "L4 (Subsystem)"
+    },
+    {
+     "name": "Distal Illumination Module",
+     "function": "Emits homogenized light from the tip",
+     "level": "L3 (Module, under Illumination Sub-System)"
+    },
+    {
+     "name": "Light Delivery Module",
+     "function": "Conveys light from the source to the tip",
+     "level": "L3 (Module, under Illumination Sub-System)"
+    },
+    {
+     "name": "Objective Optics Module",
+     "function": "Forms the image onto the sensor",
+     "level": "L3 (Module, under Imaging Sub-System)"
+    },
+    {
+     "name": "Image Sensor Module",
+     "function": "Converts the optical image to a signal",
+     "level": "L3 (Module, under Imaging Sub-System)"
+    },
+    {
+     "name": "Illumination Window & Diffuser Assembly",
+     "function": "Seals the tip and spreads light into a wide, uniform cone",
+     "level": "L2 (Assembly, under Distal Illumination Module)"
+    },
+    {
+     "name": "Light-Guide Termination Assembly",
+     "function": "Couples the fiber bundle / LED to the exit window",
+     "level": "L2 (Assembly, under Distal Illumination Module)"
+    },
+    {
+     "name": "Optical Diffuser Window",
+     "function": "Homogenizes the exiting light to a near-Lambertian, glare-free distribution (DIFFUSIL ATTACH POINT \u2014 BOM path)",
+     "level": "L1 (Part, under Illumination Window & Diffuser Assembly)"
+    },
+    {
+     "name": "Cover / Protective Window",
+     "function": "Body-contact protective face of the tip",
+     "level": "L1 (Part, under Illumination Window & Diffuser Assembly)"
+    },
+    {
+     "name": "Window Bonding Adhesive",
+     "function": "Bonds and seals the window/diffuser into the tip housing",
+     "level": "L1 (Part, under Illumination Window & Diffuser Assembly)"
+    },
+    {
+     "name": "Synthetic Fused-Silica Glass (99.999% SiO2, volume-scattering grade)",
+     "function": "Diffuser base material \u2014 UV->NIR transparent, autoclave/chemical-resistant, high-temperature stable (DIFFUSIL MATERIAL)",
+     "level": "L0 (Raw Material, under Optical Diffuser Window)"
+    },
+    {
+     "name": "Optical-Grade Sapphire / Borosilicate",
+     "function": "Alternative cover-window material",
+     "level": "L0 (Raw Material, under Cover / Protective Window)"
+    }
+   ],
+   "intersections": [
+    {
+     "unit": "Optical Diffuser Window",
+     "path": "bom",
+     "fit": "adjacent",
+     "role": "Volume optical diffuser that homogenizes the LED/fiber illumination into a wide, incident-angle-independent, near-Lambertian, glare-free cone at the distal tip, surviving repeated autoclave / UV-C / chemical high-level-disinfection cycles intact.",
+     "where": "Inside the shipped endoscope's Distal Tip Assembly -> Illumination Sub-System -> Illumination Window & Diffuser Assembly: diffusil is the L1 diffuser part bonded behind the tip illumination window.",
+     "rationale": "Endoscope tips already use a miniature diffuser to broaden the illumination cone; diffusil's distinctive value (autoclave + UV-C + acid/base survival with stable diffuse output) directly answers the segment's reprocessing-readiness mandate where polymer/PTFE diffusers degrade and ground-glass gives uneven, angle-dependent light. Sized 2x2..220x220mm and 0.3-25mm thick, diffusil can be cut to the millimetre-scale tip window. Fit is 'adjacent' not 'direct' because the dominant incumbent at this exact position is a tiny ground-glass / molded diffuser optimized for cost and size, and diffusil's UV/temperature/chemical edge is only partly exploited inside a sealed reusable tip (it is decisive for reprocessing durability but the tip is not held at 1000C)."
+    },
+    {
+     "unit": "Integrating Sphere",
+     "path": "process_vn",
+     "fit": "direct",
+     "role": "Diffuse-reference standard / integrating-sphere volume-diffusing element giving spectrally-flat, angle-independent near-Lambertian reflectance UV->NIR as the calibration reference against which each endoscope's illumination is measured.",
+     "where": "Inside the Final Test, Calibration & Release stage -> Optical & Illumination Performance Tester (L5) -> Integrating Sphere (L4): diffusil is the volume-diffusing reference/coating element and the diffuse-reference standard used to test endoscope illumination uniformity, color and spectral output.",
+     "rationale": "Illumination uniformity / spectral test rigs (e.g. CAL4-class endoscopic light-source calibrators) are built from volume-diffusing material; the incumbent Spectralon (sintered PTFE) reference degrades under UV, soils, and cannot be autoclaved/cleaned aggressively, whereas diffusil delivers the same near-Lambertian reflectance UV->NIR (incl DUV) with acid/base & autoclave-resistant, high-temperature-stable, cleanable performance. This is diffusil's core merchant-component market (opsira sells diffusil S500 exactly as integrating-sphere references), so the fit is direct \u2014 it replaces or upgrades the reference optic the QC bench depends on."
+    },
+    {
+     "unit": "Distal-Tip Illumination Optics Assembly Cell",
+     "path": "process_vn",
+     "fit": "adjacent",
+     "role": "Merchant optical component fed into the tip illumination assembly as the diffuser element behind the illumination window.",
+     "where": "Inside Optical Chain Fabrication -> Distal-Tip Illumination Optics Assembly Cell (L5) -> Illumination Window & Diffuser Mount (L4): diffusil is the consumable optical component placed and bonded into the tip during build.",
+     "rationale": "This is the process-VN counterpart of the BOM attach point: the cell is where the diffuser is physically mounted and bonded. diffusil sits here as the bought-in component (brittle, so handled in alignment/bonding jigs). Fit is 'adjacent' for the same reason as the BOM line \u2014 diffusil competes against an entrenched small ground-glass/molded diffuser at this position and wins primarily on reprocessing durability rather than on a property unique to this assembly step."
+    }
+   ],
+   "stakeholders": [
+    {
+     "role": "job_executor \u2014 operates the illumination/spectral test bench using the diffuse reference",
+     "esco": "Optical instrument assembler / Photonics engineering technician (ESCO 7311 / 3119 family)",
+     "unit": "Integrating Sphere (Optical & Illumination Performance Tester, QC bench)",
+     "decides": "Whether the integrating-sphere reference optic gives stable, contamination-free, UV->NIR diffuse reference on the production floor; flags a degraded/yellowed reference and requests replacement \u2014 the day-to-day pull for a durable diffusil reference."
+    },
+    {
+     "role": "purchase_influencer \u2014 specifies the diffuser material and homogenization/durability requirement",
+     "esco": "Optical engineer (ESCO 2152 / 'optical engineer') / Biomedical (medical device) engineer (ESCO 2149)",
+     "unit": "Optical Diffuser Window (distal tip illumination, BOM line)",
+     "decides": "The optical specification of the tip diffuser \u2014 angular distribution (Lambertian target), spectral band, and the reprocessing-survival requirement (autoclave / UV-C / acid-base). Chooses fused-silica volume diffuser vs ground-glass vs polymer; this is where diffusil is designed in or out."
+    },
+    {
+     "role": "job_overseer \u2014 accountable that the instrument and its optics survive validated reprocessing and meet device standards",
+     "esco": "Quality engineer / Quality assurance manager (ESCO 2141 'industrial quality engineer' / 1321 manufacturing manager family)",
+     "unit": "Reprocessing-Cycle Validation Rig / Optical Diffuser Window",
+     "decides": "Whether the diffuser holds its optical performance across the validated cleaning/disinfection/sterilization cycles and across the product's reuse life; signs off design-validation and reprocessing-validation reports (IEC 60601 / ISO 17664 / ISO 8600 context) \u2014 gating diffusil's qualification into the device."
+    },
+    {
+     "role": "purchase_executor \u2014 makes the financial decision to source the optical component",
+     "esco": "Purchasing manager / Procurement engineer (ESCO 1324 / 2433 'technical buyer' family)",
+     "unit": "Optical Diffuser Window / Integrating Sphere (component procurement)",
+     "decides": "Whether to qualify and contract opsira/diffusil as an approved optical-component supplier, the unit price vs ground-glass/Spectralon incumbents, lead time, and second-source strategy for a brittle bespoke-cut silica part."
+    }
+   ]
+  },
+  {
+   "segment_id": "E3",
+   "naics": "221320 \u2014 Sewage Treatment Facilities",
+   "l2": "Chemical & Petrochemical Effluent Treatment",
+   "vn_anchor": "Sewage Treatment Facilities (NAICS 221320) \u2014 Chemical & Petrochemical Effluent Treatment",
+   "vn_cfj": "To progressively de-load, detoxify and verify a complex chemical/petrochemical effluent stream so the discharged or recovered water meets its permit and the residual contaminants are safely concentrated.",
+   "vn_units": [
+    {
+     "level": "L7",
+     "name": "Chemical & Petrochemical Effluent Treatment Plant",
+     "cfj": "To convert a raw, contaminant-laden industrial effluent into a permit-compliant discharge or recoverable water while concentrating the hazardous residual for safe disposition."
+    },
+    {
+     "level": "L6",
+     "name": "Effluent Intake & Equalization",
+     "cfj": "To receive, buffer and characterize incoming streams so downstream treatment sees a steady, known load."
+    },
+    {
+     "level": "L6",
+     "name": "Phase Separation & De-Oiling",
+     "cfj": "To split free and emulsified oil, grease and gross solids from the aqueous stream."
+    },
+    {
+     "level": "L6",
+     "name": "Chemical Conditioning & Metals Precipitation",
+     "cfj": "To neutralize pH and precipitate dissolved metals into a removable solid phase."
+    },
+    {
+     "level": "L6",
+     "name": "Oxidative Destruction of Recalcitrant Organics",
+     "cfj": "To break down dissolved, biologically-resistant organic contaminants by chemical/photochemical oxidation."
+    },
+    {
+     "level": "L6",
+     "name": "Biological Organic-Load Reduction",
+     "cfj": "To biologically degrade the treatable organic fraction of the conditioned stream."
+    },
+    {
+     "level": "L6",
+     "name": "Trace-Organics & Dissolved-Solids Polishing",
+     "cfj": "To remove residual trace organics and reduce dissolved salts to stringent outfall or reuse limits."
+    },
+    {
+     "level": "L6",
+     "name": "Effluent Discharge & Compliance Verification",
+     "cfj": "To finish, meter and certify the treated stream against its discharge permit before release or recovery."
+    },
+    {
+     "level": "L6",
+     "name": "Residual & Sludge Handling",
+     "cfj": "To thicken, dewater and stabilize the concentrated hazardous residual for disposal."
+    },
+    {
+     "level": "L6",
+     "name": "Process Analytics & Monitoring",
+     "cfj": "To continuously sense stream quality and contaminant levels across the whole plant so each stage is controlled and verified."
+    },
+    {
+     "level": "L6",
+     "name": "Chemical Dosing & Utilities",
+     "cfj": "To supply, store and meter the reagents, water, air and power the treatment trains depend on."
+    },
+    {
+     "level": "L6",
+     "name": "Maintenance & Asset Integrity",
+     "cfj": "To keep corrosion-exposed treatment assets calibrated, intact and available."
+    },
+    {
+     "level": "L5",
+     "name": "Online UV-Vis Spectral Effluent Analyzer",
+     "cfj": "To continuously quantify organic load and trace contaminants in the stream by reagent-free spectral absorption."
+    },
+    {
+     "level": "L5",
+     "name": "UV-Fluorescence Oil-in-Water Analyzer",
+     "cfj": "To continuously measure residual oil/hydrocarbon concentration in the de-oiled stream."
+    },
+    {
+     "level": "L5",
+     "name": "Multiparameter Water-Quality Sonde (pH/ORP/Turbidity)",
+     "cfj": "To track the bulk physicochemical state of the stream at each control point."
+    },
+    {
+     "level": "L5",
+     "name": "Compliance Sampler & Flow-Proportional Composite Sampler",
+     "cfj": "To capture representative permit-grade samples of the final effluent."
+    }
+   ],
+   "bom_anchor": "Online UV-Vis Spectral Effluent Analyzer (reagent-free COD / oil / trace-organics monitor for chemical & petrochemical effluent)",
+   "bom_units": [
+    {
+     "name": "Online UV-Vis Spectral Effluent Analyzer",
+     "function": "L5 finished product: continuously quantifies organic load and trace contaminants in chemical/petrochemical effluent by reagent-free UV-Vis absorption.",
+     "level": "L5"
+    },
+    {
+     "name": "Optical Bench",
+     "function": "L4 subsystem: holds and aligns source, reference channel, dispersion optics and detector that perform the spectral measurement.",
+     "level": "L4"
+    },
+    {
+     "name": "Flow-Through Measurement Cell",
+     "function": "L4 subsystem: presents the effluent sample in the optical path at a defined path length, sealed against the aggressive medium.",
+     "level": "L4"
+    },
+    {
+     "name": "Detector & Acquisition Electronics",
+     "function": "L4 subsystem: converts the dispersed spectrum into a calibrated absorbance signal.",
+     "level": "L4"
+    },
+    {
+     "name": "Enclosure & Process Interface",
+     "function": "L4 subsystem: corrosion-resistant housing, mounting and fluidic/electrical interface to the plant.",
+     "level": "L4"
+    },
+    {
+     "name": "Broadband UV-Vis Light Source Assembly",
+     "function": "L3 module of the Optical Bench: emits the 190-720 nm light used to probe the sample.",
+     "level": "L3"
+    },
+    {
+     "name": "Diffuse-Reference / Beam-Homogenizing Optic",
+     "function": "L3 module of the Optical Bench: provides the angle-independent diffuse reference and homogenizes the source beam so source drift and stray light are compensated \u2014 THE diffusil position.",
+     "level": "L3"
+    },
+    {
+     "name": "Spectral Dispersion & Photodiode-Array Detector Module",
+     "function": "L3 module of the Optical Bench: disperses transmitted light and reads the full spectrum.",
+     "level": "L3"
+    },
+    {
+     "name": "Sample-Wetted Optical Window Pair",
+     "function": "L3 module of the Measurement Cell: the two windows the beam passes through, in direct contact with hot acid/base effluent.",
+     "level": "L3"
+    },
+    {
+     "name": "Reference Diffuser / Homogenizer Disc",
+     "function": "L2 assembly: the mounted diffusing element forming the diffuse-reference and homogenizer surface in the reference channel and/or behind the sample window \u2014 the diffusil component.",
+     "level": "L2"
+    },
+    {
+     "name": "Light-Source Lamp & Driver Sub-Assembly",
+     "function": "L2 assembly: the xenon-flash/deuterium emitter plus its trigger/driver board.",
+     "level": "L2"
+    },
+    {
+     "name": "Photodiode-Array & Grating Sub-Assembly",
+     "function": "L2 assembly: the dispersing grating and detector array on their carrier.",
+     "level": "L2"
+    },
+    {
+     "name": "Window Frame & Seal Assembly",
+     "function": "L2 assembly: the optical window held in its corrosion-resistant frame with chemical-resistant gasket.",
+     "level": "L2"
+    },
+    {
+     "name": "Sintered Volume-Diffuser Glass Element",
+     "function": "L1 part: the non-demountable diffusing optical element (the diffuser disc body) \u2014 diffusil's exact part: a brittle, finished, ground/polished synthetic-silica disc with internal micro-bubble scattering.",
+     "level": "L1"
+    },
+    {
+     "name": "Optical-Window Disc",
+     "function": "L1 part: the polished transmissive window disc that seals the cell.",
+     "level": "L1"
+    },
+    {
+     "name": "Diffuser Mounting Retainer Ring",
+     "function": "L1 part: the machined retainer/bezel that fixes the diffuser disc in its channel.",
+     "level": "L1"
+    },
+    {
+     "name": "Chemical-Resistant O-Ring / Gasket",
+     "function": "L1 part: seals the wetted optic against the effluent.",
+     "level": "L1"
+    },
+    {
+     "name": "Ultra-Pure Synthetic Silica (99.999% SiO2)",
+     "function": "L0 raw material: the fused-silica feedstock the diffuser and windows are made from \u2014 diffusil's base material, giving DUV-NIR transmission, ~1000 C and acid/base/autoclave survival.",
+     "level": "L0"
+    }
+   ],
+   "intersections": [
+    {
+     "unit": "Diffuse-Reference / Beam-Homogenizing Optic",
+     "path": "bom",
+     "fit": "direct",
+     "role": "Diffuse reference standard and source-beam homogenizer: provides an incident-angle-independent, near-Lambertian reference signal so the analyzer can compensate lamp drift, stray light and beam-geometry change, in both transmission and reflection, across UV (incl. DUV/UV-C) to NIR.",
+     "where": "L3 module of the Optical Bench inside the Online UV-Vis Spectral Effluent Analyzer (realized as the L1 'Sintered Volume-Diffuser Glass Element' / L0 'Ultra-Pure Synthetic Silica + Micro-Bubble Scattering Phase').",
+     "rationale": "diffusil is sold exactly as a merchant optical component that homogenizes/diffuses and serves as a diffuse reference where polymer or Spectralon references degrade. In a reagent-free UV-Vis effluent analyzer the reference channel is the accuracy-critical optic, and DUV/UV-C operation plus the harsh chemical/petrochemical service (acid/base aerosols, heat, fouling) are precisely diffusil's survival differentiators (to 1000 C, acid/base & autoclave resistant) vs. Spectralon (PTFE, UV/heat/chemical degradation)."
+    },
+    {
+     "unit": "Sample-Wetted Optical Window Pair",
+     "path": "bom",
+     "fit": "adjacent",
+     "role": "Chemically and thermally survivable diffusing window / homogenizer at the sample interface \u2014 keeps the illumination uniform onto a fouling, refractive-index-varying effluent and resists the aggressive medium.",
+     "where": "L3 module of the Flow-Through Measurement Cell (the windows in direct contact with hot acid/base effluent); diffusil's silica can serve as the diffusing window / homogenizing element directly on the wetted side.",
+     "rationale": "The wetted window is normally plain silica; using diffusil here turns it into a homogenizing element that stabilizes the measurement against the stream's optical inhomogeneity and bubbles. diffusil's 0.3-25 mm thickness, 2x2..220x220 mm size range and acid/base/autoclave resistance fit a process window, but most analyzers keep the diffuser in the reference channel rather than wetted, so this is an adjacent (design-dependent) attachment."
+    },
+    {
+     "unit": "Online UV-Vis Spectral Effluent Analyzer",
+     "path": "process_vn",
+     "fit": "direct",
+     "role": "Embedded diffuse-reference/homogenizer optic inside the monitoring instrument that the process trains rely on to control oxidation dosing and to certify discharge \u2014 i.e. a consumable optical part inside the segment's process equipment.",
+     "where": "L5 equipment unit under the horizontal 'Process Analytics & Monitoring' L6 stage \u2014 the analyzer is the consumable optical instrument embedded across the Chemical Oxidation, Effluent Polishing and Outfall Compliance process units; diffusil sits inside it.",
+     "rationale": "Process-VN path: diffusil is not the shipped plant, it is a part inside the analyzer that the plant's analytics stage deploys. The analyzer's spectral accuracy under continuous UV exposure and corrosive service depends on a reference optic that does not yellow, melt or etch \u2014 diffusil's core claim. This is the same physical part as the BOM intersection, tagged here because the analyzer itself is an L5 unit of the process value network, not the end product the segment 'sells'."
+    },
+    {
+     "unit": "UV/H2O2 Advanced-Oxidation Reactor",
+     "path": "process_vn",
+     "fit": "stretch",
+     "role": "DUV/UV-C-stable diffuse reference window for the reactor's UV-intensity reference detector, giving angle-independent, dose-accurate lamp monitoring at high fluence and elevated temperature.",
+     "where": "Inside the UV-intensity / reference monitoring optics of the AOP reactor (the reference detector window/diffuser that monitors lamp output for dose control).",
+     "rationale": "AOP reactors monitor UV intensity for dose control; a diffuse reference in front of the reference photodiode would benefit from diffusil's UV-C survival and thermal tolerance. It is a stretch because most reactor UV sensors use a simple silica window or a calibrated photodiode rather than a dedicated volume diffuser, so the attachment depends on the OEM choosing a diffuse-reference architecture."
+    }
+   ],
+   "stakeholders": [
+    {
+     "role": "job_executor \u2014 the operator/technician who runs and verifies the online analyzer at the effluent train",
+     "esco": "Industrial wastewater treatment operator (ESCO 3132.x \u2014 water/wastewater treatment plant operator family; O*NET 51-8031 Water and Wastewater Treatment Plant and System Operators)",
+     "unit": "Online UV-Vis Spectral Effluent Analyzer",
+     "decides": "Operates the analyzer, validates readings against the discharge limit, and acts on drift \u2014 directly experiences when a degraded reference optic gives bad COD/oil readings; the user whose reliability problem diffusil solves."
+    },
+    {
+     "role": "purchase_influencer \u2014 the instrumentation/optical design engineer who specs the analyzer's reference optic",
+     "esco": "Instrumentation engineer / optical (photonics) engineer (ESCO 2152.x electronics & instrumentation engineer / 2151.x; O*NET 17-2072 Electronics Engineers / 17-2199 Photonics)",
+     "unit": "Diffuse-Reference / Beam-Homogenizing Optic",
+     "decides": "Selects the reference-diffuser material and geometry in the analyzer OEM's bill of materials \u2014 the actual specifier of diffusil vs. Spectralon/polymer; defines DUV/UV-C, thermal and chemical-resistance requirements diffusil must meet."
+    },
+    {
+     "role": "purchase_executor \u2014 the analyzer-OEM procurement/sourcing manager who buys the optical component",
+     "esco": "Procurement / purchasing manager (ESCO 1212.1 / 2421.x; O*NET 13-1023 Purchasing Agents / 11-3061 Purchasing Managers)",
+     "unit": "Diffuse-Reference / Beam-Homogenizing Optic",
+     "decides": "Issues the purchase order to opsira for the merchant optical component, negotiates price/lead-time/qualification; controls whether diffusil becomes a designed-in supplied part."
+    },
+    {
+     "role": "job_overseer \u2014 the plant environmental/compliance manager accountable for permit conformance",
+     "esco": "Environmental / water-quality manager (ESCO 2143.x environmental engineer / 1322.x production-and-operations manager; O*NET 11-9121 Natural Sciences Managers / 17-2081 Environmental Engineers)",
+     "unit": "Effluent Discharge & Compliance Verification",
+     "decides": "Owns the NPDES/discharge-permit outcome and the integrity of the monitoring data; sets the requirement that the analyzer's optics stay accurate over time, indirectly driving demand for a non-degrading reference optic."
+    }
+   ]
+  },
+  {
+   "segment_id": "F4",
+   "naics": "334220 \u2014 Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing",
+   "l2": "Satellite Connectivity Provision",
+   "vn_anchor": "Radio/TV Broadcasting & Wireless Communications Equipment Manufacturing \u2014 Satellite Connectivity Provision (SATCOM terminal manufacturing)",
+   "vn_cfj": "To convert electronic, RF and optical subsystems into a qualified satellite-connectivity terminal that reliably exchanges traffic with a spacecraft from a fixed, mobile or portable platform.",
+   "vn_units": [
+    {
+     "level": "L7",
+     "name": "Satellite Connectivity Terminal Manufacturing System",
+     "cfj": "To produce qualified satellite-connectivity terminals that link a ground, maritime, aero or land-mobile platform to a satellite."
+    },
+    {
+     "level": "L6",
+     "name": "Subsystem Sourcing and Incoming Verification",
+     "cfj": "To admit RF, electronic, optical and mechanical subsystems against the build's specification before assembly."
+    },
+    {
+     "level": "L6",
+     "name": "RF Front-End and Feed Build",
+     "cfj": "To form the antenna, feed and frequency-conversion chain that radiates and captures the satellite signal."
+    },
+    {
+     "level": "L6",
+     "name": "Electronics and Modem Build",
+     "cfj": "To populate and house the boards that modulate, demodulate, control and power the terminal."
+    },
+    {
+     "level": "L6",
+     "name": "Pointing, Tracking and Sensor Integration",
+     "cfj": "To install and align the steering, position and attitude sensing that holds the terminal on the satellite."
+    },
+    {
+     "level": "L6",
+     "name": "Terminal Integration and Ruggedization",
+     "cfj": "To unite the antenna, electronics and enclosure into one platform-mounted, environmentally sealed terminal."
+    },
+    {
+     "level": "L6",
+     "name": "Calibration, Alignment and Acceptance Test",
+     "cfj": "To verify and bring the assembled terminal's RF and optical performance to specification before release."
+    },
+    {
+     "level": "L6",
+     "name": "Environmental Qualification and Screening",
+     "cfj": "To prove the terminal survives its service thermal, vibration and exposure envelope."
+    },
+    {
+     "level": "L6",
+     "name": "Quality Assurance and Metrological Traceability",
+     "cfj": "To keep measurement, inspection and reference standards traceable across the whole build."
+    },
+    {
+     "level": "L5",
+     "name": "Reflector and Flat-Panel Antenna Aperture",
+     "cfj": "To collect and concentrate the satellite signal across the operating band."
+    },
+    {
+     "level": "L5",
+     "name": "Feed Horn and Orthomode Transducer (OMT)",
+     "cfj": "To couple the aperture to the transmit and receive ports by polarization."
+    },
+    {
+     "level": "L5",
+     "name": "Block Up-Converter / Low-Noise Block (BUC/LNB)",
+     "cfj": "To translate baseband RF up to the uplink and the downlink down to receive frequencies."
+    },
+    {
+     "level": "L5",
+     "name": "Satellite Modem and Baseband Processor",
+     "cfj": "To modulate outbound and demodulate inbound traffic across the link."
+    },
+    {
+     "level": "L5",
+     "name": "Antenna Control Unit and Power Conditioning",
+     "cfj": "To command the steering chain and deliver conditioned power to the terminal."
+    },
+    {
+     "level": "L5",
+     "name": "Phased-Array Beam-Steering Module",
+     "cfj": "To electronically point and track the satellite without moving parts."
+    },
+    {
+     "level": "L5",
+     "name": "Position and Attitude Sensor Suite (GNSS / IMU / optical sensor)",
+     "cfj": "To resolve the terminal's location and orientation so the beam stays on the satellite."
+    }
+   ],
+   "bom_anchor": "Maritime Satellite Terminal (stabilized VSAT / flat-panel terminal \u2014 a complete shipped SATCOM terminal of this segment)",
+   "bom_units": [
+    {
+     "name": "Maritime Satellite Terminal",
+     "function": "Complete shipped terminal that exchanges traffic with the satellite from a vessel",
+     "level": "L5 \u2014 finished product"
+    },
+    {
+     "name": "Antenna / Aperture Subsystem",
+     "function": "Radiates and captures the satellite RF signal",
+     "level": "L4 \u2014 subsystem"
+    },
+    {
+     "name": "Radio Frequency Conversion Subsystem",
+     "function": "Converts between baseband RF and uplink/downlink frequencies",
+     "level": "L4 \u2014 subsystem"
+    },
+    {
+     "name": "Modem and Control Electronics Subsystem",
+     "function": "Modulates/demodulates traffic and commands the terminal",
+     "level": "L4 \u2014 subsystem"
+    },
+    {
+     "name": "Stabilization and Pointing Subsystem",
+     "function": "Holds the beam on the satellite while the platform moves",
+     "level": "L4 \u2014 subsystem"
+    },
+    {
+     "name": "Radome and Mechanical Enclosure Subsystem",
+     "function": "Shelters the terminal from the marine environment",
+     "level": "L4 \u2014 subsystem"
+    },
+    {
+     "name": "Reflector Dish / Flat-Panel ESA Array",
+     "function": "Concentrates the RF energy / forms the steered beam",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Feed Horn and Orthomode Transducer (OMT)",
+     "function": "Couples the aperture to transmit/receive ports by polarization",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Block Up-Converter (BUC)",
+     "function": "Up-converts the transmit RF to the uplink band",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Low-Noise Block down-converter (LNB)",
+     "function": "Down-converts and amplifies the received downlink",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Satellite Modem PCB Assembly",
+     "function": "Runs the air-interface waveform and link control",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Antenna Control Unit (ACU)",
+     "function": "Drives the stabilization and steering loops",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Inertial / GNSS Position-and-Attitude Sensor Module",
+     "function": "Resolves heading, attitude and position for pointing",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Optical Reference / Position Sensor (sun/horizon or camera sensor, ESA-class terminals)",
+     "function": "Provides an absolute optical attitude/position reference used by the pointing loop",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Radome Shell",
+     "function": "RF-transparent weatherproof cover over the aperture",
+     "level": "L3 \u2014 module"
+    },
+    {
+     "name": "Microwave PCB / Waveguide Assembly",
+     "function": "Carries and isolates the RF path inside the front end",
+     "level": "L2 \u2014 assembly"
+    },
+    {
+     "name": "Solid-State Power Amplifier (SSPA) Assembly",
+     "function": "Amplifies the transmit signal to the required EIRP",
+     "level": "L2 \u2014 assembly"
+    },
+    {
+     "name": "Phased-Array Tile / RFIC Assembly",
+     "function": "Per-element phase/amplitude control for beam steering",
+     "level": "L2 \u2014 assembly"
+    }
+   ],
+   "intersections": [
+    {
+     "unit": "Radiometric / Optical Calibration Station (Integrating Sphere + Uniform Light Source)",
+     "path": "process_vn",
+     "fit": "direct",
+     "role": "Traceable diffuse-reference standard and transmissive homogenizer: replaces polymer Spectralon/PTFE sphere coatings and reference plaques where the calibration spans UV/DUV or runs hot, giving incident-angle-independent near-Lambertian output that does not drift.",
+     "where": "Inside the integrating-sphere calibration station of the terminal's 'Calibration, Alignment and Acceptance Test' L6 stage \u2014 as the diffuse reference / sphere-port transmission diffuser (and the uniform-light-source output diffuser) against which the terminal's optical receivers, photodetectors and position/attitude optical sensors are calibrated for responsivity and spatial uniformity.",
+     "rationale": "Integrating spheres and uniform sources are the standard radiometric tool for detector responsivity/uniformity calibration (NIST SIRCUS; spacecraft optical-camera pre-launch calibration). diffusil's fused-silica volume diffusion gives angle-independent near-Lambertian transmission AND reflection from UV-C through NIR with no temporal drift \u2014 precisely where Spectralon/PTFE references degrade. This is opsira's own home turf (it builds these test stands), so the component drops straight into this VN node."
+    },
+    {
+     "unit": "Position and Attitude Sensor Suite (GNSS / IMU / optical sensor) \u2014 Sensor Optical Bench Assembly",
+     "path": "process_vn",
+     "fit": "adjacent",
+     "role": "Uniform-illumination flat-field diffuser / diffuse target for sensor pixel-response and stray-light calibration, surviving the bake-out and UV exposure those space-grade sensors are screened against.",
+     "where": "As a flat-field / uniform-illumination reference element in the sensor sub-supplier's own test fixture for the terminal's optical attitude/position sensor (sun/horizon/camera sensor) \u2014 used to flat-field-calibrate and stray-light-characterize the detector during sensor build, upstream of terminal integration.",
+     "rationale": "Optical attitude sensors are flat-field and stray-light calibrated against a uniform diffuse source during manufacture. diffusil's autoclave/bake-out and UV survival plus angle-independent homogenization make it the durable reference where polymer diffusers outgas or yellow. It is adjacent rather than direct because it sits in the sensor SUPPLIER's process, one tier up from the terminal line."
+    },
+    {
+     "unit": "Fused-Silica Sensor Window / Optical Element (BOM L1 part)",
+     "path": "bom",
+     "fit": "stretch",
+     "role": "Merchant fused-silica diffusing window / optical homogenizer designed into the sensor optical path for a built-in diffuse reference or uniform-illumination function.",
+     "where": "Could be specified AS the terminal's own sensor window/optical element on ESA-class or optical-comm-equipped terminals where a deliberately diffusing, ruggedized fused-silica element is wanted in front of a position/reference detector \u2014 i.e. diffusil shipped INSIDE the product rather than only in the test stand.",
+     "rationale": "Most SATCOM terminals are RF-only and carry no optical diffuser, so a shipped-BOM placement is a stretch \u2014 it only applies to the optical-sensor-bearing minority of terminals, and even there a clear window, not a diffuser, is the default. The honest, dominant intersection is the process_vn calibration station, not the product BOM."
+    }
+   ],
+   "stakeholders": [
+    {
+     "role": "purchase_influencer \u2014 Calibration / optical-metrology engineer who specifies the diffuse reference and integrating-sphere optics for the terminal acceptance-test stand",
+     "esco": "Optical engineer (ESCO 2152.x / 'optical engineer')",
+     "unit": "Radiometric / Optical Calibration Station (Integrating Sphere + Uniform Light Source)",
+     "decides": "Whether the calibration station's diffuse reference and sphere-port diffuser is polymer Spectralon/PTFE or fused-silica diffusil \u2014 set by the wavelength range (UV/DUV), thermal load and required long-term stability of the radiometric calibration."
+    },
+    {
+     "role": "job_executor \u2014 Calibration / test technician who operates the integrating-sphere station and runs the detector responsivity/uniformity calibrations",
+     "esco": "Calibration technician (ESCO 3119.x / 'calibration technician')",
+     "unit": "Radiometric / Optical Calibration Station (Integrating Sphere + Uniform Light Source)",
+     "decides": "Day-to-day acceptance of the reference's condition and recalibration interval \u2014 pushes for a non-drifting reference that does not need frequent re-certification or replacement after UV/heat exposure."
+    },
+    {
+     "role": "job_overseer \u2014 Test / quality manager accountable for the traceability and repeatability of terminal acceptance measurements",
+     "esco": "Quality manager / quality engineer (ESCO 2141.x / 'quality engineer')",
+     "unit": "Calibration, Alignment and Acceptance Test (L6 stage) \u2014 QA / metrological traceability",
+     "decides": "Whether the diffuse-reference standard's stability and traceability satisfy the acceptance-test quality plan and audit requirements (a drifting polymer reference is a non-conformance risk that a stable fused-silica reference removes)."
+    },
+    {
+     "role": "purchase_executor \u2014 Procurement / buyer who places the order for the optical reference component or the test-stand optics package",
+     "esco": "Purchasing manager / procurement specialist (ESCO 1324.x / 'purchasing manager')",
+     "unit": "Subsystem Sourcing and Incoming Verification (procurement of test-stand optics / reference components)",
+     "decides": "Commits the spend on the diffusil component or the opsira test stand once the optical/metrology engineer has specified it \u2014 balances unit cost against the avoided recalibration/replacement cost of a degrading reference."
+    },
+    {
+     "role": "purchase_influencer \u2014 Sensor / photonics design engineer at the optical-sensor sub-supplier who selects the flat-field reference diffuser",
+     "esco": "Photonics engineer / optical engineer (ESCO 2152.x / 'optical engineer')",
+     "unit": "Position and Attitude Sensor Suite \u2014 Sensor Optical Bench Assembly (sensor supplier's flat-field test fixture)",
+     "decides": "Whether the sensor's flat-field and stray-light calibration uses a fused-silica diffuser that survives the space-grade bake-out and UV screening the sensor itself must pass."
+    }
+   ]
+  }
+ ],
+ "meta": {
+  "title": "diffusil\u00ae \u2014 Market Opportunity Report",
+  "subtitle": "Universal Digital Twin \u00b7 PCM new-markets analysis",
+  "question": "What new markets exist for diffusil\u00ae, and how attractive are they?",
+  "methodology": [
+   "Product decomposition (Christensen)",
+   "Two-path market discovery (BOM + Process-VN)",
+   "Exhaustive NAICS universe",
+   "Separate PCM-composite ranking",
+   "JTBD dimensions + L2/L3 segmentation",
+   "Value network + BOM + stakeholders (Stage 3)"
+  ]
+ },
+ "glossary": [
+  {
+   "term": "NAICS",
+   "def": "North American Industry Classification System \u2014 6-digit industry codes used to define candidate markets."
+  },
+  {
+   "term": "UNSPSC",
+   "def": "United Nations Standard Products and Services Code \u2014 commodity classification of the product."
+  },
+  {
+   "term": "ESCO",
+   "def": "European Skills, Competences, Qualifications and Occupations \u2014 taxonomy used to map stakeholder roles to real occupations."
+  },
+  {
+   "term": "CFJ",
+   "def": "Core Functional Job (Burleson JTBD) \u2014 the fundamental job a market/unit/role is hired to do, phrased \"To\u2026\"."
+  },
+  {
+   "term": "BOM path",
+   "def": "diffusil ships inside the final product's bill of materials."
+  },
+  {
+   "term": "Process-VN path",
+   "def": "diffusil sits in the equipment/process of the production/measurement/treatment value network; it enables the output but does not ship in it."
+  },
+  {
+   "term": "Intersection unit",
+   "def": "The exact value-network node or BOM line where diffusil attaches."
+  },
+  {
+   "term": "L2 / L3",
+   "def": "Market segmentation levels: L2 = segment from the demand-primary dimension; L3 = sub-segment from a secondary dimension."
+  }
+ ]
+}

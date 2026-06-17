@@ -1,0 +1,14 @@
+/* Citation marker — Geist Mono / label-XS, uppercase, link colour. */
+.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-label-xs);
+  line-height: var(--line-height-label-xs);
+  letter-spacing: var(--letter-spacing-label-xs);
+  text-transform: uppercase;
+  color: var(--text-link);
+  white-space: nowrap;
+}

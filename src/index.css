@@ -1,0 +1,15 @@
+/* Minimal reset — the real design tokens come from @node42/ui-kit
+   (its barrel imports tokens.css + globals.css automatically). */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}

@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--text-body);
+  background: var(--color-page);
+}
+
+body {
+  margin: 0;
+}
