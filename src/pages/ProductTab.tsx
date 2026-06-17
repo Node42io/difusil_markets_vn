@@ -25,6 +25,37 @@ const SECTION_LABEL: React.CSSProperties = {
   color: "var(--text-labels)",
 };
 
+// A subtle "In plain terms" plain-language restatement of a technical line.
+function PlainTerms({ text }: { text?: string }) {
+  if (!text) return null;
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "var(--space-100)",
+        borderLeft: "2px solid var(--border-information)",
+        paddingLeft: "var(--space-300)",
+      }}
+    >
+      <Text
+        variant="b3"
+        weight="medium"
+        style={{
+          textTransform: "uppercase",
+          letterSpacing: "0.04em",
+          color: "var(--text-information)",
+        }}
+      >
+        In plain terms
+      </Text>
+      <Text variant="b2" style={{ color: "var(--text-body)" }}>
+        {text}
+      </Text>
+    </div>
+  );
+}
+
 export default function ProductTab() {
   const { product } = report;
 
@@ -42,17 +73,31 @@ export default function ProductTab() {
         }}
       >
         <Text variant="page-chapter">Functional Promise</Text>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--space-200)",
+          }}
+        >
           <div style={SECTION_LABEL}>Functional promise</div>
           <ContentCard variant="vertical" button={false}>
             {product.functional_promise}
           </ContentCard>
+          <PlainTerms text={product.functional_promise_easy} />
         </div>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--space-200)",
+          }}
+        >
           <div style={SECTION_LABEL}>Commodity-level functional promise</div>
           <ContentCard variant="vertical" button={false}>
             {product.commodity_functional_promise}
           </ContentCard>
+          <PlainTerms text={product.commodity_functional_promise_easy} />
         </div>
       </section>
 
@@ -170,7 +215,48 @@ export default function ProductTab() {
                     </Badge>
                   </div>
                 </Table.Cell>
-                <Table.Cell>{c.explanation}</Table.Cell>
+                <Table.Cell>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "var(--space-200)",
+                    }}
+                  >
+                    <Text variant="b2" style={{ color: "var(--text-body)" }}>
+                      {c.explanation}
+                    </Text>
+                    {c.easy && (
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "var(--space-100)",
+                          borderLeft: "2px solid var(--border-information)",
+                          paddingLeft: "var(--space-300)",
+                        }}
+                      >
+                        <Text
+                          variant="b3"
+                          weight="medium"
+                          style={{
+                            textTransform: "uppercase",
+                            letterSpacing: "0.04em",
+                            color: "var(--text-information)",
+                          }}
+                        >
+                          In plain terms
+                        </Text>
+                        <Text
+                          variant="b2"
+                          style={{ color: "var(--text-body)" }}
+                        >
+                          {c.easy}
+                        </Text>
+                      </div>
+                    )}
+                  </div>
+                </Table.Cell>
               </Table.Row>
             ))}
           </Table.Body>
@@ -200,6 +286,7 @@ export default function ProductTab() {
               <Table.HeaderCell>UNSPSC code</Table.HeaderCell>
               <Table.HeaderCell>Commodity</Table.HeaderCell>
               <Table.HeaderCell>Confidence</Table.HeaderCell>
+              <Table.HeaderCell>Rationale</Table.HeaderCell>
             </Table.Row>
           </Table.Head>
           <Table.Body>
@@ -213,6 +300,11 @@ export default function ProductTab() {
                 <Table.Cell>{u.name}</Table.Cell>
                 <Table.Cell>
                   <ConfidenceBadge value={u.confidence} hideIcon />
+                </Table.Cell>
+                <Table.Cell>
+                  <Text variant="b3" style={{ color: "var(--text-body)" }}>
+                    {u.rationale}
+                  </Text>
                 </Table.Cell>
               </Table.Row>
             ))}

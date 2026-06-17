@@ -23,32 +23,38 @@
    {
     "name": "Low optical transmission",
     "type": "physical",
-    "explanation": "Only ~30\u201340% of incident light is transmitted (grade T1000 @1 mm); the rest is back-scattered or absorbed, so it is unsuitable for high-efficiency illumination."
+    "explanation": "Only ~30\u201340% of incident light is transmitted (grade T1000 @1 mm); the rest is back-scattered or absorbed, so it is unsuitable for high-efficiency illumination.",
+    "easy": "Only about a third of the light makes it through, so it's not the right choice when you need bright, efficient lighting."
    },
    {
     "name": "Brittle fracture",
     "type": "physical",
-    "explanation": "It is a silica glass \u2014 brittle and thermal-shock-sensitive, with low fracture toughness despite its high bending strength."
+    "explanation": "It is a silica glass \u2014 brittle and thermal-shock-sensitive, with low fracture toughness despite its high bending strength.",
+    "easy": "It's glass, so it can crack or shatter if knocked or hit with a sudden temperature change."
    },
    {
     "name": "Maximum single-piece size",
     "type": "physical",
-    "explanation": "Sol-gel casting caps a single monolithic piece at ~220\u00d7220 mm; larger continuous diffuser areas require tiling or another technology."
+    "explanation": "Sol-gel casting caps a single monolithic piece at ~220\u00d7220 mm; larger continuous diffuser areas require tiling or another technology.",
+    "easy": "One piece can't be made larger than about 22 by 22 cm; covering a bigger area means tiling several pieces together."
    },
    {
     "name": "High material and process cost",
     "type": "economic",
-    "explanation": "Ultra-pure synthetic silica plus the multi-step sol-gel densification process makes unit cost far higher than polymer (PMMA/PC) or opal-glass diffusers."
+    "explanation": "Ultra-pure synthetic silica plus the multi-step sol-gel densification process makes unit cost far higher than polymer (PMMA/PC) or opal-glass diffusers.",
+    "easy": "The ultra-pure glass and the elaborate way it's made cost far more than ordinary plastic or opal-glass diffusers."
    },
    {
     "name": "Thickness-dependent scatter",
     "type": "operational",
-    "explanation": "As a volume (not surface) diffuser, scatter strength and transmission depend on thickness and bubble-density grade, so very thin or very large-area parts behave differently."
+    "explanation": "As a volume (not surface) diffuser, scatter strength and transmission depend on thickness and bubble-density grade, so very thin or very large-area parts behave differently.",
+    "easy": "How strongly it spreads light depends on how thick the piece is, so very thin or very large parts behave differently and have to be designed for."
    },
    {
     "name": "Hydrofluoric-acid attack",
     "type": "chemical",
-    "explanation": "Resistant to most strong acids and bases (DIN class 1), but fused silica is etched by hydrofluoric acid and hot phosphoric acid, so it cannot be used in HF process environments."
+    "explanation": "Resistant to most strong acids and bases (DIN class 1), but fused silica is etched by hydrofluoric acid and hot phosphoric acid, so it cannot be used in HF process environments.",
+    "easy": "It shrugs off almost every acid and base, but one specific chemical (hydrofluoric acid) eats into it, so it can't be used where that chemical is present."
    }
   ],
   "specifications": [
@@ -79,30 +85,36 @@
   ],
   "unspsc": {
    "custom_product_group": "Volume Silica Light Diffusers",
-   "note": "No UNSPSC commodity reached the 80% confidence gate, so the product is classified to a custom product group. The closest candidates are shown for reference.",
+   "note": "No UNSPSC commodity reached the 80% confidence gate, so diffusil is classified to a custom product group rather than force-fitting a code. It is a cross-category, dual-function product \u2014 an illumination diffuser AND a metrology diffuse-reflectance reference, made of volume synthetic silica \u2014 so no single commodity cleanly covers it. The closest candidates are shown with the rationale for each confidence.",
    "candidates": [
     {
      "code": "41115306",
      "name": "Optical diffusers",
-     "confidence": 72
+     "confidence": 72,
+     "rationale": "Directly names the product's primary function (an optical diffuser), so it's the top pick \u2014 but the UNSPSC entry sits in the lab/measuring-instruments family and captures only the light-spreading use, not diffusil's second identity as a diffuse-reflectance reference standard, nor the volume (bulk-scatter) vs surface distinction or the synthetic-silica material. Strong but not exact, so it stays under the 80% gate."
     },
     {
      "code": "41111604",
      "name": "Diffuse reflectance / photometric reference standards",
-     "confidence": 58
+     "confidence": 58,
+     "rationale": "Captures diffusil's other major identity \u2014 the calibrated diffuse-reflectance reference standard used in metrology (its current home market) \u2014 but is wrong for the larger illumination / light-spreading use. Accurate for half the picture."
     },
     {
      "code": "41121809",
      "name": "Optical glass / specialty glass blanks",
-     "confidence": 45
+     "confidence": 45,
+     "rationale": "Matches the material (synthetic-silica glass blank), not the function. It classifies what diffusil is made of, not what it does (diffuse light) \u2014 component-level, not function-level."
     },
     {
      "code": "60121009",
      "name": "Optical lenses or filters or diffusers (optical components)",
-     "confidence": 41
+     "confidence": 41,
+     "rationale": "A generic 'optical components' catch-all that lumps lenses, filters and diffusers together, in a different segment. Tangentially right (it lists diffusers) but too broad and in the wrong bucket."
     }
    ]
-  }
+  },
+  "functional_promise_easy": "It takes a beam of light and spreads it into a soft, perfectly even glow that looks the same from every direction, no matter what angle the light came in at. And it keeps doing this even under harsh ultraviolet light, extreme heat, and aggressive chemicals that would ruin ordinary plastic diffusers.",
+  "commodity_functional_promise_easy": "Light passes right through the glass and the millions of tiny bubbles inside scatter it so it comes out as a smooth, uniform glow rather than a focused beam. The effect works across the full range of light from ultraviolet to near-infrared, and it doesn't matter which angle the light hits it from."
  },
  "universe": [
   {
@@ -2850,7 +2862,8 @@
      "fit": "direct",
      "role": "DUV/UV-C-stable, high-temperature, chemical-resistant volume diffuse-reflectance reference element replacing UV-fragile PTFE/Spectralon and ceramic references",
      "where": "The diffuse-reflectance REFERENCE STANDARD that every optical metrology/inspection tool (broadband-plasma inspector, spectroscopic reflectometer/ellipsometer) calibrates its photometric and radiometric scale against. diffusil-R is the volume-diffuse reflector inside the on-tool reference module and the integrating-sphere reference. It is a consumable/part inside the segment's equipment, NOT shipped in the customer's wafer.",
-     "rationale": "Spectralon/PTFE and ceramic diffuse references measurably degrade and drift under exactly the DUV/UV-C broadband-plasma illumination (150-500nm, high photon flux) that defines this segment's optical tools; diffusil-R holds near-Lambertian diffuse reflectance over 190-3200nm without UV-induced yellowing, so the tool's calibration stays traceable longer \u2014 the precise accuracy-where-polymer-fails differentiator."
+     "rationale": "Spectralon/PTFE and ceramic diffuse references measurably degrade and drift under exactly the DUV/UV-C broadband-plasma illumination (150-500nm, high photon flux) that defines this segment's optical tools; diffusil-R holds near-Lambertian diffuse reflectance over 190-3200nm without UV-induced yellowing, so the tool's calibration stays traceable longer \u2014 the precise accuracy-where-polymer-fails differentiator.",
+     "role_easy": "Here diffusil is the trusted even-glow reference disc that the chip-inspection tools check themselves against, sitting inside the equipment (not in the customer's chip); because it survives the harsh ultraviolet light these tools use, the tool's measurements stay accurate far longer than with plastic references."
     },
     {
      "unit": "Volume diffuser / homogenizing optical element (BOM L1) / Illumination homogenizer & beam-shaping optics (VN L4) -> Beam homogenizing diffuser element (VN L3)",
@@ -2858,7 +2871,8 @@
      "fit": "adjacent",
      "role": "Incident-angle-independent transmission volume homogenizer for DUV/UV broadband-plasma illumination, surviving the source's UV flux and heat load",
      "where": "The beam HOMOGENIZER in the illumination subsystem of the inspector / reflectometer: it flattens the laser-sustained-plasma source's angular and spatial non-uniformity into a uniform, incident-angle-independent illumination field before the light reaches the wafer. diffusil-T (transmission mode) sits in the optical path as a component.",
-     "rationale": "diffusil's defining property \u2014 homogenization independent of incident angle in transmission across DUV-NIR, withstanding high UV flux and >hundreds-of-degrees thermal load near an LSP source \u2014 fits illumination homogenization; adjacent rather than direct because many inspectors use fly-eye/micro-lens or rod homogenizers, so diffusil competes for the position rather than owning it, but its UV+thermal survival is a genuine edge close to a hot plasma lamp."
+     "rationale": "diffusil's defining property \u2014 homogenization independent of incident angle in transmission across DUV-NIR, withstanding high UV flux and >hundreds-of-degrees thermal load near an LSP source \u2014 fits illumination homogenization; adjacent rather than direct because many inspectors use fly-eye/micro-lens or rod homogenizers, so diffusil competes for the position rather than owning it, but its UV+thermal survival is a genuine edge close to a hot plasma lamp.",
+     "role_easy": "Here diffusil sits inside the inspection tool's lighting system, smoothing the harsh plasma lamp's uneven, hot ultraviolet beam into one even sheet of light before it reaches the chip being checked."
     },
     {
      "unit": "Reference-channel diffuser & normalization optics (VN L4) -> Integrating / homogenizing diffuser disc (VN L3) \u2014 inside Spectroscopic reflectometer / ellipsometer (VN L5)",
@@ -2866,7 +2880,8 @@
      "fit": "direct",
      "role": "Stable DUV-NIR diffuse reference/normalization disc for the spectrometer reference channel and integrating sphere",
      "where": "The reference/normalization channel of a spectroscopic reflectometer or ellipsometer used for film-thickness and optical-property metrology: a diffuser disc (often in an integrating sphere) normalizes the broadband source and provides the diffuse reference for the spectral measurement.",
-     "rationale": "Film-thickness/optical-property tools span DUV-NIR and need a diffuse reference that does not drift spectrally; diffusil's volume scattering gives flat, stable diffuse behavior across 190-3200nm where coated PTFE references degrade, making it a direct fit for the reference-channel diffuser and integrating-sphere reference standard."
+     "rationale": "Film-thickness/optical-property tools span DUV-NIR and need a diffuse reference that does not drift spectrally; diffusil's volume scattering gives flat, stable diffuse behavior across 190-3200nm where coated PTFE references degrade, making it a direct fit for the reference-channel diffuser and integrating-sphere reference standard.",
+     "role_easy": "Here diffusil is the stable reference disc inside a film-measuring instrument's comparison channel; it gives a steady, even glow across all wavelengths so the instrument's readings of how thick a coating is stay reliable."
     }
    ],
    "stakeholders": [
@@ -3930,7 +3945,8 @@
      "fit": "direct",
      "role": "Merchant optical component: a VOLUME diffuser that delivers incident-angle-independent, near-Lambertian homogenization in transmission across UV->NIR (incl DUV/UV-C), enabling stable port illumination where polymer diffusers degrade.",
      "where": "Inside the shipped instrument as the transmissive volume-diffuser/homogenizer plate at the integrating sphere's entrance/exit port and in the illumination optics, sitting under L4 'Optical Measurement Engine' -> L3 'Beam-Homogenizing & Diffusing Optics' -> L2 'Volume Diffuser / Homogenizer Plate' -> L0 'Synthetic Fused Silica (diffusil)'.",
-     "rationale": "This is exactly what diffusil is sold as \u2014 a volume diffuser/homogenizer that homogenizes in transmission with angle-independence; for DUV/UV-C materials and semiconductor reflectometry (where short wavelengths and high flux are routine) its UV survival and ~30-40% transmission make it a direct drop-in for the port/illumination diffuser."
+     "rationale": "This is exactly what diffusil is sold as \u2014 a volume diffuser/homogenizer that homogenizes in transmission with angle-independence; for DUV/UV-C materials and semiconductor reflectometry (where short wavelengths and high flux are routine) its UV survival and ~30-40% transmission make it a direct drop-in for the port/illumination diffuser.",
+     "role_easy": "Here diffusil ships inside the analysis instrument itself as the part that evens out the light at the measuring chamber's window, working even with the short-wavelength ultraviolet light that would degrade a plastic part."
     },
     {
      "unit": "Diffuse-Reflectance Reference Standard (sphere wall / reference port)",
@@ -3938,7 +3954,8 @@
      "fit": "direct",
      "role": "Built-in diffuse reference: an ultra-pure SiO2 near-Lambertian reflector providing the in-instrument reflectance reference that is angle-independent in reflection AND survives UV, high temperature, chemical and autoclave exposure.",
      "where": "Inside the shipped instrument as the diffuse-reflectance reference element at the sphere's reference port (and as a candidate sphere-wall surface), under L4 'Optical Measurement Engine' -> L3 'Integrating Sphere Module' -> L2 'Diffuse-Reflectance Reference Standard' -> L0 'Synthetic Fused Silica (diffusil)', displacing the L0 'Sintered PTFE / Barium Sulfate' incumbent.",
-     "rationale": "diffusil's headline differentiator is diffuse-reference accuracy in reflection where Spectralon/PTFE/BaSO4 fail \u2014 i.e. under DUV/UV-C, heat, and aggressive cleaning. A materials/semiconductor sphere reference that won't UV-yellow, won't outgas, and can be wet/solvent-cleaned without losing its reflectance scale is a high-value substitution at this exact reference-port position."
+     "rationale": "diffusil's headline differentiator is diffuse-reference accuracy in reflection where Spectralon/PTFE/BaSO4 fail \u2014 i.e. under DUV/UV-C, heat, and aggressive cleaning. A materials/semiconductor sphere reference that won't UV-yellow, won't outgas, and can be wet/solvent-cleaned without losing its reflectance scale is a high-value substitution at this exact reference-port position.",
+     "role_easy": "Here diffusil is the built-in white reference surface inside the instrument that the device compares its readings against; being ultra-pure glass, it survives ultraviolet light, heat and harsh cleaning without losing its known brightness."
     },
     {
      "unit": "Reference / Calibration Standard Set",
@@ -3946,7 +3963,8 @@
      "fit": "adjacent",
      "role": "Diffuse-reflectance transfer/working standard: a durable, UV-stable, autoclavable near-Lambertian reflectance artifact used to establish and re-verify the reflectance scale on the production floor and in service.",
      "where": "Consumed at the L6 'Calibration & Metrological Qualification' stage (and the horizontal L6 'Quality Assurance & Metrological Traceability') as the diffuse-reflectance transfer/working standard the instrument's reflectance scale is set and verified against \u2014 the L5 'Reference / Calibration Standard Set' unit.",
-     "rationale": "Beyond being a built-in part, diffusil is a consumable metrology artifact in the calibration process: its long-term photometric stability under UV and cleaning makes it a better-aging working/transfer standard than degradable PTFE plaques, so it attaches at the calibration node as a reference standard, not only inside the product BOM."
+     "rationale": "Beyond being a built-in part, diffusil is a consumable metrology artifact in the calibration process: its long-term photometric stability under UV and cleaning makes it a better-aging working/transfer standard than degradable PTFE plaques, so it attaches at the calibration node as a reference standard, not only inside the product BOM.",
+     "role_easy": "Here diffusil is a durable, repeatedly-cleanable reference standard used on the factory floor and in servicing to set and re-check the instrument's accuracy, lasting far longer than the plastic standards it replaces."
     }
    ],
    "stakeholders": [
@@ -4841,7 +4859,8 @@
      "fit": "direct",
      "role": "Merchant volume transmission diffuser (diffusil-T): replaces ground-glass / opal-glass / polymer engineered diffusers as the homogenizing element, giving incident-angle-independent near-Lambertian output from UV(DUV/UV-C) through NIR with no hot-spot and no aging.",
      "where": "L1 part inside the Diffuser/Homogenizer Optic (L2) \u2192 Diffuse Illumination Head / Projection Beam Homogenizer (L3) of the shipped 3D inspection system. diffusil-T is the transmission diffuser plate/disc that homogenizes the projector or 2D illumination light.",
-     "rationale": "Machine-vision illuminators and DLP/structured-light projectors explicitly carry a homogenizer/diffuser (confirmed: 'beam homogenizer' is a named subsystem of telecentric DLP optical engines, and 'diffuse structured light' is a patented MV technique). diffusil drops into exactly that L1 position as a merchant optical component \u2014 its stated product role. Its UV-survival and non-aging are real differentiators where polymer/ground-glass diffusers yellow, burn or speckle under UV/high-flux LED or laser sources."
+     "rationale": "Machine-vision illuminators and DLP/structured-light projectors explicitly carry a homogenizer/diffuser (confirmed: 'beam homogenizer' is a named subsystem of telecentric DLP optical engines, and 'diffuse structured light' is a patented MV technique). diffusil drops into exactly that L1 position as a merchant optical component \u2014 its stated product role. Its UV-survival and non-aging are real differentiators where polymer/ground-glass diffusers yellow, burn or speckle under UV/high-flux LED or laser sources.",
+     "role_easy": "Here diffusil ships inside the camera-based inspection system as the part that turns the projector or LED light into an even, hot-spot-free glow, and unlike ground glass or plastic it won't yellow or burn under intense light."
     },
     {
      "unit": "Diffuse Reference Coupon",
@@ -4849,7 +4868,8 @@
      "fit": "direct",
      "role": "Diffuse-reflectance reference standard (diffusil-R): the near-Lambertian white reference the camera images during flat-field / shading / radiometric calibration \u2014 a direct alternative to Spectralon (sintered PTFE) and BaSO4 references.",
      "where": "L1 part inside the Diffuse Reflectance Reference Insert (L2) \u2192 Diffuse Reference Plate/Target (L3) \u2192 Diffuse Calibration Reference Target accessory (L4) shipped WITH the instrument. diffusil-R is the diffuse white reflectance reference coupon.",
-     "rationale": "Flat-field/shading correction calibration requires imaging a 'homogeneous white target / uniform white reference plate' (confirmed). Spectralon is the incumbent diffuse-reference but is a soft polymer that degrades under UV, heat, solvents, abrasion and contamination on the shop floor. diffusil-R delivers the same near-Lambertian, viewing-angle-independent reflectance while surviving UV/DUV, ~1000C, acid/base and autoclave cleaning \u2014 diffusil's core differentiator exactly where polymer references fail. Accuracy-of-diffuse-reference is the value driver."
+     "rationale": "Flat-field/shading correction calibration requires imaging a 'homogeneous white target / uniform white reference plate' (confirmed). Spectralon is the incumbent diffuse-reference but is a soft polymer that degrades under UV, heat, solvents, abrasion and contamination on the shop floor. diffusil-R delivers the same near-Lambertian, viewing-angle-independent reflectance while surviving UV/DUV, ~1000C, acid/base and autoclave cleaning \u2014 diffusil's core differentiator exactly where polymer references fail. Accuracy-of-diffuse-reference is the value driver.",
+     "role_easy": "Here diffusil is the even white reference target shipped with the inspection system; the camera photographs it to calibrate itself, and it stays accurate through ultraviolet light, heat and harsh cleaning that wreck the usual plastic targets."
     },
     {
      "unit": "Radiometric & Flat-Field Calibration Station",
@@ -4857,7 +4877,8 @@
      "fit": "direct",
      "role": "Master/working diffuse white reference used on the production calibration rig itself to flat-field-calibrate every instrument before dispatch (a consumable/reference part inside the segment's process equipment, not in the shipped product).",
      "where": "L4 'Diffuse White Reference Standard' inside the Radiometric & Flat-Field Calibration Station (L5) of the manufacturer's OWN calibration line (Radiometric & Dimensional Calibration L6).",
-     "rationale": "Every MV/metrology instrument is flat-field and radiometrically calibrated on a station that needs a stable diffuse white reference under the instrument's own illumination. A diffusil-R master reference holds its certified reflectance across UV and through aggressive cleaning, so the factory's calibration reference does not drift or contaminate \u2014 improving the radiometric scale traceability of every unit shipped. This is the process_vn (equipment-consumable) attachment of the same component."
+     "rationale": "Every MV/metrology instrument is flat-field and radiometrically calibrated on a station that needs a stable diffuse white reference under the instrument's own illumination. A diffusil-R master reference holds its certified reflectance across UV and through aggressive cleaning, so the factory's calibration reference does not drift or contaminate \u2014 improving the radiometric scale traceability of every unit shipped. This is the process_vn (equipment-consumable) attachment of the same component.",
+     "role_easy": "Here diffusil is the master white reference used on the factory's own calibration rig to tune every camera unit before shipping; because it doesn't drift or get contaminated, every instrument leaves the factory better calibrated."
     },
     {
      "unit": "Diffuse-Reference & Calibration-Target Production Cell",
@@ -4865,7 +4886,8 @@
      "fit": "adjacent",
      "role": "Bought-in diffuse-reference blank that the target-production cell mounts, certifies and ships; diffusil is the supplied reference element this cell builds around.",
      "where": "L4 'Diffuse Reference Element' inside the Diffuse-Reference & Calibration-Target Production Cell (L5) \u2014 the cell that produces the calibration targets shipped with instruments.",
-     "rationale": "This cell exists to make the diffuse-reference targets; diffusil-R is the merchant element it consumes and certifies. Adjacent (not direct) because the cell could equally source Spectralon/BaSO4; diffusil wins on durability/UV/thermal/chemical survival and reflectance stability, which is precisely what a certified, long-life reference target needs."
+     "rationale": "This cell exists to make the diffuse-reference targets; diffusil-R is the merchant element it consumes and certifies. Adjacent (not direct) because the cell could equally source Spectralon/BaSO4; diffusil wins on durability/UV/thermal/chemical survival and reflectance stability, which is precisely what a certified, long-life reference target needs.",
+     "role_easy": "Here diffusil is the bought-in glass reference blank that a dedicated workshop mounts, certifies and turns into the calibration targets sold with the instruments; it's chosen because a long-life reference needs to keep its exact brightness."
     },
     {
      "unit": "Structured-Light / Fringe Projector Build Station",
@@ -4873,7 +4895,8 @@
      "fit": "adjacent",
      "role": "Transmission homogenizer optic the projector-build station integrates into the DLP/structured-light optical engine to flatten illumination uniformity across the DMD/pattern field.",
      "where": "L4 'Beam Homogenizer' inside the Structured-Light / Fringe Projector Build Station (L5) of the build flow (Illumination & Light-Shaping Subassembly Build L6).",
-     "rationale": "The projector optical engine needs a homogenizer; diffusil-T can serve it. Marked adjacent rather than direct because high-etendue laser/LED projector homogenization is often done with lenslet arrays/light-pipes where diffusil's ~30-40% transmission is a throughput trade-off \u2014 diffusil wins specifically when UV/DUV bands, high thermal load, or wide-angle Lambertian fill are required and polymer/holographic diffusers cannot survive."
+     "rationale": "The projector optical engine needs a homogenizer; diffusil-T can serve it. Marked adjacent rather than direct because high-etendue laser/LED projector homogenization is often done with lenslet arrays/light-pipes where diffusil's ~30-40% transmission is a throughput trade-off \u2014 diffusil wins specifically when UV/DUV bands, high thermal load, or wide-angle Lambertian fill are required and polymer/holographic diffusers cannot survive.",
+     "role_easy": "Here diffusil sits inside the station that builds the pattern-projectors, evening out the projector's light across the image; it's a fit mainly when intense or ultraviolet light would destroy the usual plastic diffusers."
     },
     {
      "unit": "Spectroscopic Sorting (L3 task) reference path",
@@ -4881,7 +4904,8 @@
      "fit": "stretch",
      "role": "In-line diffuse spectral white/transmission reference for NIR/UV spectroscopic sorters and hyperspectral web-inspection \u2014 survives the dust, UV lamps and cleaning of a sorting line where Spectralon contaminates.",
      "where": "Diffuse white/transmission reference inside spectroscopic sorting & hyperspectral inspection optics (an L3 inspection-task instrument within this L2), used to white-reference the spectral line every frame.",
-     "rationale": "Spectroscopic sorting and hyperspectral inspection re-reference against a diffuse white every scan; diffusil's UV-NIR Lambertian behaviour and chemical/abrasion survival fit a contaminated production line. Stretch because it is one specific L3 task instrument rather than the anchor 3D-metrology product, and many sorters use ceramic/PTFE tiles today \u2014 diffusil's edge is durability and UV/NIR breadth, not cost."
+     "rationale": "Spectroscopic sorting and hyperspectral inspection re-reference against a diffuse white every scan; diffusil's UV-NIR Lambertian behaviour and chemical/abrasion survival fit a contaminated production line. Stretch because it is one specific L3 task instrument rather than the anchor 3D-metrology product, and many sorters use ceramic/PTFE tiles today \u2014 diffusil's edge is durability and UV/NIR breadth, not cost.",
+     "role_easy": "Here diffusil could serve as the white reference inside spectral sorting and scanning machines that re-check themselves every scan; it suits a dusty, ultraviolet-lit production line where plastic references get contaminated, though it's a less certain fit."
     }
    ],
    "stakeholders": [
@@ -5647,7 +5671,8 @@
      "fit": "adjacent",
      "role": "Volume optical diffuser that homogenizes the LED/fiber illumination into a wide, incident-angle-independent, near-Lambertian, glare-free cone at the distal tip, surviving repeated autoclave / UV-C / chemical high-level-disinfection cycles intact.",
      "where": "Inside the shipped endoscope's Distal Tip Assembly -> Illumination Sub-System -> Illumination Window & Diffuser Assembly: diffusil is the L1 diffuser part bonded behind the tip illumination window.",
-     "rationale": "Endoscope tips already use a miniature diffuser to broaden the illumination cone; diffusil's distinctive value (autoclave + UV-C + acid/base survival with stable diffuse output) directly answers the segment's reprocessing-readiness mandate where polymer/PTFE diffusers degrade and ground-glass gives uneven, angle-dependent light. Sized 2x2..220x220mm and 0.3-25mm thick, diffusil can be cut to the millimetre-scale tip window. Fit is 'adjacent' not 'direct' because the dominant incumbent at this exact position is a tiny ground-glass / molded diffuser optimized for cost and size, and diffusil's UV/temperature/chemical edge is only partly exploited inside a sealed reusable tip (it is decisive for reprocessing durability but the tip is not held at 1000C)."
+     "rationale": "Endoscope tips already use a miniature diffuser to broaden the illumination cone; diffusil's distinctive value (autoclave + UV-C + acid/base survival with stable diffuse output) directly answers the segment's reprocessing-readiness mandate where polymer/PTFE diffusers degrade and ground-glass gives uneven, angle-dependent light. Sized 2x2..220x220mm and 0.3-25mm thick, diffusil can be cut to the millimetre-scale tip window. Fit is 'adjacent' not 'direct' because the dominant incumbent at this exact position is a tiny ground-glass / molded diffuser optimized for cost and size, and diffusil's UV/temperature/chemical edge is only partly exploited inside a sealed reusable tip (it is decisive for reprocessing durability but the tip is not held at 1000C).",
+     "role_easy": "Here diffusil ships inside the endoscope's tip, spreading the LED or fiber light into a wide, glare-free cone for the doctor's view; its real edge is surviving the repeated steam-sterilization and chemical disinfection the scope goes through between patients."
     },
     {
      "unit": "Integrating Sphere",
@@ -5655,7 +5680,8 @@
      "fit": "direct",
      "role": "Diffuse-reference standard / integrating-sphere volume-diffusing element giving spectrally-flat, angle-independent near-Lambertian reflectance UV->NIR as the calibration reference against which each endoscope's illumination is measured.",
      "where": "Inside the Final Test, Calibration & Release stage -> Optical & Illumination Performance Tester (L5) -> Integrating Sphere (L4): diffusil is the volume-diffusing reference/coating element and the diffuse-reference standard used to test endoscope illumination uniformity, color and spectral output.",
-     "rationale": "Illumination uniformity / spectral test rigs (e.g. CAL4-class endoscopic light-source calibrators) are built from volume-diffusing material; the incumbent Spectralon (sintered PTFE) reference degrades under UV, soils, and cannot be autoclaved/cleaned aggressively, whereas diffusil delivers the same near-Lambertian reflectance UV->NIR (incl DUV) with acid/base & autoclave-resistant, high-temperature-stable, cleanable performance. This is diffusil's core merchant-component market (opsira sells diffusil S500 exactly as integrating-sphere references), so the fit is direct \u2014 it replaces or upgrades the reference optic the QC bench depends on."
+     "rationale": "Illumination uniformity / spectral test rigs (e.g. CAL4-class endoscopic light-source calibrators) are built from volume-diffusing material; the incumbent Spectralon (sintered PTFE) reference degrades under UV, soils, and cannot be autoclaved/cleaned aggressively, whereas diffusil delivers the same near-Lambertian reflectance UV->NIR (incl DUV) with acid/base & autoclave-resistant, high-temperature-stable, cleanable performance. This is diffusil's core merchant-component market (opsira sells diffusil S500 exactly as integrating-sphere references), so the fit is direct \u2014 it replaces or upgrades the reference optic the QC bench depends on.",
+     "role_easy": "Here diffusil is the even-glow reference standard inside the test rig that checks each finished endoscope's light output; unlike the usual plastic reference, it can be steam-sterilized and harshly cleaned without losing its accuracy."
     },
     {
      "unit": "Distal-Tip Illumination Optics Assembly Cell",
@@ -5663,7 +5689,8 @@
      "fit": "adjacent",
      "role": "Merchant optical component fed into the tip illumination assembly as the diffuser element behind the illumination window.",
      "where": "Inside Optical Chain Fabrication -> Distal-Tip Illumination Optics Assembly Cell (L5) -> Illumination Window & Diffuser Mount (L4): diffusil is the consumable optical component placed and bonded into the tip during build.",
-     "rationale": "This is the process-VN counterpart of the BOM attach point: the cell is where the diffuser is physically mounted and bonded. diffusil sits here as the bought-in component (brittle, so handled in alignment/bonding jigs). Fit is 'adjacent' for the same reason as the BOM line \u2014 diffusil competes against an entrenched small ground-glass/molded diffuser at this position and wins primarily on reprocessing durability rather than on a property unique to this assembly step."
+     "rationale": "This is the process-VN counterpart of the BOM attach point: the cell is where the diffuser is physically mounted and bonded. diffusil sits here as the bought-in component (brittle, so handled in alignment/bonding jigs). Fit is 'adjacent' for the same reason as the BOM line \u2014 diffusil competes against an entrenched small ground-glass/molded diffuser at this position and wins primarily on reprocessing durability rather than on a property unique to this assembly step.",
+     "role_easy": "Here diffusil is the bought-in diffuser component that the tip-assembly workshop carefully bonds into each endoscope tip during manufacture; it has to be handled gently in jigs because, being glass, it's brittle."
     }
    ],
    "stakeholders": [
@@ -6430,7 +6457,8 @@
      "fit": "direct",
      "role": "Diffuse reference standard and source-beam homogenizer: provides an incident-angle-independent, near-Lambertian reference signal so the analyzer can compensate lamp drift, stray light and beam-geometry change, in both transmission and reflection, across UV (incl. DUV/UV-C) to NIR.",
      "where": "L3 module of the Optical Bench inside the Online UV-Vis Spectral Effluent Analyzer (realized as the L1 'Sintered Volume-Diffuser Glass Element' / L0 'Ultra-Pure Synthetic Silica + Micro-Bubble Scattering Phase').",
-     "rationale": "diffusil is sold exactly as a merchant optical component that homogenizes/diffuses and serves as a diffuse reference where polymer or Spectralon references degrade. In a reagent-free UV-Vis effluent analyzer the reference channel is the accuracy-critical optic, and DUV/UV-C operation plus the harsh chemical/petrochemical service (acid/base aerosols, heat, fouling) are precisely diffusil's survival differentiators (to 1000 C, acid/base & autoclave resistant) vs. Spectralon (PTFE, UV/heat/chemical degradation)."
+     "rationale": "diffusil is sold exactly as a merchant optical component that homogenizes/diffuses and serves as a diffuse reference where polymer or Spectralon references degrade. In a reagent-free UV-Vis effluent analyzer the reference channel is the accuracy-critical optic, and DUV/UV-C operation plus the harsh chemical/petrochemical service (acid/base aerosols, heat, fouling) are precisely diffusil's survival differentiators (to 1000 C, acid/base & autoclave resistant) vs. Spectralon (PTFE, UV/heat/chemical degradation).",
+     "role_easy": "Here diffusil ships inside the water-monitoring analyzer as the steady reference that lets it correct for lamp drift and stray light; it's chosen because it survives the ultraviolet light, heat and corrosive fumes of chemical-plant wastewater that would ruin a plastic reference."
     },
     {
      "unit": "Sample-Wetted Optical Window Pair",
@@ -6438,7 +6466,8 @@
      "fit": "adjacent",
      "role": "Chemically and thermally survivable diffusing window / homogenizer at the sample interface \u2014 keeps the illumination uniform onto a fouling, refractive-index-varying effluent and resists the aggressive medium.",
      "where": "L3 module of the Flow-Through Measurement Cell (the windows in direct contact with hot acid/base effluent); diffusil's silica can serve as the diffusing window / homogenizing element directly on the wetted side.",
-     "rationale": "The wetted window is normally plain silica; using diffusil here turns it into a homogenizing element that stabilizes the measurement against the stream's optical inhomogeneity and bubbles. diffusil's 0.3-25 mm thickness, 2x2..220x220 mm size range and acid/base/autoclave resistance fit a process window, but most analyzers keep the diffuser in the reference channel rather than wetted, so this is an adjacent (design-dependent) attachment."
+     "rationale": "The wetted window is normally plain silica; using diffusil here turns it into a homogenizing element that stabilizes the measurement against the stream's optical inhomogeneity and bubbles. diffusil's 0.3-25 mm thickness, 2x2..220x220 mm size range and acid/base/autoclave resistance fit a process window, but most analyzers keep the diffuser in the reference channel rather than wetted, so this is an adjacent (design-dependent) attachment.",
+     "role_easy": "Here diffusil could double as the diffusing window that sits right in the dirty, hot, acidic wastewater stream, keeping the light even despite bubbles and murk; it's a design-dependent option since most analyzers keep the diffuser safely out of the flow."
     },
     {
      "unit": "Online UV-Vis Spectral Effluent Analyzer",
@@ -6446,7 +6475,8 @@
      "fit": "direct",
      "role": "Embedded diffuse-reference/homogenizer optic inside the monitoring instrument that the process trains rely on to control oxidation dosing and to certify discharge \u2014 i.e. a consumable optical part inside the segment's process equipment.",
      "where": "L5 equipment unit under the horizontal 'Process Analytics & Monitoring' L6 stage \u2014 the analyzer is the consumable optical instrument embedded across the Chemical Oxidation, Effluent Polishing and Outfall Compliance process units; diffusil sits inside it.",
-     "rationale": "Process-VN path: diffusil is not the shipped plant, it is a part inside the analyzer that the plant's analytics stage deploys. The analyzer's spectral accuracy under continuous UV exposure and corrosive service depends on a reference optic that does not yellow, melt or etch \u2014 diffusil's core claim. This is the same physical part as the BOM intersection, tagged here because the analyzer itself is an L5 unit of the process value network, not the end product the segment 'sells'."
+     "rationale": "Process-VN path: diffusil is not the shipped plant, it is a part inside the analyzer that the plant's analytics stage deploys. The analyzer's spectral accuracy under continuous UV exposure and corrosive service depends on a reference optic that does not yellow, melt or etch \u2014 diffusil's core claim. This is the same physical part as the BOM intersection, tagged here because the analyzer itself is an L5 unit of the process value network, not the end product the segment 'sells'.",
+     "role_easy": "Here diffusil is the same reference part viewed as a component inside the monitoring instrument that the treatment plant relies on to control its chemical dosing and prove its discharge is clean; its survival in corrosive, ultraviolet-lit service is what keeps the readings trustworthy."
     },
     {
      "unit": "UV/H2O2 Advanced-Oxidation Reactor",
@@ -6454,7 +6484,8 @@
      "fit": "stretch",
      "role": "DUV/UV-C-stable diffuse reference window for the reactor's UV-intensity reference detector, giving angle-independent, dose-accurate lamp monitoring at high fluence and elevated temperature.",
      "where": "Inside the UV-intensity / reference monitoring optics of the AOP reactor (the reference detector window/diffuser that monitors lamp output for dose control).",
-     "rationale": "AOP reactors monitor UV intensity for dose control; a diffuse reference in front of the reference photodiode would benefit from diffusil's UV-C survival and thermal tolerance. It is a stretch because most reactor UV sensors use a simple silica window or a calibrated photodiode rather than a dedicated volume diffuser, so the attachment depends on the OEM choosing a diffuse-reference architecture."
+     "rationale": "AOP reactors monitor UV intensity for dose control; a diffuse reference in front of the reference photodiode would benefit from diffusil's UV-C survival and thermal tolerance. It is a stretch because most reactor UV sensors use a simple silica window or a calibrated photodiode rather than a dedicated volume diffuser, so the attachment depends on the OEM choosing a diffuse-reference architecture.",
+     "role_easy": "Here diffusil could serve as the ultraviolet-proof reference window for the light-sensor that monitors a wastewater-treatment reactor's UV lamp dose; it's a less certain fit because most such reactors use a plain window rather than a diffuser."
     }
    ],
    "stakeholders": [
@@ -7477,7 +7508,8 @@
      "fit": "direct",
      "role": "Traceable diffuse-reference standard and transmissive homogenizer: replaces polymer Spectralon/PTFE sphere coatings and reference plaques where the calibration spans UV/DUV or runs hot, giving incident-angle-independent near-Lambertian output that does not drift.",
      "where": "Inside the integrating-sphere calibration station of the terminal's 'Calibration, Alignment and Acceptance Test' L6 stage \u2014 as the diffuse reference / sphere-port transmission diffuser (and the uniform-light-source output diffuser) against which the terminal's optical receivers, photodetectors and position/attitude optical sensors are calibrated for responsivity and spatial uniformity.",
-     "rationale": "Integrating spheres and uniform sources are the standard radiometric tool for detector responsivity/uniformity calibration (NIST SIRCUS; spacecraft optical-camera pre-launch calibration). diffusil's fused-silica volume diffusion gives angle-independent near-Lambertian transmission AND reflection from UV-C through NIR with no temporal drift \u2014 precisely where Spectralon/PTFE references degrade. This is opsira's own home turf (it builds these test stands), so the component drops straight into this VN node."
+     "rationale": "Integrating spheres and uniform sources are the standard radiometric tool for detector responsivity/uniformity calibration (NIST SIRCUS; spacecraft optical-camera pre-launch calibration). diffusil's fused-silica volume diffusion gives angle-independent near-Lambertian transmission AND reflection from UV-C through NIR with no temporal drift \u2014 precisely where Spectralon/PTFE references degrade. This is opsira's own home turf (it builds these test stands), so the component drops straight into this VN node.",
+     "role_easy": "Here diffusil is the traceable even-glow reference standard inside the calibration rig used to test satellite-terminal light sensors; it replaces plastic sphere coatings where the calibration uses ultraviolet light or runs hot and would make plastic drift."
     },
     {
      "unit": "Position and Attitude Sensor Suite (GNSS / IMU / optical sensor) \u2014 Sensor Optical Bench Assembly",
@@ -7485,7 +7517,8 @@
      "fit": "adjacent",
      "role": "Uniform-illumination flat-field diffuser / diffuse target for sensor pixel-response and stray-light calibration, surviving the bake-out and UV exposure those space-grade sensors are screened against.",
      "where": "As a flat-field / uniform-illumination reference element in the sensor sub-supplier's own test fixture for the terminal's optical attitude/position sensor (sun/horizon/camera sensor) \u2014 used to flat-field-calibrate and stray-light-characterize the detector during sensor build, upstream of terminal integration.",
-     "rationale": "Optical attitude sensors are flat-field and stray-light calibrated against a uniform diffuse source during manufacture. diffusil's autoclave/bake-out and UV survival plus angle-independent homogenization make it the durable reference where polymer diffusers outgas or yellow. It is adjacent rather than direct because it sits in the sensor SUPPLIER's process, one tier up from the terminal line."
+     "rationale": "Optical attitude sensors are flat-field and stray-light calibrated against a uniform diffuse source during manufacture. diffusil's autoclave/bake-out and UV survival plus angle-independent homogenization make it the durable reference where polymer diffusers outgas or yellow. It is adjacent rather than direct because it sits in the sensor SUPPLIER's process, one tier up from the terminal line.",
+     "role_easy": "Here diffusil is the uniform-light reference used one step upstream, in the sensor-maker's own test fixture, to calibrate a space-grade optical sensor's pixels; it's chosen because it survives the bake-out and ultraviolet screening those space parts must pass."
     },
     {
      "unit": "Fused-Silica Sensor Window / Optical Element (BOM L1 part)",
@@ -7493,7 +7526,8 @@
      "fit": "stretch",
      "role": "Merchant fused-silica diffusing window / optical homogenizer designed into the sensor optical path for a built-in diffuse reference or uniform-illumination function.",
      "where": "Could be specified AS the terminal's own sensor window/optical element on ESA-class or optical-comm-equipped terminals where a deliberately diffusing, ruggedized fused-silica element is wanted in front of a position/reference detector \u2014 i.e. diffusil shipped INSIDE the product rather than only in the test stand.",
-     "rationale": "Most SATCOM terminals are RF-only and carry no optical diffuser, so a shipped-BOM placement is a stretch \u2014 it only applies to the optical-sensor-bearing minority of terminals, and even there a clear window, not a diffuser, is the default. The honest, dominant intersection is the process_vn calibration station, not the product BOM."
+     "rationale": "Most SATCOM terminals are RF-only and carry no optical diffuser, so a shipped-BOM placement is a stretch \u2014 it only applies to the optical-sensor-bearing minority of terminals, and even there a clear window, not a diffuser, is the default. The honest, dominant intersection is the process_vn calibration station, not the product BOM.",
+     "role_easy": "Here diffusil could, in rare cases, ship inside the terminal itself as a built-in diffusing window in front of an optical sensor; this is a long shot because most satellite terminals are radio-only and carry no optical diffuser at all."
     }
    ],
    "stakeholders": [

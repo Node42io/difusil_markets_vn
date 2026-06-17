@@ -12,15 +12,27 @@ export interface Product {
   vendor: string;
   technology_class: string;
   functional_promise: string;
+  functional_promise_easy: string;
   commodity_functional_promise: string;
+  commodity_functional_promise_easy: string;
   custom_product_group: string;
   features: string[];
-  constraints: { name: string; type: string; explanation: string }[];
+  constraints: {
+    name: string;
+    type: string;
+    explanation: string;
+    easy: string;
+  }[];
   specifications: string[];
   unspsc: {
     custom_product_group: string;
     note: string;
-    candidates: { code: string; name: string; confidence: number }[];
+    candidates: {
+      code: string;
+      name: string;
+      confidence: number;
+      rationale: string;
+    }[];
   };
 }
 
@@ -99,6 +111,7 @@ export interface Intersection {
   path: string;
   fit: string;
   role: string;
+  role_easy: string;
   where: string;
   rationale: string;
 }

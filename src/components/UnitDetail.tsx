@@ -62,6 +62,24 @@ function ConnectedProduct({
           </Text>
         </div>
       )}
+      {x.role_easy && (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--space-100)",
+            borderLeft: "2px solid var(--border-information)",
+            paddingLeft: "var(--space-300)",
+          }}
+        >
+          <div style={{ ...LABEL_STYLE, color: "var(--text-information)" }}>
+            What {productName} does here
+          </div>
+          <Text variant="b2" style={{ color: "var(--text-body)" }}>
+            {x.role_easy}
+          </Text>
+        </div>
+      )}
       {x.where && (
         <div>
           <div style={LABEL_STYLE}>Where it sits</div>

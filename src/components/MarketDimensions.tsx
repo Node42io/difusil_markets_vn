@@ -139,15 +139,28 @@ export default function MarketDimensions({ market }: { market: DimensionMarket }
               {l2.name}
             </Text>
             {l2.cfj && (
-              <Text
-                variant="b2"
+              <div
                 style={{
-                  color: "var(--text-body)",
                   marginTop: "var(--space-100)",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "var(--space-100)",
                 }}
               >
-                {l2.cfj}
-              </Text>
+                <Text
+                  variant="b3"
+                  style={{
+                    textTransform: "uppercase",
+                    letterSpacing: "0.04em",
+                    color: "var(--text-labels)",
+                  }}
+                >
+                  Core functional job
+                </Text>
+                <Text variant="b2" style={{ color: "var(--text-body)" }}>
+                  {l2.cfj}
+                </Text>
+              </div>
             )}
             {l2.l3.length > 0 && (
               <div
